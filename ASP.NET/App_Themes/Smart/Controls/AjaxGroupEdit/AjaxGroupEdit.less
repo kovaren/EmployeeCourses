@@ -1,0 +1,34 @@
+﻿@import '../../../BaseTheme/Controls/AjaxGroupEdit/AjaxGroupEdit.less';
+
+/**
+ * Файл визуального оформления AjaxGroupEdit.
+ */
+
+
+.@{wgeWrapperClass} {
+    .@{wgeTableParentClass} {
+        .@{wgeTableClass} {
+            .@{wgeTableCaptionClass} td {                
+                .background(#0098ca,#027da6);
+                color: @wgeCaptionTextColor;
+                font-weight: normal;
+                font-size: 13px;
+                filter: none;
+            }
+
+            .@{wgeTableDataRowClass},
+            .@{wgeTableDataAlternateRowClass} {
+                > td {
+                    border-color: @wgeTableTopBorderColor @wgeTableRightBorderColor @wgeTableBottomBorderColor @wgeTableLeftBorderColor;
+                    background: @wgeTableBackgroundColor;
+                }
+
+                &:hover > td {
+                    background: @wgeTableHoveredBackgroundColor;
+                }
+            }
+        }
+    }
+}
+
+@import '_Settings.less';

@@ -1,0 +1,1622 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ICSSoft.STORMNET.Business.1.0.0.1.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService">
+            <summary>Shim type of ICSSoft.STORMNET.Business.SQLDataService</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.#ctor(ICSSoft.STORMNET.Business.SQLDataService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.Bind(ICSSoft.STORMNET.Business.IDataService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.Bind(System.ICloneable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AddDeletedObjectToDeleteDictionaryDataObjectFunctionSortedListStringCollectionStringCollectionSortedListStringCollection">
+            <summary>Sets the shim of SQLDataService.AddDeletedObjectToDeleteDictionary(DataObject dobject, Function UpdaterFunction, SortedList DeleteList, StringCollection DeleteOrder, StringCollection DeleteTables, SortedList TableOperations, StringCollection QueryOrder)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AddMasterTableToQuertyOrderStringCollectionStringString">
+            <summary>Sets the shim of SQLDataService.AddMasterTableToQuertyOrder(StringCollection QueryOrder, String masterTable, String thisTable)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AddPropsByLimitsViewViewFunction">
+            <summary>Sets the shim of SQLDataService.AddPropsByLimits(View curView, View OldView, Function func)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AddToProcessingObjectsKeysDictionaryOfTypeKeyPairBooleanDataObject">
+            <summary>Sets the shim of SQLDataService.AddToProcessingObjectsKeys(Dictionary`2&lt;TypeKeyPair,Boolean&gt; processedDictionary, DataObject dob)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AfterGenerateSQLSelectQueryAddAfterGenerateSQLSelectQueryEventHandler">
+            <summary>Sets the shim of SQLDataService.add_AfterGenerateSQLSelectQuery(AfterGenerateSQLSelectQueryEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AfterGenerateSQLSelectQueryRemoveAfterGenerateSQLSelectQueryEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_AfterGenerateSQLSelectQuery(AfterGenerateSQLSelectQueryEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AfterGenerateSQLSelectQueryStaticAddAfterGenerateSQLSelectQueryEventHandler">
+            <summary>Sets the shim of SQLDataService.add_AfterGenerateSQLSelectQueryStatic(AfterGenerateSQLSelectQueryEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AfterGenerateSQLSelectQueryStaticRemoveAfterGenerateSQLSelectQueryEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_AfterGenerateSQLSelectQueryStatic(AfterGenerateSQLSelectQueryEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AfterUpdateObjectsAddAfterUpdateObjectsEventHandler">
+            <summary>Sets the shim of SQLDataService.add_AfterUpdateObjects(AfterUpdateObjectsEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AfterUpdateObjectsRemoveAfterUpdateObjectsEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_AfterUpdateObjects(AfterUpdateObjectsEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AppendLogString">
+            <summary>Sets the shim of SQLDataService.AppendLog(String s)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.ApplyReadPermissionsLoadingCustomizationStructISecurityManager">
+            <summary>Sets the shim of SQLDataService.ApplyReadPermissions(LoadingCustomizationStruct customizationStruct, ISecurityManager securityManager)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AuditOperationDataObjectICollectionOfAuditAdditionalInfoIDbTransaction">
+            <summary>Sets the shim of SQLDataService.AuditOperation(DataObject dobject, ICollection`1&lt;AuditAdditionalInfo&gt; auditOperationInfoList, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AuditOperationIEnumerableOfDataObjectICollectionOfAuditAdditionalInfoIDbTransaction">
+            <summary>Sets the shim of SQLDataService.AuditOperation(IEnumerable`1&lt;DataObject&gt; dobjects, ICollection`1&lt;AuditAdditionalInfo&gt; auditOperationInfoList, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.BeforeUpdateObjectsAddBeforeUpdateObjectsEventHandler">
+            <summary>Sets the shim of SQLDataService.add_BeforeUpdateObjects(BeforeUpdateObjectsEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.BeforeUpdateObjectsRemoveBeforeUpdateObjectsEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_BeforeUpdateObjects(BeforeUpdateObjectsEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.CheckExistsFunction">
+            <summary>Sets the shim of SQLDataService.CheckExists(Function LimitFunction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.Clone">
+            <summary>Sets the shim of SQLDataService.Clone()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.CommandTimeoutGet">
+            <summary>Sets the shim of SQLDataService.get_CommandTimeout()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.CommandTimeoutSetInt32">
+            <summary>Sets the shim of SQLDataService.set_CommandTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.CompleteLoadStringedObjectViewObjectRef">
+            <summary>Sets the shim of SQLDataService.CompleteLoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.Constructor">
+            <summary>Sets the shim of SQLDataService.SQLDataService()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.ConstructorISecurityManager">
+            <summary>Sets the shim of SQLDataService.SQLDataService(ISecurityManager securityManager)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.ContainsKeyINProcessingDictionaryOfTypeKeyPairBooleanDataObject">
+            <summary>Sets the shim of SQLDataService.ContainsKeyINProcessing(Dictionary`2&lt;TypeKeyPair,Boolean&gt; processedDictionary, DataObject dob)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.ConvertSimpleValueToQueryValueStringObject">
+            <summary>Sets the shim of SQLDataService.ConvertSimpleValueToQueryValueString(Object value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.ConvertValueToQueryValueStringDataObjectString">
+            <summary>Sets the shim of SQLDataService.ConvertValueToQueryValueString(DataObject dataobject, String propname)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.ConvertValueToQueryValueStringObject">
+            <summary>Sets the shim of SQLDataService.ConvertValueToQueryValueString(Object value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.CreateTransactionIDbConnection">
+            <summary>Sets the shim of SQLDataService.CreateTransaction(IDbConnection connection)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.CustomizationStringGet">
+            <summary>Sets the shim of SQLDataService.get_CustomizationString()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.CustomizationStringSetString">
+            <summary>Sets the shim of SQLDataService.set_CustomizationString(String value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.CustomizeCommandIDbCommand">
+            <summary>Sets the shim of SQLDataService.CustomizeCommand(IDbCommand cmd)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.DoNotChangeCustomizationStringGet">
+            <summary>Sets the shim of SQLDataService.get_DoNotChangeCustomizationString()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.DoNotChangeCustomizationStringSetBoolean">
+            <summary>Sets the shim of SQLDataService.set_DoNotChangeCustomizationString(Boolean value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.ExecuteNonQueryString">
+            <summary>Sets the shim of SQLDataService.ExecuteNonQuery(String Query)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GenStringStringInt32">
+            <summary>Sets the shim of SQLDataService.GenString(String StringBlock, Int32 count)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GenerateQueriesForUpdateObjectsStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionSortedListStringCollectionBooleanArrayListDataObjectCacheDataObjectArray">
+            <summary>Sets the shim of SQLDataService.GenerateQueriesForUpdateObjects(StringCollection deleteQueries, StringCollection deleteTables, StringCollection updateQueries, StringCollection updateTables, StringCollection insertQueries, StringCollection insertTables, SortedList tableOperations, StringCollection queryOrder, Boolean checkLoadedProps, ArrayList processingObjects, DataObjectCache dataObjectCache, DataObject[] dobjects)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GenerateQueriesForUpdateObjectsStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionSortedListStringCollectionBooleanArrayListDataObjectCacheListOfDataObjectDataObjectArray">
+            <summary>Sets the shim of SQLDataService.GenerateQueriesForUpdateObjects(StringCollection deleteQueries, StringCollection deleteTables, StringCollection updateQueries, StringCollection updateTables, StringCollection insertQueries, StringCollection insertTables, SortedList tableOperations, StringCollection queryOrder, Boolean checkLoadedProps, ArrayList processingObjects, DataObjectCache dataObjectCache, List`1&lt;DataObject&gt; auditObjects, DataObject[] dobjects)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GenerateSQLSelectByStorageStructStorageStructForViewBooleanBooleanStringInt32Boolean">
+            <summary>Sets the shim of SQLDataService.GenerateSQLSelectByStorageStruct(StorageStructForView storageStruct, Boolean addNotMainKeys, Boolean addMasterFieldsCustomizer, String AddingAdvansedField, Int32 AddingKeysCount, Boolean SelectTypesIds)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GenerateSQLSelectByStorageStructStorageStructForViewBooleanBooleanStringInt32BooleanBooleanBoolean">
+            <summary>Sets the shim of SQLDataService.GenerateSQLSelectByStorageStruct(StorageStructForView storageStruct, Boolean addNotMainKeys, Boolean addMasterFieldsCustomizer, String AddingAdvansedField, Int32 AddingKeysCount, Boolean SelectTypesIds, Boolean MustNewGenerate, Boolean MustDopSelect)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GenerateSQLSelectLoadingCustomizationStructBoolean">
+            <summary>Sets the shim of SQLDataService.GenerateSQLSelect(LoadingCustomizationStruct customizationStruct, Boolean Optimized)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetConvertToTypeExpressionTypeString">
+            <summary>Sets the shim of SQLDataService.GetConvertToTypeExpression(Type valType, String value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetDataObjectFromSearchedListListOfDataObjectDataObject">
+            <summary>Sets the shim of SQLDataService.GetDataObjectFromSearchedList(List`1&lt;DataObject&gt; searchedDataObjectList, DataObject searchedDataObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetINExpressionStringArray">
+            <summary>Sets the shim of SQLDataService.GetINExpression(String[] identifiers)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetIfNullExpressionStringArray">
+            <summary>Sets the shim of SQLDataService.GetIfNullExpression(String[] identifiers)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetInnerJoinExpressionStringStringStringStringStringStringStringOutStringOut">
+            <summary>Sets the shim of SQLDataService.GetInnerJoinExpression(String subTable, String subTableAlias, String parentAliasWithKey, String subTableKey, String subJoins, String baseOutline, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetInstanceId">
+            <summary>Sets the shim of SQLDataService.GetInstanceId()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetJoinTableModifierExpression">
+            <summary>Sets the shim of SQLDataService.GetJoinTableModifierExpression()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetLeftJoinExpressionStringStringStringStringStringStringStringOutStringOut">
+            <summary>Sets the shim of SQLDataService.GetLeftJoinExpression(String subTable, String subTableAlias, String parentAliasWithKey, String subTableKey, String subJoins, String baseOutline, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetObjectIndexLoadingCustomizationStructFunction">
+            <summary>Sets the shim of SQLDataService.GetObjectIndex(LoadingCustomizationStruct lcs, Function limitFunction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetObjectIndexesLoadingCustomizationStructFunction">
+            <summary>Sets the shim of SQLDataService.GetObjectIndexes(LoadingCustomizationStruct lcs, Function limitFunction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetObjectIndexesWithPksLoadingCustomizationStructFunctionNullableOfInt32">
+            <summary>Sets the shim of SQLDataService.GetObjectIndexesWithPks(LoadingCustomizationStruct lcs, Function limitFunction, Nullable`1&lt;Int32&gt; maxResults)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetObjectsCountLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.GetObjectsCount(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.GetPropertiesInExpressionStringString">
+            <summary>Sets the shim of SQLDataService.GetPropertiesInExpression(String expression, String namespacewithpoint)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.IsExpressionContainAttrubuteCheckOnlyString">
+            <summary>Sets the shim of SQLDataService.IsExpressionContainAttrubuteCheckOnly(String expression)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LimitFunction2SQLWhereFunction">
+            <summary>Sets the shim of SQLDataService.LimitFunction2SQLWhere(Function LimitFunction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LimitFunction2SQLWhereFunctionStorageStructForViewArrayStringArrayBoolean">
+            <summary>Sets the shim of SQLDataService.LimitFunction2SQLWhere(Function LimitFunction, StorageStructForView[] StorageStruct, String[] asnameprop, Boolean MustNewGenerate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectByExtConnViewDataObjectBooleanBooleanDataObjectCacheIDbConnectionIDbTransaction">
+            <summary>Sets the shim of SQLDataService.LoadObjectByExtConn(View dataObjectView, DataObject dobject, Boolean сlearDataObject, Boolean сheckExistingObject, DataObjectCache dataObjectCache, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectDataObject">
+            <summary>Sets the shim of SQLDataService.LoadObject(DataObject dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectDataObjectBooleanBoolean">
+            <summary>Sets the shim of SQLDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectDataObjectDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectStringDataObject">
+            <summary>Sets the shim of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectStringDataObjectBooleanBoolean">
+            <summary>Sets the shim of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectStringDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectStringDataObjectDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectViewDataObject">
+            <summary>Sets the shim of SQLDataService.LoadObject(View dataObjectView, DataObject dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectViewDataObjectBooleanBoolean">
+            <summary>Sets the shim of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectViewDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectViewDataObjectDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsDataObjectArrayViewBoolean">
+            <summary>Sets the shim of SQLDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsDataObjectArrayViewBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsLoadingCustomizationStructArray">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsLoadingCustomizationStructArrayChangeViewForTypeDelegate">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsLoadingCustomizationStructDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsLoadingCustomizationStructObjectRef">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsObjectRef">
+            <summary>Sets the shim of SQLDataService.LoadObjects(Object&amp; State)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsView">
+            <summary>Sets the shim of SQLDataService.LoadObjects(View dataObjectView)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsViewArray">
+            <summary>Sets the shim of SQLDataService.LoadObjects(View[] dataObjectViews)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsViewArrayChangeViewForTypeDelegate">
+            <summary>Sets the shim of SQLDataService.LoadObjects(View[] dataObjectViews, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadObjectsViewChangeViewForTypeDelegate">
+            <summary>Sets the shim of SQLDataService.LoadObjects(View dataObjectView, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadRawValuesLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.LoadRawValues(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadStringedObjectViewCharLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadStringedObjectViewCharLoadingCustomizationStructObjectRef">
+            <summary>Sets the shim of SQLDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadStringedObjectViewObjectRef">
+            <summary>Sets the shim of SQLDataService.LoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.LoadValuesCharLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.LoadValues(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.OnBeforeUpdateObjectsArrayList">
+            <summary>Sets the shim of SQLDataService.OnBeforeUpdateObjects(ArrayList allQueriedObjects)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.OnCreateCommandAddOnCreateCommandEventHandler">
+            <summary>Sets the shim of SQLDataService.add_OnCreateCommand(OnCreateCommandEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.OnCreateCommandRemoveOnCreateCommandEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_OnCreateCommand(OnCreateCommandEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.OnGenerateSQLSelectAddOnGenerateSQLSelectEventHandler">
+            <summary>Sets the shim of SQLDataService.add_OnGenerateSQLSelect(OnGenerateSQLSelectEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.OnGenerateSQLSelectRemoveOnGenerateSQLSelectEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_OnGenerateSQLSelect(OnGenerateSQLSelectEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.PrvSecondLoadObjectViewDataObjectBooleanDataObjectCacheDataObject">
+            <summary>Sets the shim of SQLDataService.PrvSecondLoadObject(View dataObjectView, DataObject dataObject, Boolean checkExistingObject, DataObjectCache dataObjectCache, DataObject dataObjectFromDB)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.PutIdentifierIntoBracketsString">
+            <summary>Sets the shim of SQLDataService.PutIdentifierIntoBrackets(String identifier)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.ReplaceAliasesStorageStructForViewArrayStringArrayString">
+            <summary>Sets the shim of SQLDataService.ReplaceAliases(StorageStructForView[] StorageStruct, String[] asnameprop, String sw)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.RunCommandsStringCollectionStringCollectionStringIDbCommandObjectBoolean">
+            <summary>Sets the shim of SQLDataService.RunCommands(StringCollection queries, StringCollection tables, String table, IDbCommand command, Object businessID, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.SecondLoadObjectViewDataObjectBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.SecondLoadObject(View dataObjectView, DataObject dataObject, Boolean checkExistingObject, DataObjectCache dataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.SecurityManagerGet">
+            <summary>Sets the shim of SQLDataService.get_SecurityManager()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.SecurityManagerSetISecurityManager">
+            <summary>Sets the shim of SQLDataService.set_SecurityManager(ISecurityManager value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.StaticConstructor">
+            <summary>Sets the shim of SQLDataService.SQLDataService()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.StorageTypeGet">
+            <summary>Sets the shim of SQLDataService.get_StorageType()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.StorageTypeSetStorageTypeEnum">
+            <summary>Sets the shim of SQLDataService.set_StorageType(StorageTypeEnum value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.TranslateExpressionStringStringStringBooleanOut">
+            <summary>Sets the shim of SQLDataService.TranslateExpression(String expression, String namespacewithpoint, String exteranlnamewithpoint, Boolean&amp; PointExistInSourceIdentifier)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.TypeUsageGet">
+            <summary>Sets the shim of SQLDataService.get_TypeUsage()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.TypeUsageSetTypeUsage">
+            <summary>Sets the shim of SQLDataService.set_TypeUsage(TypeUsage value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.TypesGet">
+            <summary>Sets the shim of SQLDataService.get_Types()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.UpdateObjectDataObject">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.UpdateObjectDataObjectBoolean">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.UpdateObjectDataObjectDataObjectCache">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.UpdateObjectDataObjectRef">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject&amp; dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.UpdateObjectsDataObjectArrayRef">
+            <summary>Sets the shim of SQLDataService.UpdateObjects(DataObject[]&amp; objects)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.UseCommandTimeoutGet">
+            <summary>Sets the shim of SQLDataService.get_UseCommandTimeout()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.UseCommandTimeoutSetBoolean">
+            <summary>Sets the shim of SQLDataService.set_UseCommandTimeout(Boolean value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService._GenerateQueriesForUpdateObjectsb__9DataObject">
+            <summary>Sets the shim of SQLDataService.&lt;GenerateQueriesForUpdateObjects&gt;b__9(DataObject mi)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService._GetObjectIndexb__0KeyValuePairOfInt32String">
+            <summary>Sets the shim of SQLDataService.&lt;GetObjectIndex&gt;b__0(KeyValuePair`2&lt;Int32,String&gt; s)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService._GetObjectIndexesb__2KeyValuePairOfInt32String">
+            <summary>Sets the shim of SQLDataService.&lt;GetObjectIndexes&gt;b__2(KeyValuePair`2&lt;Int32,String&gt; s)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.prv_AddMasterObjectsToCacheDataObjectArrayListDataObjectCache">
+            <summary>Sets the shim of SQLDataService.prv_AddMasterObjectsToCache(DataObject dataobject, ArrayList arrl, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AddDeletedObjectToDeleteDictionaryDataObjectFunctionSortedListStringCollectionStringCollectionSortedListStringCollection">
+            <summary>Sets the shim of SQLDataService.AddDeletedObjectToDeleteDictionary(DataObject dobject, Function UpdaterFunction, SortedList DeleteList, StringCollection DeleteOrder, StringCollection DeleteTables, SortedList TableOperations, StringCollection QueryOrder)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AddDeletedViewToDeleteDictionaryViewCaseSensivityStringDictionaryObjectStringCollectionDataObjectArrayOutStringCollectionSortedListStringCollectionDataObjectCache">
+            <summary>Sets the shim of SQLDataService.AddDeletedViewToDeleteDictionary(View view, CaseSensivityStringDictionary DeleteDictionary, Object mainkey, StringCollection DeleteOrder, DataObject[]&amp; updateobjects, StringCollection DeleteTables, SortedList TableOperations, StringCollection QueryOrder, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AddMasterTableToQuertyOrderStringCollectionStringString">
+            <summary>Sets the shim of SQLDataService.AddMasterTableToQuertyOrder(StringCollection QueryOrder, String masterTable, String thisTable)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AddPropsByLimitsViewViewFunction">
+            <summary>Sets the shim of SQLDataService.AddPropsByLimits(View curView, View OldView, Function func)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AddToProcessingObjectsKeysDictionaryOfTypeKeyPairBooleanDataObject">
+            <summary>Sets the shim of SQLDataService.AddToProcessingObjectsKeys(Dictionary`2&lt;TypeKeyPair,Boolean&gt; processedDictionary, DataObject dob)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AfterGenerateSQLSelectQueryAddAfterGenerateSQLSelectQueryEventHandler">
+            <summary>Sets the shim of SQLDataService.add_AfterGenerateSQLSelectQuery(AfterGenerateSQLSelectQueryEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AfterGenerateSQLSelectQueryRemoveAfterGenerateSQLSelectQueryEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_AfterGenerateSQLSelectQuery(AfterGenerateSQLSelectQueryEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AfterUpdateObjectsAddAfterUpdateObjectsEventHandler">
+            <summary>Sets the shim of SQLDataService.add_AfterUpdateObjects(AfterUpdateObjectsEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AfterUpdateObjectsRemoveAfterUpdateObjectsEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_AfterUpdateObjects(AfterUpdateObjectsEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AppendLogString">
+            <summary>Sets the shim of SQLDataService.AppendLog(String s)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AuditOperationDataObjectICollectionOfAuditAdditionalInfoIDbTransaction">
+            <summary>Sets the shim of SQLDataService.AuditOperation(DataObject dobject, ICollection`1&lt;AuditAdditionalInfo&gt; auditOperationInfoList, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.AuditOperationIEnumerableOfDataObjectICollectionOfAuditAdditionalInfoIDbTransaction">
+            <summary>Sets the shim of SQLDataService.AuditOperation(IEnumerable`1&lt;DataObject&gt; dobjects, ICollection`1&lt;AuditAdditionalInfo&gt; auditOperationInfoList, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.BeforeUpdateObjectsAddBeforeUpdateObjectsEventHandler">
+            <summary>Sets the shim of SQLDataService.add_BeforeUpdateObjects(BeforeUpdateObjectsEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.BeforeUpdateObjectsRemoveBeforeUpdateObjectsEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_BeforeUpdateObjects(BeforeUpdateObjectsEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CheckExistsFunction">
+            <summary>Sets the shim of SQLDataService.CheckExists(Function LimitFunction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.Clone">
+            <summary>Sets the shim of SQLDataService.Clone()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CommandTimeoutGet">
+            <summary>Sets the shim of SQLDataService.get_CommandTimeout()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CommandTimeoutSetInt32">
+            <summary>Sets the shim of SQLDataService.set_CommandTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CompleteLoadStringedObjectViewObjectRef">
+            <summary>Sets the shim of SQLDataService.CompleteLoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ContainsKeyINProcessingDictionaryOfTypeKeyPairBooleanDataObject">
+            <summary>Sets the shim of SQLDataService.ContainsKeyINProcessing(Dictionary`2&lt;TypeKeyPair,Boolean&gt; processedDictionary, DataObject dob)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ConvertSimpleValueToQueryValueStringObject">
+            <summary>Sets the shim of SQLDataService.ConvertSimpleValueToQueryValueString(Object value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ConvertValueToQueryValueStringDataObjectString">
+            <summary>Sets the shim of SQLDataService.ConvertValueToQueryValueString(DataObject dataobject, String propname)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ConvertValueToQueryValueStringObject">
+            <summary>Sets the shim of SQLDataService.ConvertValueToQueryValueString(Object value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CreateJoinsStorageStructForViewPropSourceStringInt32ArrayListStringInt32OutStringOutStringOut">
+            <summary>Sets the shim of SQLDataService.CreateJoins(PropSource source, String parentAlias, Int32 index, ArrayList keysandtypes, String baseOutline, Int32&amp; joinscount, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CreateJoinsStorageStructForViewPropSourceStringInt32ArrayListStringInt32OutStringOutStringOutBoolean">
+            <summary>Sets the shim of SQLDataService.CreateJoins(PropSource source, String parentAlias, Int32 index, ArrayList keysandtypes, String baseOutline, Int32&amp; joinscount, String&amp; FromPart, String&amp; WherePart, Boolean MustNewGenerate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CreateTransactionIDbConnection">
+            <summary>Sets the shim of SQLDataService.CreateTransaction(IDbConnection connection)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CustomizationStringGet">
+            <summary>Sets the shim of SQLDataService.get_CustomizationString()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CustomizationStringSetString">
+            <summary>Sets the shim of SQLDataService.set_CustomizationString(String value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.CustomizeCommandIDbCommand">
+            <summary>Sets the shim of SQLDataService.CustomizeCommand(IDbCommand cmd)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.DoNotChangeCustomizationStringGet">
+            <summary>Sets the shim of SQLDataService.get_DoNotChangeCustomizationString()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.DoNotChangeCustomizationStringSetBoolean">
+            <summary>Sets the shim of SQLDataService.set_DoNotChangeCustomizationString(Boolean value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ExecuteNonQueryString">
+            <summary>Sets the shim of SQLDataService.ExecuteNonQuery(String Query)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GenStringStringInt32">
+            <summary>Sets the shim of SQLDataService.GenString(String StringBlock, Int32 count)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GenerateAuditForAggregatorsArrayListDataObjectCacheListOfDataObjectRefIDbTransaction">
+            <summary>Sets the shim of SQLDataService.GenerateAuditForAggregators(ArrayList processingObjects, DataObjectCache dataObjectCache, List`1&lt;DataObject&gt;&amp; auditObjects, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GenerateQueriesForUpdateObjectsStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionSortedListStringCollectionBooleanArrayListDataObjectCacheDataObjectArray">
+            <summary>Sets the shim of SQLDataService.GenerateQueriesForUpdateObjects(StringCollection deleteQueries, StringCollection deleteTables, StringCollection updateQueries, StringCollection updateTables, StringCollection insertQueries, StringCollection insertTables, SortedList tableOperations, StringCollection queryOrder, Boolean checkLoadedProps, ArrayList processingObjects, DataObjectCache dataObjectCache, DataObject[] dobjects)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GenerateQueriesForUpdateObjectsStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionSortedListStringCollectionBooleanArrayListDataObjectCacheListOfDataObjectDataObjectArray">
+            <summary>Sets the shim of SQLDataService.GenerateQueriesForUpdateObjects(StringCollection deleteQueries, StringCollection deleteTables, StringCollection updateQueries, StringCollection updateTables, StringCollection insertQueries, StringCollection insertTables, SortedList tableOperations, StringCollection queryOrder, Boolean checkLoadedProps, ArrayList processingObjects, DataObjectCache dataObjectCache, List`1&lt;DataObject&gt; auditObjects, DataObject[] dobjects)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GenerateSQLSelectByStorageStructStorageStructForViewBooleanBooleanStringInt32Boolean">
+            <summary>Sets the shim of SQLDataService.GenerateSQLSelectByStorageStruct(StorageStructForView storageStruct, Boolean addNotMainKeys, Boolean addMasterFieldsCustomizer, String AddingAdvansedField, Int32 AddingKeysCount, Boolean SelectTypesIds)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GenerateSQLSelectByStorageStructStorageStructForViewBooleanBooleanStringInt32BooleanBooleanBoolean">
+            <summary>Sets the shim of SQLDataService.GenerateSQLSelectByStorageStruct(StorageStructForView storageStruct, Boolean addNotMainKeys, Boolean addMasterFieldsCustomizer, String AddingAdvansedField, Int32 AddingKeysCount, Boolean SelectTypesIds, Boolean MustNewGenerate, Boolean MustDopSelect)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GenerateSQLSelectLoadingCustomizationStructBoolean">
+            <summary>Sets the shim of SQLDataService.GenerateSQLSelect(LoadingCustomizationStruct customizationStruct, Boolean Optimized)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GenerateSQLSelectLoadingCustomizationStructBooleanStorageStructForViewArrayOutBoolean">
+            <summary>Sets the shim of SQLDataService.GenerateSQLSelect(LoadingCustomizationStruct customizationStruct, Boolean ForReadValues, StorageStructForView[]&amp; StorageStruct, Boolean Optimized)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetAlteredPropsWithValuesDataObjectBooleanCaseSensivityStringDictionaryOutDataObjectArrayOutDataObjectArrayOutBoolean">
+            <summary>Sets the shim of SQLDataService.GetAlteredPropsWithValues(DataObject dobject, Boolean CheckLoadedProps, CaseSensivityStringDictionary&amp; propsWithValues, DataObject[]&amp; detailObjects, DataObject[]&amp; masterObjects, Boolean ReturnPropStorageNames)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetConvertToTypeExpressionTypeString">
+            <summary>Sets the shim of SQLDataService.GetConvertToTypeExpression(Type valType, String value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetDataObjectFromSearchedListListOfDataObjectDataObject">
+            <summary>Sets the shim of SQLDataService.GetDataObjectFromSearchedList(List`1&lt;DataObject&gt; searchedDataObjectList, DataObject searchedDataObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetINExpressionStringArray">
+            <summary>Sets the shim of SQLDataService.GetINExpression(String[] identifiers)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetIfNullExpressionStringArray">
+            <summary>Sets the shim of SQLDataService.GetIfNullExpression(String[] identifiers)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetInnerJoinExpressionStringStringStringStringStringStringStringOutStringOut">
+            <summary>Sets the shim of SQLDataService.GetInnerJoinExpression(String subTable, String subTableAlias, String parentAliasWithKey, String subTableKey, String subJoins, String baseOutline, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetInstanceId">
+            <summary>Sets the shim of SQLDataService.GetInstanceId()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetJoinTableModifierExpression">
+            <summary>Sets the shim of SQLDataService.GetJoinTableModifierExpression()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetLeftJoinExpressionStringStringStringStringStringStringStringOutStringOut">
+            <summary>Sets the shim of SQLDataService.GetLeftJoinExpression(String subTable, String subTableAlias, String parentAliasWithKey, String subTableKey, String subJoins, String baseOutline, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetObjectIndexLoadingCustomizationStructFunction">
+            <summary>Sets the shim of SQLDataService.GetObjectIndex(LoadingCustomizationStruct lcs, Function limitFunction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetObjectIndexesLoadingCustomizationStructFunction">
+            <summary>Sets the shim of SQLDataService.GetObjectIndexes(LoadingCustomizationStruct lcs, Function limitFunction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetObjectIndexesWithPksLoadingCustomizationStructFunctionNullableOfInt32">
+            <summary>Sets the shim of SQLDataService.GetObjectIndexesWithPks(LoadingCustomizationStruct lcs, Function limitFunction, Nullable`1&lt;Int32&gt; maxResults)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetObjectsCountLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.GetObjectsCount(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.GetPropertiesInExpressionStringString">
+            <summary>Sets the shim of SQLDataService.GetPropertiesInExpression(String expression, String namespacewithpoint)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.IsExpressionContainAttrubuteCheckOnlyString">
+            <summary>Sets the shim of SQLDataService.IsExpressionContainAttrubuteCheckOnly(String expression)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LimitFunction2SQLWhereFunction">
+            <summary>Sets the shim of SQLDataService.LimitFunction2SQLWhere(Function LimitFunction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LimitFunction2SQLWhereFunctionStorageStructForViewArrayStringArrayBoolean">
+            <summary>Sets the shim of SQLDataService.LimitFunction2SQLWhere(Function LimitFunction, StorageStructForView[] StorageStruct, String[] asnameprop, Boolean MustNewGenerate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectByExtConnViewDataObjectBooleanBooleanDataObjectCacheIDbConnectionIDbTransaction">
+            <summary>Sets the shim of SQLDataService.LoadObjectByExtConn(View dataObjectView, DataObject dobject, Boolean сlearDataObject, Boolean сheckExistingObject, DataObjectCache dataObjectCache, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectDataObject">
+            <summary>Sets the shim of SQLDataService.LoadObject(DataObject dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectDataObjectBooleanBoolean">
+            <summary>Sets the shim of SQLDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectDataObjectDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectStringDataObject">
+            <summary>Sets the shim of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectStringDataObjectBooleanBoolean">
+            <summary>Sets the shim of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectStringDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectStringDataObjectDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectViewDataObject">
+            <summary>Sets the shim of SQLDataService.LoadObject(View dataObjectView, DataObject dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectViewDataObjectBooleanBoolean">
+            <summary>Sets the shim of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectViewDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectViewDataObjectDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsByExtConnLoadingCustomizationStructObjectRefDataObjectCacheIDbConnectionIDbTransaction">
+            <summary>Sets the shim of SQLDataService.LoadObjectsByExtConn(LoadingCustomizationStruct customizationStruct, Object&amp; state, DataObjectCache dataObjectCache, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsDataObjectArrayViewBoolean">
+            <summary>Sets the shim of SQLDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsDataObjectArrayViewBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsLoadingCustomizationStructArray">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsLoadingCustomizationStructArrayChangeViewForTypeDelegate">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsLoadingCustomizationStructDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsLoadingCustomizationStructObjectRef">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsLoadingCustomizationStructObjectRefDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsObjectRef">
+            <summary>Sets the shim of SQLDataService.LoadObjects(Object&amp; State)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsObjectRefDataObjectCache">
+            <summary>Sets the shim of SQLDataService.LoadObjects(Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsView">
+            <summary>Sets the shim of SQLDataService.LoadObjects(View dataObjectView)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsViewArray">
+            <summary>Sets the shim of SQLDataService.LoadObjects(View[] dataObjectViews)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsViewArrayChangeViewForTypeDelegate">
+            <summary>Sets the shim of SQLDataService.LoadObjects(View[] dataObjectViews, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadObjectsViewChangeViewForTypeDelegate">
+            <summary>Sets the shim of SQLDataService.LoadObjects(View dataObjectView, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadRawValuesLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.LoadRawValues(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadStringedObjectViewCharLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadStringedObjectViewCharLoadingCustomizationStructObjectRef">
+            <summary>Sets the shim of SQLDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadStringedObjectViewObjectRef">
+            <summary>Sets the shim of SQLDataService.LoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.LoadValuesCharLoadingCustomizationStruct">
+            <summary>Sets the shim of SQLDataService.LoadValues(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.OnBeforeUpdateObjectsArrayList">
+            <summary>Sets the shim of SQLDataService.OnBeforeUpdateObjects(ArrayList allQueriedObjects)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.OnCreateCommandAddOnCreateCommandEventHandler">
+            <summary>Sets the shim of SQLDataService.add_OnCreateCommand(OnCreateCommandEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.OnCreateCommandRemoveOnCreateCommandEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_OnCreateCommand(OnCreateCommandEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.OnGenerateSQLSelectAddOnGenerateSQLSelectEventHandler">
+            <summary>Sets the shim of SQLDataService.add_OnGenerateSQLSelect(OnGenerateSQLSelectEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.OnGenerateSQLSelectRemoveOnGenerateSQLSelectEventHandler">
+            <summary>Sets the shim of SQLDataService.remove_OnGenerateSQLSelect(OnGenerateSQLSelectEventHandler value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.PrvSecondLoadObjectViewDataObjectBooleanDataObjectCacheDataObject">
+            <summary>Sets the shim of SQLDataService.PrvSecondLoadObject(View dataObjectView, DataObject dataObject, Boolean checkExistingObject, DataObjectCache dataObjectCache, DataObject dataObjectFromDB)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.PutIdentifierIntoBracketsString">
+            <summary>Sets the shim of SQLDataService.PutIdentifierIntoBrackets(String identifier)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ReadFirstByExtConnStringObjectRefInt32IDbConnectionIDbTransaction">
+            <summary>Sets the shim of SQLDataService.ReadFirstByExtConn(String Query, Object&amp; State, Int32 LoadingBufferSize, IDbConnection Connection, IDbTransaction Transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ReadFirstStringObjectRefInt32">
+            <summary>Sets the shim of SQLDataService.ReadFirst(String Query, Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ReadNextByExtConnObjectRefInt32">
+            <summary>Sets the shim of SQLDataService.ReadNextByExtConn(Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ReadNextObjectRefInt32">
+            <summary>Sets the shim of SQLDataService.ReadNext(Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.ReplaceAliasesStorageStructForViewArrayStringArrayString">
+            <summary>Sets the shim of SQLDataService.ReplaceAliases(StorageStructForView[] StorageStruct, String[] asnameprop, String sw)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.RunCommandsStringCollectionStringCollectionStringIDbCommandObjectBoolean">
+            <summary>Sets the shim of SQLDataService.RunCommands(StringCollection queries, StringCollection tables, String table, IDbCommand command, Object businessID, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.SecondLoadObjectViewDataObjectBooleanDataObjectCache">
+            <summary>Sets the shim of SQLDataService.SecondLoadObject(View dataObjectView, DataObject dataObject, Boolean checkExistingObject, DataObjectCache dataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.SecurityManagerGet">
+            <summary>Sets the shim of SQLDataService.get_SecurityManager()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.SecurityManagerSetISecurityManager">
+            <summary>Sets the shim of SQLDataService.set_SecurityManager(ISecurityManager value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.StorageTypeGet">
+            <summary>Sets the shim of SQLDataService.get_StorageType()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.StorageTypeSetStorageTypeEnum">
+            <summary>Sets the shim of SQLDataService.set_StorageType(StorageTypeEnum value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.TranslateExpressionStringStringStringBooleanOut">
+            <summary>Sets the shim of SQLDataService.TranslateExpression(String expression, String namespacewithpoint, String exteranlnamewithpoint, Boolean&amp; PointExistInSourceIdentifier)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.TypeUsageGet">
+            <summary>Sets the shim of SQLDataService.get_TypeUsage()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.TypeUsageSetTypeUsage">
+            <summary>Sets the shim of SQLDataService.set_TypeUsage(TypeUsage value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.TypesGet">
+            <summary>Sets the shim of SQLDataService.get_Types()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectDataObject">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectDataObjectBoolean">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectDataObjectDataObjectCache">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectDataObjectRef">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject&amp; dobject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectDataObjectRefBoolean">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject&amp; dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectDataObjectRefDataObjectCache">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectDataObjectRefDataObjectCacheBoolean">
+            <summary>Sets the shim of SQLDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectsByExtConnDataObjectArrayRefDataObjectCacheBooleanIDbConnectionIDbTransaction">
+            <summary>Sets the shim of SQLDataService.UpdateObjectsByExtConn(DataObject[]&amp; objects, DataObjectCache dataObjectCache, Boolean alwaysThrowException, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectsDataObjectArrayRef">
+            <summary>Sets the shim of SQLDataService.UpdateObjects(DataObject[]&amp; objects)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectsDataObjectArrayRefBoolean">
+            <summary>Sets the shim of SQLDataService.UpdateObjects(DataObject[]&amp; objects, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectsDataObjectArrayRefDataObjectCache">
+            <summary>Sets the shim of SQLDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectsDataObjectArrayRefDataObjectCacheBoolean">
+            <summary>Sets the shim of SQLDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UpdateObjectsOrderedDataObjectArrayRefBoolean">
+            <summary>Sets the shim of SQLDataService.UpdateObjectsOrdered(DataObject[]&amp; objects, Boolean alwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UseCommandTimeoutGet">
+            <summary>Sets the shim of SQLDataService.get_UseCommandTimeout()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.UseCommandTimeoutSetBoolean">
+            <summary>Sets the shim of SQLDataService.set_UseCommandTimeout(Boolean value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.ShimSQLDataService.AllInstances.prv_AddMasterObjectsToCacheDataObjectArrayListDataObjectCache">
+            <summary>Sets the shim of SQLDataService.prv_AddMasterObjectsToCache(DataObject dataobject, ArrayList arrl, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Business.Fakes.StubIDataService">
+            <summary>Stub type of ICSSoft.STORMNET.Business.IDataService</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.#ctor">
+            <summary>Initializes a new instance of type StubIDataService</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.AttachBackingFieldToCustomizationString">
+            <summary>Attaches delegates to emulate StubIDataService.CustomizationString as a property with a backing field.</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.AttachBackingFieldToTypeUsage">
+            <summary>Attaches delegates to emulate StubIDataService.TypeUsage as a property with a backing field.</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.Clone">
+            <summary>Sets the stub of ICloneable.Clone()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.CompleteLoadStringedObjectViewObjectRef">
+            <summary>Sets the stub of IDataService.CompleteLoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.CustomizationStringGet">
+            <summary>Sets the stub of IDataService.get_CustomizationString()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.CustomizationStringSetString">
+            <summary>Sets the stub of IDataService.set_CustomizationString(String value)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.GetInstanceId">
+            <summary>Sets the stub of IDataService.GetInstanceId()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.GetObjectsCountLoadingCustomizationStruct">
+            <summary>Sets the stub of IDataService.GetObjectsCount(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#CompleteLoadStringedObjectView(System.Object@)">
+            <summary>Sets the stub of IDataService.CompleteLoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#GetInstanceId">
+            <summary>Sets the stub of IDataService.GetInstanceId()</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#GetObjectsCount(ICSSoft.STORMNET.Business.LoadingCustomizationStruct)">
+            <summary>Sets the stub of IDataService.GetObjectsCount(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of IDataService.LoadObject(DataObject dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(ICSSoft.STORMNET.DataObject,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of IDataService.LoadObject(View dataObjectView, DataObject dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(System.String,ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of IDataService.LoadObject(String dataObjectViewName, DataObject dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of IDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObject(View dataObjectView, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(System.String,ICSSoft.STORMNET.DataObject,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObject(String dataObjectViewName, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of IDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(System.String,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of IDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObject(System.String,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(System.Object@)">
+            <summary>Sets the stub of IDataService.LoadObjects(Object&amp; State)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.View[])">
+            <summary>Sets the stub of IDataService.LoadObjects(View[] dataObjectViews)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct)">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.DataObject[],ICSSoft.STORMNET.View,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.DataObject[],ICSSoft.STORMNET.View,System.Boolean)">
+            <summary>Sets the stub of IDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.View)">
+            <summary>Sets the stub of IDataService.LoadObjects(View dataObjectView)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct[])">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.View[],ICSSoft.STORMNET.Business.ChangeViewForTypeDelegate)">
+            <summary>Sets the stub of IDataService.LoadObjects(View[] dataObjectViews, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct[],ICSSoft.STORMNET.Business.ChangeViewForTypeDelegate)">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Object@)">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(System.Object@,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObjects(Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.View,ICSSoft.STORMNET.Business.ChangeViewForTypeDelegate)">
+            <summary>Sets the stub of IDataService.LoadObjects(View dataObjectView, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Object@,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadStringedObjectView(System.Object@)">
+            <summary>Sets the stub of IDataService.LoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadStringedObjectView(System.Char,ICSSoft.STORMNET.Business.LoadingCustomizationStruct)">
+            <summary>Sets the stub of IDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadStringedObjectView(System.Char,ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Object@)">
+            <summary>Sets the stub of IDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#LoadValues(System.Char,ICSSoft.STORMNET.Business.LoadingCustomizationStruct)">
+            <summary>Sets the stub of IDataService.LoadValues(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObject(ICSSoft.STORMNET.DataObject@)">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject&amp; dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObject(ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObject(ICSSoft.STORMNET.DataObject@,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObject(ICSSoft.STORMNET.DataObject@,System.Boolean)">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject&amp; dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObject(ICSSoft.STORMNET.DataObject,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObject(ICSSoft.STORMNET.DataObject,System.Boolean)">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObject(ICSSoft.STORMNET.DataObject@,ICSSoft.STORMNET.DataObjectCache,System.Boolean)">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObjects(ICSSoft.STORMNET.DataObject[]@)">
+            <summary>Sets the stub of IDataService.UpdateObjects(DataObject[]&amp; objects)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObjects(ICSSoft.STORMNET.DataObject[]@,System.Boolean)">
+            <summary>Sets the stub of IDataService.UpdateObjects(DataObject[]&amp; objects, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObjects(ICSSoft.STORMNET.DataObject[]@,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of IDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#UpdateObjects(ICSSoft.STORMNET.DataObject[]@,ICSSoft.STORMNET.DataObjectCache,System.Boolean)">
+            <summary>Sets the stub of IDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectDataObject">
+            <summary>Sets the stub of IDataService.LoadObject(DataObject dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectDataObjectBooleanBoolean">
+            <summary>Sets the stub of IDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectDataObjectDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectStringDataObject">
+            <summary>Sets the stub of IDataService.LoadObject(String dataObjectViewName, DataObject dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectStringDataObjectBooleanBoolean">
+            <summary>Sets the stub of IDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectStringDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectStringDataObjectDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObject(String dataObjectViewName, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectViewDataObject">
+            <summary>Sets the stub of IDataService.LoadObject(View dataObjectView, DataObject dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectViewDataObjectBooleanBoolean">
+            <summary>Sets the stub of IDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectViewDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectViewDataObjectDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObject(View dataObjectView, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsDataObjectArrayViewBoolean">
+            <summary>Sets the stub of IDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsDataObjectArrayViewBooleanDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsLoadingCustomizationStruct">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsLoadingCustomizationStructArray">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsLoadingCustomizationStructArrayChangeViewForTypeDelegate">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsLoadingCustomizationStructDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsLoadingCustomizationStructObjectRef">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsLoadingCustomizationStructObjectRefDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsObjectRef">
+            <summary>Sets the stub of IDataService.LoadObjects(Object&amp; State)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsObjectRefDataObjectCache">
+            <summary>Sets the stub of IDataService.LoadObjects(Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsView">
+            <summary>Sets the stub of IDataService.LoadObjects(View dataObjectView)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsViewArray">
+            <summary>Sets the stub of IDataService.LoadObjects(View[] dataObjectViews)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsViewArrayChangeViewForTypeDelegate">
+            <summary>Sets the stub of IDataService.LoadObjects(View[] dataObjectViews, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadObjectsViewChangeViewForTypeDelegate">
+            <summary>Sets the stub of IDataService.LoadObjects(View dataObjectView, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadStringedObjectViewCharLoadingCustomizationStruct">
+            <summary>Sets the stub of IDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadStringedObjectViewCharLoadingCustomizationStructObjectRef">
+            <summary>Sets the stub of IDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadStringedObjectViewObjectRef">
+            <summary>Sets the stub of IDataService.LoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.LoadValuesCharLoadingCustomizationStruct">
+            <summary>Sets the stub of IDataService.LoadValues(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.SecurityManagerGet">
+            <summary>Sets the stub of IDataService.get_SecurityManager()</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubIDataService.global::System#ICloneable#Clone">
+            <summary>Sets the stub of ICloneable.Clone()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.TypeUsageGet">
+            <summary>Sets the stub of IDataService.get_TypeUsage()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.TypeUsageSetTypeUsage">
+            <summary>Sets the stub of IDataService.set_TypeUsage(TypeUsage value)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectDataObject">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectDataObjectBoolean">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectDataObjectDataObjectCache">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectDataObjectRef">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject&amp; dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectDataObjectRefBoolean">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject&amp; dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectDataObjectRefDataObjectCache">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectDataObjectRefDataObjectCacheBoolean">
+            <summary>Sets the stub of IDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectsDataObjectArrayRef">
+            <summary>Sets the stub of IDataService.UpdateObjects(DataObject[]&amp; objects)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectsDataObjectArrayRefBoolean">
+            <summary>Sets the stub of IDataService.UpdateObjects(DataObject[]&amp; objects, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectsDataObjectArrayRefDataObjectCache">
+            <summary>Sets the stub of IDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubIDataService.UpdateObjectsDataObjectArrayRefDataObjectCacheBoolean">
+            <summary>Sets the stub of IDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#CustomizationString">
+            <summary>Sets the stub of IDataService.get_CustomizationString()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#SecurityManager">
+            <summary>Sets the stub of IDataService.get_SecurityManager()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.StubIDataService.icssstormnetb::ICSSoft#STORMNET#Business#IDataService#TypeUsage">
+            <summary>Sets the stub of IDataService.get_TypeUsage()</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService">
+            <summary>Stub type of ICSSoft.STORMNET.Business.SQLDataService</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.#ctor(ICSSoft.STORMNET.Security.ISecurityManager)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.AttachBackingFieldToSite">
+            <summary>Attaches delegates to emulate StubSQLDataService.Site as a property with a backing field.</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CanRaiseEventsGet">
+            <summary>Sets the stub of Component.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.Clone">
+            <summary>Sets the stub of SQLDataService.Clone()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.Clone01">
+            <summary>Sets the stub of SQLDataService.Clone()</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ConvertSimpleValueToQueryValueString(System.Object)">
+            <summary>Sets the stub of SQLDataService.ConvertSimpleValueToQueryValueString(Object value)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ConvertSimpleValueToQueryValueStringObject">
+            <summary>Sets the stub of SQLDataService.ConvertSimpleValueToQueryValueString(Object value)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ConvertValueToQueryValueString(System.Object)">
+            <summary>Sets the stub of SQLDataService.ConvertValueToQueryValueString(Object value)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ConvertValueToQueryValueString(ICSSoft.STORMNET.DataObject,System.String)">
+            <summary>Sets the stub of SQLDataService.ConvertValueToQueryValueString(DataObject dataobject, String propname)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ConvertValueToQueryValueStringDataObjectString">
+            <summary>Sets the stub of SQLDataService.ConvertValueToQueryValueString(DataObject dataobject, String propname)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ConvertValueToQueryValueStringObject">
+            <summary>Sets the stub of SQLDataService.ConvertValueToQueryValueString(Object value)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CreateJoins(ICSSoft.STORMNET.Business.StorageStructForView.PropSource,System.String,System.Int32,System.Collections.ArrayList,System.String,System.Int32@,System.String@,System.String@)">
+            <summary>Sets the stub of SQLDataService.CreateJoins(PropSource source, String parentAlias, Int32 index, ArrayList keysandtypes, String baseOutline, Int32&amp; joinscount, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CreateJoins(ICSSoft.STORMNET.Business.StorageStructForView.PropSource,System.String,System.Int32,System.Collections.ArrayList,System.String,System.Int32@,System.String@,System.String@,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.CreateJoins(PropSource source, String parentAlias, Int32 index, ArrayList keysandtypes, String baseOutline, Int32&amp; joinscount, String&amp; FromPart, String&amp; WherePart, Boolean MustNewGenerate)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CreateJoinsStorageStructForViewPropSourceStringInt32ArrayListStringInt32OutStringOutStringOut">
+            <summary>Sets the stub of SQLDataService.CreateJoins(PropSource source, String parentAlias, Int32 index, ArrayList keysandtypes, String baseOutline, Int32&amp; joinscount, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CreateJoinsStorageStructForViewPropSourceStringInt32ArrayListStringInt32OutStringOutStringOutBoolean">
+            <summary>Sets the stub of SQLDataService.CreateJoins(PropSource source, String parentAlias, Int32 index, ArrayList keysandtypes, String baseOutline, Int32&amp; joinscount, String&amp; FromPart, String&amp; WherePart, Boolean MustNewGenerate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CreateTransaction(System.Data.IDbConnection)">
+            <summary>Sets the stub of SQLDataService.CreateTransaction(IDbConnection connection)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CreateTransactionIDbConnection">
+            <summary>Sets the stub of SQLDataService.CreateTransaction(IDbConnection connection)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CustomizeCommand(System.Data.IDbCommand)">
+            <summary>Sets the stub of SQLDataService.CustomizeCommand(IDbCommand cmd)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CustomizeCommandIDbCommand">
+            <summary>Sets the stub of SQLDataService.CustomizeCommand(IDbCommand cmd)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.Dispose(System.Boolean)">
+            <summary>Sets the stub of Component.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.DisposeBoolean">
+            <summary>Sets the stub of Component.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ExecuteNonQuery(System.String)">
+            <summary>Sets the stub of SQLDataService.ExecuteNonQuery(String Query)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ExecuteNonQueryString">
+            <summary>Sets the stub of SQLDataService.ExecuteNonQuery(String Query)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateAuditForAggregators(System.Collections.ArrayList,ICSSoft.STORMNET.DataObjectCache,System.Collections.Generic.List{ICSSoft.STORMNET.DataObject}@,System.Data.IDbTransaction)">
+            <summary>Sets the stub of SQLDataService.GenerateAuditForAggregators(ArrayList processingObjects, DataObjectCache dataObjectCache, List`1&lt;DataObject&gt;&amp; auditObjects, IDbTransaction transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateAuditForAggregatorsArrayListDataObjectCacheListOfDataObjectRefIDbTransaction">
+            <summary>Sets the stub of SQLDataService.GenerateAuditForAggregators(ArrayList processingObjects, DataObjectCache dataObjectCache, List`1&lt;DataObject&gt;&amp; auditObjects, IDbTransaction transaction)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateQueriesForUpdateObjects(System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.SortedList,System.Collections.Specialized.StringCollection,System.Boolean,System.Collections.ArrayList,ICSSoft.STORMNET.DataObjectCache,ICSSoft.STORMNET.DataObject[])">
+            <summary>Sets the stub of SQLDataService.GenerateQueriesForUpdateObjects(StringCollection deleteQueries, StringCollection deleteTables, StringCollection updateQueries, StringCollection updateTables, StringCollection insertQueries, StringCollection insertTables, SortedList tableOperations, StringCollection queryOrder, Boolean checkLoadedProps, ArrayList processingObjects, DataObjectCache dataObjectCache, DataObject[] dobjects)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateQueriesForUpdateObjects(System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.Collections.SortedList,System.Collections.Specialized.StringCollection,System.Boolean,System.Collections.ArrayList,ICSSoft.STORMNET.DataObjectCache,System.Collections.Generic.List{ICSSoft.STORMNET.DataObject},ICSSoft.STORMNET.DataObject[])">
+            <summary>Sets the stub of SQLDataService.GenerateQueriesForUpdateObjects(StringCollection deleteQueries, StringCollection deleteTables, StringCollection updateQueries, StringCollection updateTables, StringCollection insertQueries, StringCollection insertTables, SortedList tableOperations, StringCollection queryOrder, Boolean checkLoadedProps, ArrayList processingObjects, DataObjectCache dataObjectCache, List`1&lt;DataObject&gt; auditObjects, DataObject[] dobjects)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateQueriesForUpdateObjectsStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionSortedListStringCollectionBooleanArrayListDataObjectCacheDataObjectArray">
+            <summary>Sets the stub of SQLDataService.GenerateQueriesForUpdateObjects(StringCollection deleteQueries, StringCollection deleteTables, StringCollection updateQueries, StringCollection updateTables, StringCollection insertQueries, StringCollection insertTables, SortedList tableOperations, StringCollection queryOrder, Boolean checkLoadedProps, ArrayList processingObjects, DataObjectCache dataObjectCache, DataObject[] dobjects)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateQueriesForUpdateObjectsStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionStringCollectionSortedListStringCollectionBooleanArrayListDataObjectCacheListOfDataObjectDataObjectArray">
+            <summary>Sets the stub of SQLDataService.GenerateQueriesForUpdateObjects(StringCollection deleteQueries, StringCollection deleteTables, StringCollection updateQueries, StringCollection updateTables, StringCollection insertQueries, StringCollection insertTables, SortedList tableOperations, StringCollection queryOrder, Boolean checkLoadedProps, ArrayList processingObjects, DataObjectCache dataObjectCache, List`1&lt;DataObject&gt; auditObjects, DataObject[] dobjects)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateSQLSelect(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.GenerateSQLSelect(LoadingCustomizationStruct customizationStruct, Boolean Optimized)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateSQLSelect(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Boolean,ICSSoft.STORMNET.Business.StorageStructForView[]@,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.GenerateSQLSelect(LoadingCustomizationStruct customizationStruct, Boolean ForReadValues, StorageStructForView[]&amp; StorageStruct, Boolean Optimized)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateSQLSelectByStorageStruct(ICSSoft.STORMNET.Business.StorageStructForView,System.Boolean,System.Boolean,System.String,System.Int32,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.GenerateSQLSelectByStorageStruct(StorageStructForView storageStruct, Boolean addNotMainKeys, Boolean addMasterFieldsCustomizer, String AddingAdvansedField, Int32 AddingKeysCount, Boolean SelectTypesIds)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateSQLSelectByStorageStruct(ICSSoft.STORMNET.Business.StorageStructForView,System.Boolean,System.Boolean,System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.GenerateSQLSelectByStorageStruct(StorageStructForView storageStruct, Boolean addNotMainKeys, Boolean addMasterFieldsCustomizer, String AddingAdvansedField, Int32 AddingKeysCount, Boolean SelectTypesIds, Boolean MustNewGenerate, Boolean MustDopSelect)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateSQLSelectByStorageStructStorageStructForViewBooleanBooleanStringInt32Boolean">
+            <summary>Sets the stub of SQLDataService.GenerateSQLSelectByStorageStruct(StorageStructForView storageStruct, Boolean addNotMainKeys, Boolean addMasterFieldsCustomizer, String AddingAdvansedField, Int32 AddingKeysCount, Boolean SelectTypesIds)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateSQLSelectByStorageStructStorageStructForViewBooleanBooleanStringInt32BooleanBooleanBoolean">
+            <summary>Sets the stub of SQLDataService.GenerateSQLSelectByStorageStruct(StorageStructForView storageStruct, Boolean addNotMainKeys, Boolean addMasterFieldsCustomizer, String AddingAdvansedField, Int32 AddingKeysCount, Boolean SelectTypesIds, Boolean MustNewGenerate, Boolean MustDopSelect)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateSQLSelectLoadingCustomizationStructBoolean">
+            <summary>Sets the stub of SQLDataService.GenerateSQLSelect(LoadingCustomizationStruct customizationStruct, Boolean Optimized)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GenerateSQLSelectLoadingCustomizationStructBooleanStorageStructForViewArrayOutBoolean">
+            <summary>Sets the stub of SQLDataService.GenerateSQLSelect(LoadingCustomizationStruct customizationStruct, Boolean ForReadValues, StorageStructForView[]&amp; StorageStruct, Boolean Optimized)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetAlteredPropsWithValues(ICSSoft.STORMNET.DataObject,System.Boolean,ICSSoft.STORMNET.Collections.CaseSensivityStringDictionary@,ICSSoft.STORMNET.DataObject[]@,ICSSoft.STORMNET.DataObject[]@,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.GetAlteredPropsWithValues(DataObject dobject, Boolean CheckLoadedProps, CaseSensivityStringDictionary&amp; propsWithValues, DataObject[]&amp; detailObjects, DataObject[]&amp; masterObjects, Boolean ReturnPropStorageNames)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetAlteredPropsWithValuesDataObjectBooleanCaseSensivityStringDictionaryOutDataObjectArrayOutDataObjectArrayOutBoolean">
+            <summary>Sets the stub of SQLDataService.GetAlteredPropsWithValues(DataObject dobject, Boolean CheckLoadedProps, CaseSensivityStringDictionary&amp; propsWithValues, DataObject[]&amp; detailObjects, DataObject[]&amp; masterObjects, Boolean ReturnPropStorageNames)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetConnection">
+            <summary>Sets the stub of SQLDataService.GetConnection()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetConnection01">
+            <summary>Sets the stub of SQLDataService.GetConnection()</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetConvertToTypeExpression(System.Type,System.String)">
+            <summary>Sets the stub of SQLDataService.GetConvertToTypeExpression(Type valType, String value)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetConvertToTypeExpressionTypeString">
+            <summary>Sets the stub of SQLDataService.GetConvertToTypeExpression(Type valType, String value)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetINExpression(System.String[])">
+            <summary>Sets the stub of SQLDataService.GetINExpression(String[] identifiers)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetINExpressionStringArray">
+            <summary>Sets the stub of SQLDataService.GetINExpression(String[] identifiers)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetIfNullExpression(System.String[])">
+            <summary>Sets the stub of SQLDataService.GetIfNullExpression(String[] identifiers)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetIfNullExpressionStringArray">
+            <summary>Sets the stub of SQLDataService.GetIfNullExpression(String[] identifiers)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetInnerJoinExpression(System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>Sets the stub of SQLDataService.GetInnerJoinExpression(String subTable, String subTableAlias, String parentAliasWithKey, String subTableKey, String subJoins, String baseOutline, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetInnerJoinExpressionStringStringStringStringStringStringStringOutStringOut">
+            <summary>Sets the stub of SQLDataService.GetInnerJoinExpression(String subTable, String subTableAlias, String parentAliasWithKey, String subTableKey, String subJoins, String baseOutline, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetJoinTableModifierExpression">
+            <summary>Sets the stub of SQLDataService.GetJoinTableModifierExpression()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetJoinTableModifierExpression01">
+            <summary>Sets the stub of SQLDataService.GetJoinTableModifierExpression()</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetLeftJoinExpression(System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>Sets the stub of SQLDataService.GetLeftJoinExpression(String subTable, String subTableAlias, String parentAliasWithKey, String subTableKey, String subJoins, String baseOutline, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetLeftJoinExpressionStringStringStringStringStringStringStringOutStringOut">
+            <summary>Sets the stub of SQLDataService.GetLeftJoinExpression(String subTable, String subTableAlias, String parentAliasWithKey, String subTableKey, String subJoins, String baseOutline, String&amp; FromPart, String&amp; WherePart)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetService(System.Type)">
+            <summary>Sets the stub of Component.GetService(Type service)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.GetServiceType">
+            <summary>Sets the stub of Component.GetService(Type service)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.InitializeStub">
+            <summary>Initializes a new instance of type StubSQLDataService</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LimitFunction2SQLWhere(ICSSoft.STORMNET.FunctionalLanguage.Function)">
+            <summary>Sets the stub of SQLDataService.LimitFunction2SQLWhere(Function LimitFunction)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LimitFunction2SQLWhere(ICSSoft.STORMNET.FunctionalLanguage.Function,ICSSoft.STORMNET.Business.StorageStructForView[],System.String[],System.Boolean)">
+            <summary>Sets the stub of SQLDataService.LimitFunction2SQLWhere(Function LimitFunction, StorageStructForView[] StorageStruct, String[] asnameprop, Boolean MustNewGenerate)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LimitFunction2SQLWhereFunction">
+            <summary>Sets the stub of SQLDataService.LimitFunction2SQLWhere(Function LimitFunction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LimitFunction2SQLWhereFunctionStorageStructForViewArrayStringArrayBoolean">
+            <summary>Sets the stub of SQLDataService.LimitFunction2SQLWhere(Function LimitFunction, StorageStructForView[] StorageStruct, String[] asnameprop, Boolean MustNewGenerate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of SQLDataService.LoadObject(DataObject dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(ICSSoft.STORMNET.DataObject,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of SQLDataService.LoadObject(View dataObjectView, DataObject dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(System.String,ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(System.String,ICSSoft.STORMNET.DataObject,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(System.String,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObject(System.String,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectByExtConn(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,System.Boolean,System.Boolean,ICSSoft.STORMNET.DataObjectCache,System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>Sets the stub of SQLDataService.LoadObjectByExtConn(View dataObjectView, DataObject dobject, Boolean сlearDataObject, Boolean сheckExistingObject, DataObjectCache dataObjectCache, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectByExtConnViewDataObjectBooleanBooleanDataObjectCacheIDbConnectionIDbTransaction">
+            <summary>Sets the stub of SQLDataService.LoadObjectByExtConn(View dataObjectView, DataObject dobject, Boolean сlearDataObject, Boolean сheckExistingObject, DataObjectCache dataObjectCache, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectDataObject">
+            <summary>Sets the stub of SQLDataService.LoadObject(DataObject dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectDataObjectBooleanBoolean">
+            <summary>Sets the stub of SQLDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObject(DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectDataObjectDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectStringDataObject">
+            <summary>Sets the stub of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectStringDataObjectBooleanBoolean">
+            <summary>Sets the stub of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectStringDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectStringDataObjectDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObject(String dataObjectViewName, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectViewDataObject">
+            <summary>Sets the stub of SQLDataService.LoadObject(View dataObjectView, DataObject dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectViewDataObjectBooleanBoolean">
+            <summary>Sets the stub of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectViewDataObjectBooleanBooleanDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, Boolean ClearDataObject, Boolean CheckExistingObject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectViewDataObjectDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObject(View dataObjectView, DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(System.Object@)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(Object&amp; State)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct[])">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.View[])">
+            <summary>Sets the stub of SQLDataService.LoadObjects(View[] dataObjectViews)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Object@)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct[],ICSSoft.STORMNET.Business.ChangeViewForTypeDelegate)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.DataObject[],ICSSoft.STORMNET.View,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.View)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(View dataObjectView)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.DataObject[],ICSSoft.STORMNET.View,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(System.Object@,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.View,ICSSoft.STORMNET.Business.ChangeViewForTypeDelegate)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(View dataObjectView, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.View[],ICSSoft.STORMNET.Business.ChangeViewForTypeDelegate)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(View[] dataObjectViews, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjects(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Object@,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsByExtConn(ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Object@,ICSSoft.STORMNET.DataObjectCache,System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>Sets the stub of SQLDataService.LoadObjectsByExtConn(LoadingCustomizationStruct customizationStruct, Object&amp; state, DataObjectCache dataObjectCache, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsByExtConnLoadingCustomizationStructObjectRefDataObjectCacheIDbConnectionIDbTransaction">
+            <summary>Sets the stub of SQLDataService.LoadObjectsByExtConn(LoadingCustomizationStruct customizationStruct, Object&amp; state, DataObjectCache dataObjectCache, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsDataObjectArrayViewBoolean">
+            <summary>Sets the stub of SQLDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsDataObjectArrayViewBooleanDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObjects(DataObject[] dataobjects, View dataObjectView, Boolean ClearDataobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsLoadingCustomizationStruct">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsLoadingCustomizationStructArray">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsLoadingCustomizationStructArrayChangeViewForTypeDelegate">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct[] customizationStructs, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsLoadingCustomizationStructDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsLoadingCustomizationStructObjectRef">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsLoadingCustomizationStructObjectRefDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObjects(LoadingCustomizationStruct customizationStruct, Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsObjectRef">
+            <summary>Sets the stub of SQLDataService.LoadObjects(Object&amp; State)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsObjectRefDataObjectCache">
+            <summary>Sets the stub of SQLDataService.LoadObjects(Object&amp; State, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsView">
+            <summary>Sets the stub of SQLDataService.LoadObjects(View dataObjectView)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsViewArray">
+            <summary>Sets the stub of SQLDataService.LoadObjects(View[] dataObjectViews)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsViewArrayChangeViewForTypeDelegate">
+            <summary>Sets the stub of SQLDataService.LoadObjects(View[] dataObjectViews, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadObjectsViewChangeViewForTypeDelegate">
+            <summary>Sets the stub of SQLDataService.LoadObjects(View dataObjectView, ChangeViewForTypeDelegate changeViewForTypeDelegate)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadRawValues(ICSSoft.STORMNET.Business.LoadingCustomizationStruct)">
+            <summary>Sets the stub of SQLDataService.LoadRawValues(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadRawValuesLoadingCustomizationStruct">
+            <summary>Sets the stub of SQLDataService.LoadRawValues(LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadStringedObjectView(System.Object@)">
+            <summary>Sets the stub of SQLDataService.LoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadStringedObjectView(System.Char,ICSSoft.STORMNET.Business.LoadingCustomizationStruct)">
+            <summary>Sets the stub of SQLDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadStringedObjectView(System.Char,ICSSoft.STORMNET.Business.LoadingCustomizationStruct,System.Object@)">
+            <summary>Sets the stub of SQLDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadStringedObjectViewCharLoadingCustomizationStruct">
+            <summary>Sets the stub of SQLDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadStringedObjectViewCharLoadingCustomizationStructObjectRef">
+            <summary>Sets the stub of SQLDataService.LoadStringedObjectView(Char separator, LoadingCustomizationStruct customizationStruct, Object&amp; State)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadStringedObjectViewObjectRef">
+            <summary>Sets the stub of SQLDataService.LoadStringedObjectView(Object&amp; state)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadValues(System.Char,ICSSoft.STORMNET.Business.LoadingCustomizationStruct)">
+            <summary>Sets the stub of SQLDataService.LoadValues(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.LoadValuesCharLoadingCustomizationStruct">
+            <summary>Sets the stub of SQLDataService.LoadValues(Char separator, LoadingCustomizationStruct customizationStruct)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.PrvSecondLoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,System.Boolean,ICSSoft.STORMNET.DataObjectCache,ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of SQLDataService.PrvSecondLoadObject(View dataObjectView, DataObject dataObject, Boolean checkExistingObject, DataObjectCache dataObjectCache, DataObject dataObjectFromDB)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.PrvSecondLoadObjectViewDataObjectBooleanDataObjectCacheDataObject">
+            <summary>Sets the stub of SQLDataService.PrvSecondLoadObject(View dataObjectView, DataObject dataObject, Boolean checkExistingObject, DataObjectCache dataObjectCache, DataObject dataObjectFromDB)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.PutIdentifierIntoBrackets(System.String)">
+            <summary>Sets the stub of SQLDataService.PutIdentifierIntoBrackets(String identifier)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.PutIdentifierIntoBracketsString">
+            <summary>Sets the stub of SQLDataService.PutIdentifierIntoBrackets(String identifier)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ReadFirst(System.String,System.Object@,System.Int32)">
+            <summary>Sets the stub of SQLDataService.ReadFirst(String Query, Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ReadFirstByExtConn(System.String,System.Object@,System.Int32,System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>Sets the stub of SQLDataService.ReadFirstByExtConn(String Query, Object&amp; State, Int32 LoadingBufferSize, IDbConnection Connection, IDbTransaction Transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ReadFirstByExtConnStringObjectRefInt32IDbConnectionIDbTransaction">
+            <summary>Sets the stub of SQLDataService.ReadFirstByExtConn(String Query, Object&amp; State, Int32 LoadingBufferSize, IDbConnection Connection, IDbTransaction Transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ReadFirstStringObjectRefInt32">
+            <summary>Sets the stub of SQLDataService.ReadFirst(String Query, Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ReadNext(System.Object@,System.Int32)">
+            <summary>Sets the stub of SQLDataService.ReadNext(Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ReadNextByExtConn(System.Object@,System.Int32)">
+            <summary>Sets the stub of SQLDataService.ReadNextByExtConn(Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ReadNextByExtConnObjectRefInt32">
+            <summary>Sets the stub of SQLDataService.ReadNextByExtConn(Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ReadNextObjectRefInt32">
+            <summary>Sets the stub of SQLDataService.ReadNext(Object&amp; State, Int32 LoadingBufferSize)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.RunCommands(System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.String,System.Data.IDbCommand,System.Object,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.RunCommands(StringCollection queries, StringCollection tables, String table, IDbCommand command, Object businessID, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.RunCommandsStringCollectionStringCollectionStringIDbCommandObjectBoolean">
+            <summary>Sets the stub of SQLDataService.RunCommands(StringCollection queries, StringCollection tables, String table, IDbCommand command, Object businessID, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.SecondLoadObject(ICSSoft.STORMNET.View,ICSSoft.STORMNET.DataObject,System.Boolean,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.SecondLoadObject(View dataObjectView, DataObject dataObject, Boolean checkExistingObject, DataObjectCache dataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.SecondLoadObjectViewDataObjectBooleanDataObjectCache">
+            <summary>Sets the stub of SQLDataService.SecondLoadObject(View dataObjectView, DataObject dataObject, Boolean checkExistingObject, DataObjectCache dataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.SiteGet">
+            <summary>Sets the stub of Component.get_Site()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.SiteSetISite">
+            <summary>Sets the stub of Component.set_Site(ISite value)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ToString">
+            <summary>Sets the stub of Component.ToString()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.ToString01">
+            <summary>Sets the stub of Component.ToString()</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.TranslateExpression(System.String,System.String,System.String,System.Boolean@)">
+            <summary>Sets the stub of SQLDataService.TranslateExpression(String expression, String namespacewithpoint, String exteranlnamewithpoint, Boolean&amp; PointExistInSourceIdentifier)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.TranslateExpressionStringStringStringBooleanOut">
+            <summary>Sets the stub of SQLDataService.TranslateExpression(String expression, String namespacewithpoint, String exteranlnamewithpoint, Boolean&amp; PointExistInSourceIdentifier)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObject(ICSSoft.STORMNET.DataObject@)">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject&amp; dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObject(ICSSoft.STORMNET.DataObject)">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject dobject)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObject(ICSSoft.STORMNET.DataObject,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObject(ICSSoft.STORMNET.DataObject@,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObject(ICSSoft.STORMNET.DataObject,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObject(ICSSoft.STORMNET.DataObject@,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject&amp; dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObject(ICSSoft.STORMNET.DataObject@,ICSSoft.STORMNET.DataObjectCache,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectDataObject">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectDataObjectBoolean">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectDataObjectDataObjectCache">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectDataObjectRef">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject&amp; dobject)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectDataObjectRefBoolean">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject&amp; dobject, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectDataObjectRefDataObjectCache">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectDataObjectRefDataObjectCacheBoolean">
+            <summary>Sets the stub of SQLDataService.UpdateObject(DataObject&amp; dobject, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjects(ICSSoft.STORMNET.DataObject[]@)">
+            <summary>Sets the stub of SQLDataService.UpdateObjects(DataObject[]&amp; objects)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjects(ICSSoft.STORMNET.DataObject[]@,ICSSoft.STORMNET.DataObjectCache)">
+            <summary>Sets the stub of SQLDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjects(ICSSoft.STORMNET.DataObject[]@,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.UpdateObjects(DataObject[]&amp; objects, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjects(ICSSoft.STORMNET.DataObject[]@,ICSSoft.STORMNET.DataObjectCache,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectsByExtConn(ICSSoft.STORMNET.DataObject[]@,ICSSoft.STORMNET.DataObjectCache,System.Boolean,System.Data.IDbConnection,System.Data.IDbTransaction)">
+            <summary>Sets the stub of SQLDataService.UpdateObjectsByExtConn(DataObject[]&amp; objects, DataObjectCache dataObjectCache, Boolean alwaysThrowException, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectsByExtConnDataObjectArrayRefDataObjectCacheBooleanIDbConnectionIDbTransaction">
+            <summary>Sets the stub of SQLDataService.UpdateObjectsByExtConn(DataObject[]&amp; objects, DataObjectCache dataObjectCache, Boolean alwaysThrowException, IDbConnection connection, IDbTransaction transaction)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectsDataObjectArrayRef">
+            <summary>Sets the stub of SQLDataService.UpdateObjects(DataObject[]&amp; objects)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectsDataObjectArrayRefBoolean">
+            <summary>Sets the stub of SQLDataService.UpdateObjects(DataObject[]&amp; objects, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectsDataObjectArrayRefDataObjectCache">
+            <summary>Sets the stub of SQLDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectsDataObjectArrayRefDataObjectCacheBoolean">
+            <summary>Sets the stub of SQLDataService.UpdateObjects(DataObject[]&amp; objects, DataObjectCache DataObjectCache, Boolean AlwaysThrowException)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectsOrdered(ICSSoft.STORMNET.DataObject[]@,System.Boolean)">
+            <summary>Sets the stub of SQLDataService.UpdateObjectsOrdered(DataObject[]&amp; objects, Boolean alwaysThrowException)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.UpdateObjectsOrderedDataObjectArrayRefBoolean">
+            <summary>Sets the stub of SQLDataService.UpdateObjectsOrdered(DataObject[]&amp; objects, Boolean alwaysThrowException)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.CanRaiseEvents">
+            <summary>Sets the stub of Component.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Business.Fakes.StubSQLDataService.Site">
+            <summary>Sets the stub of Component.get_Site()</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.ICSSoftSTORMNETBusinessDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of ICSSoft.STORMNET.Business</summary>
+        </member>
+    </members>
+</doc>

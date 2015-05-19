@@ -1,0 +1,24 @@
+﻿@import '../../../BaseTheme/Controls/Messages/AlertMessage.less';
+
+/* Файл визуального оформления модальных окон с сообщениями. */
+
+/*#region Модальное окно.*/
+#@{alertContainerId} {
+    border: 5px solid #999999;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 12px;
+    font-family: Arial,sans-serif;
+    /*#region Заголовок модального окна.*/
+    #@{alertTitleId} {        
+        border-width: 1px;
+        border-style: solid;
+        border-color: #FFFFFF #FFFFFF #999999;
+        color: #666666;        
+    }
+    /*#endregion*/
+}
+/*#endregion*/
+
+@import '_Settings.less';

@@ -1,0 +1,97 @@
+﻿/**
+ * Стили базовой темы.
+ * Страница и модальное окно ошибки.
+ */
+
+@import (reference) '_Variables.less';
+
+/* Страница с ошибкой. */
+.@{exceptionPanelClass} {
+    width: 100%;
+
+    &.@{exceptionHideClass} {
+        display: none;
+    }
+
+    &.@{exceptionVisibleClass} {
+        display: block;
+    }
+
+    .@{exceptionTitleClass} {
+        display: block;
+        padding: 4px 0;
+        margin-left: @exceptionTitleMarginLeft;
+        text-decoration: underline;
+        font-weight: normal;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .@{showCollapseExeptionClass} {
+        width: 100%;
+        background-color: @showCollapseExeptionBackgroundColor;
+        cursor: pointer;        
+    }
+
+    @{exceptionTextClass} {
+        width: 100%;
+        background-color: @exceptionTextBackgroundColor;        
+        -ms-word-break: break-all;
+        word-break: break-all;
+    }
+
+    .@{stackTraceClass} {
+        color: #505050;
+    }
+}
+
+/* Всплывающее окно с ошибкой. */
+.@{errorModalWindowClass} {
+
+    .@{errorCaptionClass} {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .@{errorContentClass} {
+        padding-bottom: 20px;
+
+        .@{exceptionPanelClass} {
+
+            .@{errorMsgLblClass},
+            .@{collapsiblePnlClass} {
+                word-wrap: break-word;
+                -ms-word-wrap: break-word;
+                margin-left: 0;
+
+                .@{exceptionTypeClass} {
+                    color: @errorTypeTextColor;
+                }
+            }
+        }
+    }
+
+    .@{errorToolbarClass} {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        width: 95%;
+        background: @errorToolbarBackgroundColor;        
+        text-align: right;
+
+        .@{errorOkBtnClass} {
+            width: 75px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .@{errorListClass} {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .@{errorSelectClass} {
+        float: left;
+        width: 48px;
+    }
+}

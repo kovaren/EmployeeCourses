@@ -1,0 +1,494 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ICSSoft.STORMNET.Web.Tools.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS">
+            <summary>Shim type of ICSSoft.STORMNET.Web.Tools.BridgeToDS</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.#ctor(ICSSoft.STORMNET.Web.Tools.BridgeToDS)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.DataObjectArrayToStronglyTypedListOf1DataObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{ICSSoft.STORMNET.DataObject[],System.Collections.Generic.List{``0}})">
+            <summary>Sets the shim of BridgeToDS.DataObjectArrayToStronglyTypedList(DataObject[] dataObjects)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.StronglyTypedListToDataObjectArrayOf1ListOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Collections.Generic.List{``0},ICSSoft.STORMNET.DataObject[]})">
+            <summary>Sets the shim of BridgeToDS.StronglyTypedListToDataObjectArray(List`1&lt;!!0&gt; stronglyTypedObjectList)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.ChangeCustomizationStringAddChangeCustomizationStringDelegate">
+            <summary>Sets the shim of BridgeToDS.add_ChangeCustomizationString(ChangeCustomizationStringDelegate value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.ChangeCustomizationStringRemoveChangeCustomizationStringDelegate">
+            <summary>Sets the shim of BridgeToDS.remove_ChangeCustomizationString(ChangeCustomizationStringDelegate value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.ChangeDataServiceTypeAddChangeDataServiceTypeDelegate">
+            <summary>Sets the shim of BridgeToDS.add_ChangeDataServiceType(ChangeDataServiceTypeDelegate value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.ChangeDataServiceTypeRemoveChangeDataServiceTypeDelegate">
+            <summary>Sets the shim of BridgeToDS.remove_ChangeDataServiceType(ChangeDataServiceTypeDelegate value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.Constructor">
+            <summary>Sets the shim of BridgeToDS.BridgeToDS()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetCustomizationStringBoolean">
+            <summary>Sets the shim of BridgeToDS.GetCustomizationString(Boolean ro)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDRDataService">
+            <summary>Sets the shim of BridgeToDS.GetDRDataService()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDRDataServiceString">
+            <summary>Sets the shim of BridgeToDS.GetDRDataService(String ConnectionStringName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataObjectTypeArrayStringTypeStringString">
+            <summary>Sets the shim of BridgeToDS.GetDataObject(Type[] dataObjectTypes, String viewName, Type dataServiceType, String connStringName, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataObjectTypeArrayViewTypeStringString">
+            <summary>Sets the shim of BridgeToDS.GetDataObject(Type[] dataObjectTypes, View view, Type dataServiceType, String connStringName, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataObjectTypeStringString">
+            <summary>Sets the shim of BridgeToDS.GetDataObject(Type dataObjectType, String viewName, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataObjectTypeStringStringString">
+            <summary>Sets the shim of BridgeToDS.GetDataObject(Type dataObjectType, String viewName, String connStringName, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataObjectTypeStringTypeStringString">
+            <summary>Sets the shim of BridgeToDS.GetDataObject(Type dataObjectType, String viewName, Type dataServiceType, String connStringName, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataObjectTypeViewString">
+            <summary>Sets the shim of BridgeToDS.GetDataObject(Type dataObjectType, View view, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataObjectTypeViewTypeStringString">
+            <summary>Sets the shim of BridgeToDS.GetDataObject(Type dataObjectType, View view, Type dataServiceType, String connStringName, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataService">
+            <summary>Sets the shim of BridgeToDS.GetDataService()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataServiceString">
+            <summary>Sets the shim of BridgeToDS.GetDataService(String ConnectionStringName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataServiceStringString">
+            <summary>Sets the shim of BridgeToDS.GetDataService(String serviceType, String connectionStringName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataSetSqlCommand">
+            <summary>Sets the shim of BridgeToDS.GetDataSet(SqlCommand command)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataSetSqlCommandString">
+            <summary>Sets the shim of BridgeToDS.GetDataSet(SqlCommand command, String connstr)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataTableForObjectTypeStringString">
+            <summary>Sets the shim of BridgeToDS.GetDataTableForObject(Type dataObjectType, String viewName, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataTableForObjectTypeStringStringTypeArray">
+            <summary>Sets the shim of BridgeToDS.GetDataTableForObject(Type dataObjectBaseType, String viewName, String primaryKey, Type[] loadingTypes)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataTableForObjectTypeViewString">
+            <summary>Sets the shim of BridgeToDS.GetDataTableForObject(Type dataObjectType, View v, String primaryKey)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataTableForObjectTypeViewStringTypeArray">
+            <summary>Sets the shim of BridgeToDS.GetDataTableForObject(Type dataObjectBaseType, View v, String primaryKey, Type[] loadingTypes)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetDataTableTypeStringTypeString">
+            <summary>Sets the shim of BridgeToDS.GetDataTable(Type dataObjectType, String viewName, Type dataServiceType, String connStringName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetExecuteNonQuerySqlCommand">
+            <summary>Sets the shim of BridgeToDS.GetExecuteNonQuery(SqlCommand command)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetExecuteNonQuerySqlCommandString">
+            <summary>Sets the shim of BridgeToDS.GetExecuteNonQuery(SqlCommand command, String connstr)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetExecuteReaderSqlCommandCommandBehavior">
+            <summary>Sets the shim of BridgeToDS.GetExecuteReader(SqlCommand command, CommandBehavior behavior)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetExecuteReaderSqlCommandCommandBehaviorString">
+            <summary>Sets the shim of BridgeToDS.GetExecuteReader(SqlCommand command, CommandBehavior behavior, String connstr)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetScalarSqlCommand">
+            <summary>Sets the shim of BridgeToDS.GetScalar(SqlCommand command)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetScalarSqlCommandString">
+            <summary>Sets the shim of BridgeToDS.GetScalar(SqlCommand command, String connstr)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.GetServiceStringString">
+            <summary>Sets the shim of BridgeToDS.GetService(String dataServiceTypeName, String exceptionMessage)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.IsGuidString">
+            <summary>Sets the shim of BridgeToDS.IsGuid(String PK)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.SaveDataObjectWithAllAlteredPropsDataObjectString">
+            <summary>Sets the shim of BridgeToDS.SaveDataObjectWithAllAlteredProps(DataObject DObj, String ConnStrName)</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.DataObjectArrayToStronglyTypedListOf1DataObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{ICSSoft.STORMNET.Web.Tools.BridgeToDS,ICSSoft.STORMNET.DataObject[],System.Collections.Generic.List{``0}})">
+            <summary>Sets the shim of BridgeToDS.DataObjectArrayToStronglyTypedList(DataObject[] dataObjects)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.StronglyTypedListToDataObjectArrayOf1ListOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{ICSSoft.STORMNET.Web.Tools.BridgeToDS,System.Collections.Generic.List{``0},ICSSoft.STORMNET.DataObject[]})">
+            <summary>Sets the shim of BridgeToDS.StronglyTypedListToDataObjectArray(List`1&lt;!!0&gt; stronglyTypedObjectList)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.GetDataSetSqlCommand">
+            <summary>Sets the shim of BridgeToDS.GetDataSet(SqlCommand command)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.GetDataSetSqlCommandString">
+            <summary>Sets the shim of BridgeToDS.GetDataSet(SqlCommand command, String connstr)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.GetExecuteNonQuerySqlCommand">
+            <summary>Sets the shim of BridgeToDS.GetExecuteNonQuery(SqlCommand command)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.GetExecuteNonQuerySqlCommandString">
+            <summary>Sets the shim of BridgeToDS.GetExecuteNonQuery(SqlCommand command, String connstr)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.GetExecuteReaderSqlCommandCommandBehavior">
+            <summary>Sets the shim of BridgeToDS.GetExecuteReader(SqlCommand command, CommandBehavior behavior)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.GetExecuteReaderSqlCommandCommandBehaviorString">
+            <summary>Sets the shim of BridgeToDS.GetExecuteReader(SqlCommand command, CommandBehavior behavior, String connstr)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.GetScalarSqlCommand">
+            <summary>Sets the shim of BridgeToDS.GetScalar(SqlCommand command)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimBridgeToDS.AllInstances.GetScalarSqlCommandString">
+            <summary>Sets the shim of BridgeToDS.GetScalar(SqlCommand command, String connstr)</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider">
+            <summary>Shim type of ICSSoft.STORMNET.Web.Tools.ServiceSecurityProvider</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.#ctor(ICSSoft.STORMNET.Web.Tools.ServiceSecurityProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.CheckInitializationState">
+            <summary>Sets the shim of ServiceSecurityProvider.CheckInitializationState()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.Constructor">
+            <summary>Sets the shim of ServiceSecurityProvider.ServiceSecurityProvider()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.ConstructorXDocument">
+            <summary>Sets the shim of ServiceSecurityProvider.ServiceSecurityProvider(XDocument xmlDoc)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.ConstructorXmlDocument">
+            <summary>Sets the shim of ServiceSecurityProvider.ServiceSecurityProvider(XmlDocument xmlDoc)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.GetAllowedTypesForMethodString">
+            <summary>Sets the shim of ServiceSecurityProvider.GetAllowedTypesForMethod(String methodName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.GetAllowedTypesString">
+            <summary>Sets the shim of ServiceSecurityProvider.GetAllowedTypes(String methodName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.IsMethodAllowedStringType">
+            <summary>Sets the shim of ServiceSecurityProvider.IsMethodAllowed(String methodName, Type type)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.LoadDataXDocument">
+            <summary>Sets the shim of ServiceSecurityProvider.LoadData(XDocument doc)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.SetMethodAllowedTypeStringType">
+            <summary>Sets the shim of ServiceSecurityProvider.SetMethodAllowedType(String methodName, Type type)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.UpdateDataDictionaryOfTypeListOfStringTypeString">
+            <summary>Sets the shim of ServiceSecurityProvider.UpdateData(Dictionary`2&lt;Type,List`1&lt;String&gt;&gt; data, Type type, String methodName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider._GetAllowedTypesForMethodb__3KeyValuePairOfTypeListOfString">
+            <summary>Sets the shim of ServiceSecurityProvider.&lt;GetAllowedTypesForMethod&gt;b__3(KeyValuePair`2&lt;Type,List`1&lt;String&gt;&gt; t)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider._GetAllowedTypesb__0Type">
+            <summary>Sets the shim of ServiceSecurityProvider.&lt;GetAllowedTypes&gt;b__0(Type t)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider._LoadDatab__7XElement">
+            <summary>Sets the shim of ServiceSecurityProvider.&lt;LoadData&gt;b__7(XElement m)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider._LoadDatab__8XElement">
+            <summary>Sets the shim of ServiceSecurityProvider.&lt;LoadData&gt;b__8(XElement e)</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.AllInstances.CheckInitializationState">
+            <summary>Sets the shim of ServiceSecurityProvider.CheckInitializationState()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.AllInstances.GetAllowedTypesForMethodString">
+            <summary>Sets the shim of ServiceSecurityProvider.GetAllowedTypesForMethod(String methodName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.AllInstances.GetAllowedTypesString">
+            <summary>Sets the shim of ServiceSecurityProvider.GetAllowedTypes(String methodName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.AllInstances.IsMethodAllowedStringType">
+            <summary>Sets the shim of ServiceSecurityProvider.IsMethodAllowed(String methodName, Type type)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimServiceSecurityProvider.AllInstances.SetMethodAllowedTypeStringType">
+            <summary>Sets the shim of ServiceSecurityProvider.SetMethodAllowedType(String methodName, Type type)</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder">
+            <summary>Shim type of ICSSoft.STORMNET.Web.Tools.WebBinder</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.#ctor(ICSSoft.STORMNET.Web.Tools.WebBinder)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ApplyDataFromControlsControlCollectionViewDataObjectRef">
+            <summary>Sets the shim of WebBinder.ApplyDataFromControls(ControlCollection controls, View view, DataObject&amp; dataObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ApplyDataObjectObjectPropertyInfoType">
+            <summary>Sets the shim of WebBinder.ApplyData(Object propValue, Object control, PropertyInfo controlPropertyInfo, Type controlType)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ApplyDataObjectObjectString">
+            <summary>Sets the shim of WebBinder.ApplyData(Object propValue, Object control, String controlPropName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ApplyDataToControlsControlCollectionViewDataObjectBooleanBooleanFuncOfStringStringBoolean">
+            <summary>Sets the shim of WebBinder.ApplyDataToControls(ControlCollection controls, View view, DataObject dataObject, Boolean isPostBack, Boolean isSaving, Func`3&lt;String,String,Boolean&gt; controlsIdComparer)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ConstructorString">
+            <summary>Sets the shim of WebBinder.WebBinder(String formName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ConstructorStringString">
+            <summary>Sets the shim of WebBinder.WebBinder(String formName, String connStrName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ConstructorViewBooleanString">
+            <summary>Sets the shim of WebBinder.WebBinder(View view, Boolean withDetails, String connStrName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ConstructorViewStringBooleanStringString">
+            <summary>Sets the shim of WebBinder.WebBinder(View view, String detailName, Boolean withDetails, String formName, String connStrName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ConstructorXmlDocument">
+            <summary>Sets the shim of WebBinder.WebBinder(XmlDocument xmlDocument)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ConstructorXmlDocumentString">
+            <summary>Sets the shim of WebBinder.WebBinder(XmlDocument xmlDocument, String connStrName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.ControlIdEqualForPropStringStringFuncOfStringStringBoolean">
+            <summary>Sets the shim of WebBinder.ControlIdEqualForProp(String controlId1, String controlId2, Func`3&lt;String,String,Boolean&gt; controlsIdComparer)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetBindedValueControl">
+            <summary>Sets the shim of WebBinder.GetBindedValue(Control control)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetControlControlCollectionStringFuncOfStringStringBoolean">
+            <summary>Sets the shim of WebBinder.GetControl(ControlCollection controls, String id, Func`3&lt;String,String,Boolean&gt; controlsIdComparer)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetControlNameStringStringOut">
+            <summary>Sets the shim of WebBinder.GetControlName(String propertyName, String&amp; controlProp)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetControlNameStringStringOutStringOut">
+            <summary>Sets the shim of WebBinder.GetControlName(String propertyName, String&amp; controlProp, String&amp; masterViewName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetControlTypeViaControlProviderViewString">
+            <summary>Sets the shim of WebBinder.GetControlTypeViaControlProvider(View view, String viewPropName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetDefaultPropertyType">
+            <summary>Sets the shim of WebBinder.GetDefaultProperty(Type type)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetDocumentForBindingViewStringBooleanString">
+            <summary>Sets the shim of WebBinder.GetDocumentForBinding(View view, String detailName, Boolean withDetails, String formName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetDocumentForBindingViewStringBooleanXDocument">
+            <summary>Sets the shim of WebBinder.GetDocumentForBinding(View view, String detailName, Boolean withDetails, XDocument xml)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetFormFileString">
+            <summary>Sets the shim of WebBinder.GetFormFile(String formName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetPropertyInfoViaControlProviderControlStringViewString">
+            <summary>Sets the shim of WebBinder.GetPropertyInfoViaControlProvider(Control ctrl, String controlProp, View view, String viewPropName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetPropertyNamesString">
+            <summary>Sets the shim of WebBinder.GetPropertyNames(String controlName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetStandartXmlDocViewBoolean">
+            <summary>Sets the shim of WebBinder.GetStandartXmlDoc(View view, Boolean withDetails)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.GetValueForDataObjectPropertyControlStringTypeTypeStringObject">
+            <summary>Sets the shim of WebBinder.GetValueForDataObjectProperty(Control ctrl, String masterViewName, Type controlPropertyType, Type objectType, String objectPropertyName, Object valueInControl)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.IsSystemTypeType">
+            <summary>Sets the shim of WebBinder.IsSystemType(Type type)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.PreprocessValueTypeObject">
+            <summary>Sets the shim of WebBinder.PreprocessValue(Type propType, Object value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.SetControlValueForStringControlTypePropertyInfoObjectObject">
+            <summary>Sets the shim of WebBinder.SetControlValueForStringControlType(PropertyInfo controlPropertyInfo, Object control, Object propValue)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.SetReadOnlyFormControlCollectionViewBooleanFuncOfStringStringBoolean">
+            <summary>Sets the shim of WebBinder.SetReadOnlyForm(ControlCollection controls, View view, Boolean readOnlyFlag, Func`3&lt;String,String,Boolean&gt; controlIdsComparer)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.SetReadOnlyInCssClassNameControlBoolean">
+            <summary>Sets the shim of WebBinder.SetReadOnlyInCssClassName(Control ctrl, Boolean readOnly)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.SetReadOnlyPropertyControlCollectionStringBoolean">
+            <summary>Sets the shim of WebBinder.SetReadOnlyProperty(ControlCollection controls, String propName, Boolean readOnlyFlag)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.SetReadOnlyToAjaxGroupEditsControlCollectionBoolean">
+            <summary>Sets the shim of WebBinder.SetReadOnlyToAjaxGroupEdits(ControlCollection controls, Boolean readOnly)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.SetReadonlyToControlControlBoolean">
+            <summary>Sets the shim of WebBinder.SetReadonlyToControl(Control ctrl, Boolean readOnlyFlag)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.StaticConstructor">
+            <summary>Sets the shim of WebBinder.WebBinder()</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder._GetControlNameb__9XmlNode">
+            <summary>Sets the shim of WebBinder.&lt;GetControlName&gt;b__9(XmlNode xnode)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder._GetDocumentForBindingb__1XAttribute">
+            <summary>Sets the shim of WebBinder.&lt;GetDocumentForBinding&gt;b__1(XAttribute x)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder._GetDocumentForBindingb__2XAttribute">
+            <summary>Sets the shim of WebBinder.&lt;GetDocumentForBinding&gt;b__2(XAttribute x)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder._GetPropertyNamesb__dXmlNode">
+            <summary>Sets the shim of WebBinder.&lt;GetPropertyNames&gt;b__d(XmlNode node)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder._GetPropertyNamesb__eXmlNode">
+            <summary>Sets the shim of WebBinder.&lt;GetPropertyNames&gt;b__e(XmlNode node)</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.ApplyDataFromControlsControlCollectionViewDataObjectRef">
+            <summary>Sets the shim of WebBinder.ApplyDataFromControls(ControlCollection controls, View view, DataObject&amp; dataObject)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.ApplyDataToControlsControlCollectionViewDataObjectBooleanBooleanFuncOfStringStringBoolean">
+            <summary>Sets the shim of WebBinder.ApplyDataToControls(ControlCollection controls, View view, DataObject dataObject, Boolean isPostBack, Boolean isSaving, Func`3&lt;String,String,Boolean&gt; controlsIdComparer)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.GetControlControlCollectionStringFuncOfStringStringBoolean">
+            <summary>Sets the shim of WebBinder.GetControl(ControlCollection controls, String id, Func`3&lt;String,String,Boolean&gt; controlsIdComparer)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.GetControlNameStringStringOut">
+            <summary>Sets the shim of WebBinder.GetControlName(String propertyName, String&amp; controlProp)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.GetControlNameStringStringOutStringOut">
+            <summary>Sets the shim of WebBinder.GetControlName(String propertyName, String&amp; controlProp, String&amp; masterViewName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.GetControlNameStringStringOutStringOutStringOut">
+            <summary>Sets the shim of WebBinder.GetControlName(String propertyName, String&amp; controlProp, String&amp; masterViewName, String&amp; detailEditForm)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.GetDocumentForBindingViewStringBooleanString">
+            <summary>Sets the shim of WebBinder.GetDocumentForBinding(View view, String detailName, Boolean withDetails, String formName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.GetDocumentForBindingViewStringBooleanXDocument">
+            <summary>Sets the shim of WebBinder.GetDocumentForBinding(View view, String detailName, Boolean withDetails, XDocument xml)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.GetPropertyNamesString">
+            <summary>Sets the shim of WebBinder.GetPropertyNames(String controlName)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.GetValueForDataObjectPropertyControlStringTypeTypeStringObject">
+            <summary>Sets the shim of WebBinder.GetValueForDataObjectProperty(Control ctrl, String masterViewName, Type controlPropertyType, Type objectType, String objectPropertyName, Object valueInControl)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.SetReadOnlyFormControlCollectionViewBooleanFuncOfStringStringBoolean">
+            <summary>Sets the shim of WebBinder.SetReadOnlyForm(ControlCollection controls, View view, Boolean readOnlyFlag, Func`3&lt;String,String,Boolean&gt; controlIdsComparer)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.SetReadOnlyPropertyControlCollectionStringBoolean">
+            <summary>Sets the shim of WebBinder.SetReadOnlyProperty(ControlCollection controls, String propName, Boolean readOnlyFlag)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.ShimWebBinder.AllInstances.SetReadonlyToControlControlBoolean">
+            <summary>Sets the shim of WebBinder.SetReadonlyToControl(Control ctrl, Boolean readOnlyFlag)</summary>
+        </member>
+        <member name="T:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper">
+            <summary>Stub type of ICSSoft.STORMNET.Web.Tools.ILockHelper</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.#ctor">
+            <summary>Initializes a new instance of type StubILockHelper</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.AttachBackingFieldToLockTimeout">
+            <summary>Attaches delegates to emulate StubILockHelper.LockTimeout as a property with a backing field.</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.ClearWebLockString">
+            <summary>Sets the stub of ILockHelper.ClearWebLock(String userName)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.ClearWebLockStringString">
+            <summary>Sets the stub of ILockHelper.ClearWebLock(String dataObjectKey, String userName)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.GetLockString">
+            <summary>Sets the stub of ILockHelper.GetLock(String dataObjectKey)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.icssstormnetwt::ICSSoft#STORMNET#Web#Tools#ILockHelper#ClearWebLock(System.String)">
+            <summary>Sets the stub of ILockHelper.ClearWebLock(String userName)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.icssstormnetwt::ICSSoft#STORMNET#Web#Tools#ILockHelper#ClearWebLock(System.String,System.String)">
+            <summary>Sets the stub of ILockHelper.ClearWebLock(String dataObjectKey, String userName)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.icssstormnetwt::ICSSoft#STORMNET#Web#Tools#ILockHelper#GetLock(System.String)">
+            <summary>Sets the stub of ILockHelper.GetLock(String dataObjectKey)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.icssstormnetwt::ICSSoft#STORMNET#Web#Tools#ILockHelper#LockDataObject(System.String,System.String,System.String@)">
+            <summary>Sets the stub of ILockHelper.LockDataObject(String dataObjectKey, String userName, String&amp; lockUserName)</summary>
+        </member>
+        <member name="M:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.icssstormnetwt::ICSSoft#STORMNET#Web#Tools#ILockHelper#LockDataObjectFormAjax(System.String,System.String,System.String@)">
+            <summary>Sets the stub of ILockHelper.LockDataObjectFormAjax(String dataObjectKey, String userName, String&amp; lockUserName)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.LockDataObjectFormAjaxStringStringStringOut">
+            <summary>Sets the stub of ILockHelper.LockDataObjectFormAjax(String dataObjectKey, String userName, String&amp; lockUserName)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.LockDataObjectStringStringStringOut">
+            <summary>Sets the stub of ILockHelper.LockDataObject(String dataObjectKey, String userName, String&amp; lockUserName)</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.LockTimeoutGet">
+            <summary>Sets the stub of ILockHelper.get_LockTimeout()</summary>
+        </member>
+        <member name="F:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.LockTimeoutSetTimeSpan">
+            <summary>Sets the stub of ILockHelper.set_LockTimeout(TimeSpan value)</summary>
+        </member>
+        <member name="P:ICSSoft.STORMNET.Web.Tools.Fakes.StubILockHelper.icssstormnetwt::ICSSoft#STORMNET#Web#Tools#ILockHelper#LockTimeout">
+            <summary>Sets the stub of ILockHelper.get_LockTimeout()</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.ICSSoftSTORMNETWebToolsDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of ICSSoft.STORMNET.Web.Tools</summary>
+        </member>
+        <member name="T:NewPlatform.Flexberry.Services.Fakes.StubICacheService">
+            <summary>Stub type of NewPlatform.Flexberry.Services.ICacheService</summary>
+        </member>
+        <member name="M:NewPlatform.Flexberry.Services.Fakes.StubICacheService.#ctor">
+            <summary>Initializes a new instance of type StubICacheService</summary>
+        </member>
+        <member name="F:NewPlatform.Flexberry.Services.Fakes.StubICacheService.DeleteFromCacheString">
+            <summary>Sets the stub of ICacheService.DeleteFromCache(String key)</summary>
+        </member>
+        <member name="M:NewPlatform.Flexberry.Services.Fakes.StubICacheService.GetFromCacheOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,``0})">
+            <summary>Sets stubs of GetFromCache(String key)</summary>
+        </member>
+        <member name="M:NewPlatform.Flexberry.Services.Fakes.StubICacheService.icssstormnetwt::NewPlatform#Flexberry#Services#ICacheService#DeleteFromCache(System.String)">
+            <summary>Sets the stub of ICacheService.DeleteFromCache(String key)</summary>
+        </member>
+        <member name="M:NewPlatform.Flexberry.Services.Fakes.StubICacheService.icssstormnetwt::NewPlatform#Flexberry#Services#ICacheService#GetFromCache``1(System.String)">
+            <summary>Sets the stub of ICacheService.GetFromCache(String key)</summary>
+        </member>
+        <member name="M:NewPlatform.Flexberry.Services.Fakes.StubICacheService.icssstormnetwt::NewPlatform#Flexberry#Services#ICacheService#SetToCache``1(System.String,``0)">
+            <summary>Sets the stub of ICacheService.SetToCache(String key, !!0 value)</summary>
+        </member>
+        <member name="M:NewPlatform.Flexberry.Services.Fakes.StubICacheService.SetToCacheOf1StringM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,``0,System.Boolean})">
+            <summary>Sets stubs of SetToCache(String key, !!0 value)</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,182 @@
+﻿/**
+ * Файл визуального оформления основного тулбара.
+ */
+
+
+/* Основной тулбар. */
+.@{wolvHeaderClass} {
+    display: block;
+    overflow: hidden;
+}
+
+.@{wolvToolbarGroupClass},
+.@{wolvToolbarDynamicContainer} {
+    display: inline-block;
+}
+
+/* Кнопка тулбара. */
+.@{wolvToolbarBtnClass} {
+    display: inline-block;
+    padding: @wolvToolbarBtnPadding;
+    font-size: @wolvToolbarBtnFontSize;
+    line-height: @wolvToolbarBtnLineHeight;
+    margin-left: @wolvToolbarBtnMarginLeft;
+
+    & + .@{wolvToolbarLimitOptionsBtnClass},
+    & + .@{wolvToolbarExportExcelOptionsBtnClass} {
+        margin-left: -1px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    &:first-child {
+        .@{wolvToolbarGroupClass}:first-child & {
+            margin-left: 0;
+        }
+    }
+}
+
+.@{wolvToolbarLimitEditBtnClass},
+.@{wolvToolbarExportExcelBtnClass} {
+    .border-radius-right(0);
+}
+
+.@{wolvToolbarLimitOptionsBtnClass},
+.@{wolvToolbarExportExcelOptionsBtnClass} {
+   .border-radius-left(0);
+}
+
+/* Разделитель кнопок тулбара. */
+.@{wolvToolbarSeparatorClass} {
+    display: inline-block;    
+    width: 1px;
+    height: @wolvToolbarSeparatorHeigtn;
+    margin: @wolvToolbarSeparatorMargin;
+    background: @wolvToolbarSeparatorBackgroundColor;
+    vertical-align: middle;
+}
+
+
+/* Подпись кнопки тулбара. */
+.@{wolvToolbarCaptionClass} {
+    margin-left: 0.5em;
+    vertical-align: middle;
+
+    .@{wolvToolbarLimitOptionsBtnClass} &,
+    .@{wolvToolbarExportExcelOptionsBtnClass} &{
+        display: none;
+        margin-left: 0;
+    }
+}
+
+/* Иконки внутри кнопок Toolbar. */
+.@{wolvToolbarBtnIconClass} {
+    .font-icon-style();
+
+    .@{wolvToolbarLimitEditBtnClass} & {
+        height: 14px;
+        padding-left: 3px;
+        margin-top: 1px;
+        margin-bottom: -1px;
+        font-family: IcsFont;
+        font-size: 15px;
+    }
+
+    .@{wolvToolbarUseSelectedBtnClass} & {
+        .rotate (45deg);
+    }
+
+    &:before {
+        /* Кнопка обновления данных. */
+        .@{wolvToolbarRefreshBtnClass} & {
+            content: "\f021";
+            color: @wolvToolbarRefreshBtnIconColor;
+        }
+        /* Кнопка создания новой записи. */
+        .@{wolvToolbarCreateBtnClass} & {
+            content: "\f067";
+            color: @wolvToolbarCreateBtnIconColor;
+        }
+        /* Кнопка редактирования записи. */
+        .@{wolvToolbarEditBtnClass} & {
+            content: "\f040";
+            color: @wolvToolbarEditBtnIconColor;
+        }
+        /* Кнопка удаления. */
+        .@{wolvToolbarDeleteBtnClass} & {
+            content: "\f014";
+            color: @wolvToolbarDeleteBtnIconColor;
+        }
+        /* Кнопка поиска. */
+        .@{wolvToolbarSearchBtnClass} & {
+            content: "\f002";
+            color: @wolvToolbarSearchBtnIconColor;
+        }
+        /* Кнопка фильтрации. */
+        .@{wolvToolbarFilterBtnClass} & {
+            content: "\f0b0";
+            color: @wolvToolbarFilterBtnIconColor;
+        }
+        /* Кнопка редактирования ограничений. */
+        .@{wolvToolbarLimitEditBtnClass} & {
+            content: "\0065";
+            color: @wolvToolbarLimitEditBtnIconColor;
+        }
+        /* Кнопка печати данных. */
+        .@{wolvToolbarPrintBtnClass} & {
+            content: "\f02f";
+            color: @wolvToolbarPrintBtnIconColor;
+        }
+        /* Кнопка настроек столбцов. */
+        .@{wolvToolbarConfigureColumnsBtnClass} & {
+            content: "\f013";
+            color: @wolvToolbarConfigureColumnsBtnIconColor;
+        }
+        /* Кнопка экспорта в Excel. */
+        .@{wolvToolbarExportExcelBtnClass} & {
+            content: "\f1c3";
+            color: @wolvToolbarExportExcelBtnIconColor;
+        }
+        /* Кнопка экспорта в XML. */
+        .@{wolvToolbarExportXmlBtnClass} & {
+            content: "\f1c9";
+            color: @wolvToolbarExportXmlBtnIconColor;
+        }
+        /* Кнопка вкл/выкл древовидного режима. */
+        .@{wolvToolbarHierarchyBtnClass} & {
+            content: "\f0e8";
+            color: @wolvToolbarHierarchyBtnIconColor;
+        }
+        /* Кнопка опций ограничений и экспорта. */
+        .@{wolvToolbarLimitOptionsBtnClass} &,
+        .@{wolvToolbarExportExcelOptionsBtnClass} & {
+            content: "\f0d7";
+            color: @wolvToolbarCaretBtnIconColor;
+        }
+        /* Кнопка для выбора отмеченных записей в лукапах. */
+        .@{wolvToolbarUseSelectedBtnClass} & {
+            content: "\f063";
+            color: @wolvToolbarUseSelectedBtnIconColor;
+        }
+        /* Сплит-кнопка. */
+        .@{wolvToolbarSplitBtnClass} & {
+            width: 16px;
+        }
+    }
+}
+
+/* Отключенная кнопка удаления. */
+.@{wolvToolbarDeleteBtnClass}.ics-wolv-toolbar-button-delete-disabled,
+.@{wolvToolbarDeleteBtnClass}.ics-wolv-toolbar-button-delete-disabled:active {
+    background: @wolvToolbarDeleteBtnDisabledBackgroundColor;    
+    color: @wolvToolbarDeleteBtnDisabledTextColor;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    .@{wolvToolbarBtnIconClass}:before {
+        color: @wolvToolbarDeleteBtnDisabledTextColor;
+    }
+}
+
+
+@import (reference) 'WolvClasses.less';

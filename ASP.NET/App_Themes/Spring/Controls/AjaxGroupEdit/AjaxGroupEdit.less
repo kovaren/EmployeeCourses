@@ -1,0 +1,63 @@
+﻿@import '../../../BaseTheme/Controls/AjaxGroupEdit/AjaxGroupEdit.less';
+
+/**
+ * Файл визуального оформления AjaxGroupEdit.
+ */
+
+
+/*#region Основной тулбар.*/
+.@{wgeToolbar} {
+    border-top: 1px solid @wgeToolbarBorderColor;
+    border-bottom: 1px solid @wgeToolbarBorderColor;
+    background-color: @wgeToolbarBackgroundColor;
+    z-index: 100;
+}
+/*#endregion*/
+
+.@{wgeWrapperClass} {
+    .@{wgeTableParentClass} {
+        .@{wgeTableClass} {
+            /*#region Шапка таблицы.*/
+            .@{wgeTableCaptionClass} > td {                
+                background: @wgeTableCaptionBackgroundColor;
+            }
+            /*#endregion*/
+            .@{wgeTableCaptionItemClass} td {
+                background: @wgeCaptionTextBackgroundColor;
+                color: @wgeCaptionTextColor;
+                font-weight: normal;
+                font-size: 13px;
+            }
+
+            .@{wgeTableWrapperCellDataClass} {
+                .lookup span {
+                    line-height: 30px;
+                }
+            }
+
+            tr.@{wgeTableDataRowClass} {
+                > td {
+                    border-color: @wgeTableDataRowBorderColor;
+                    background: @wgeTableDataRowBackgroundColor;
+                }
+
+                &:hover > td {
+                    background: @wgeTableDataRowHoveredBackgroundColor;
+                }
+            }
+
+            tr.@{wgeTableDataAlternateRowClass} {
+                > td {
+                    border-color: @wgeTableDataAlternateRowBorderColor;
+                    background: @wgeTableDataAlternateRowBackgroundColor;
+                }
+
+                &:hover > td {
+                    background: @wgeTableDataAlternateRowHoveredBackgroundColor;
+                }
+            }
+        }
+    }
+}
+
+@import '_Settings.less';

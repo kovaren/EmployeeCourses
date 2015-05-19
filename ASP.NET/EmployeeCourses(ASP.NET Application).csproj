@@ -1,0 +1,1266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2B75C4F-F1C8-4861-87DD-17D1FAD83D87}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IIS.EmployeeCourses</RootNamespace>
+    <AssemblyName>EmployeeCourses(ASP.NET Application)</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary.dll">
+      <Name>AntiXssLibrary.dll</Name>
+      <HintPath>lib\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CacheBaseLibrary.dll">
+      <Name>CacheBaseLibrary.dll</Name>
+      <HintPath>lib\CacheBaseLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CheckingLibrary.dll">
+      <Name>CheckingLibrary.dll</Name>
+      <HintPath>lib\CheckingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientLibrary.dll">
+      <Name>ClientLibrary.dll</Name>
+      <HintPath>lib\ClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomSiteMapProvider.dll">
+      <Name>CustomSiteMapProvider.dll</Name>
+      <HintPath>lib\CustomSiteMapProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml.dll">
+      <Name>DocumentFormat.OpenXml.dll</Name>
+      <HintPath>lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="EventTaskMonitor.dll">
+      <Name>EventTaskMonitor.dll</Name>
+      <HintPath>lib\EventTaskMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpressionBuilder.dll">
+      <Name>ExpressionBuilder.dll</Name>
+      <HintPath>lib\ExpressionBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="ExternalLangDef.dll">
+      <Name>ExternalLangDef.dll</Name>
+      <HintPath>lib\ExternalLangDef.dll</HintPath>
+    </Reference>
+    <Reference Include="HttpCompress.dll">
+      <Name>HttpCompress.dll</Name>
+      <HintPath>lib\HttpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib.dll">
+      <Name>ICSharpCode.SharpZipLib.dll</Name>
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.Services.CurrentUserService.dll">
+      <Name>ICSSoft.Services.CurrentUserService.dll</Name>
+      <HintPath>lib\ICSSoft.Services.CurrentUserService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.Services.UnityFactory.dll">
+      <Name>ICSSoft.Services.UnityFactory.dll</Name>
+      <HintPath>lib\ICSSoft.Services.UnityFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.AzManBridge.dll">
+      <Name>ICSSoft.STORMNET.AzManBridge.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.AzManBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.BF.dll">
+      <Name>ICSSoft.STORMNET.BF.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.BF.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.1.0.0.1.Fakes.dll">
+      <Name>ICSSoft.STORMNET.Business.1.0.0.1.Fakes.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.1.0.0.1.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.Audit.dll">
+      <Name>ICSSoft.STORMNET.Business.Audit.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.Audit.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.BFDataService.dll">
+      <Name>ICSSoft.STORMNET.Business.BFDataService.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.BFDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.dll">
+      <Name>ICSSoft.STORMNET.Business.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.DRDataService.dll">
+      <Name>ICSSoft.STORMNET.Business.DRDataService.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.DRDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.HttpDataService.dll">
+      <Name>ICSSoft.STORMNET.Business.HttpDataService.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.HttpDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.LINQProvider.dll">
+      <Name>ICSSoft.STORMNET.Business.LINQProvider.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.LINQProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.LockService.dll">
+      <Name>ICSSoft.STORMNET.Business.LockService.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.LockService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.MSSQLDataService.dll">
+      <Name>ICSSoft.STORMNET.Business.MSSQLDataService.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.MSSQLDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.ODBCDataService.dll">
+      <Name>ICSSoft.STORMNET.Business.ODBCDataService.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.ODBCDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.OracleDataService.dll">
+      <Name>ICSSoft.STORMNET.Business.OracleDataService.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.OracleDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.PostgresDataService.dll">
+      <Name>ICSSoft.STORMNET.Business.PostgresDataService.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Business.PostgresDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Collections.dll">
+      <Name>ICSSoft.STORMNET.Collections.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.DataObject.dll">
+      <Name>ICSSoft.STORMNET.DataObject.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.DataObject.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Drawing.dll">
+      <Name>ICSSoft.STORMNET.Drawing.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.EBSI.dll">
+      <Name>ICSSoft.STORMNET.EBSI.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.EBSI.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.FunctionalLanguage.dll">
+      <Name>ICSSoft.STORMNET.FunctionalLanguage.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.FunctionalLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.LockServices.dll">
+      <Name>ICSSoft.STORMNET.LockServices.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.LockServices.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.RightManager.dll">
+      <Name>ICSSoft.STORMNET.RightManager.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.RightManager.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.TestDataBase.dll">
+      <Name>ICSSoft.STORMNET.TestDataBase.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.TestDataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.TestTools.dll">
+      <Name>ICSSoft.STORMNET.TestTools.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.TestTools.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Tools.dll">
+      <Name>ICSSoft.STORMNET.Tools.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.UserDataTypes.dll">
+      <Name>ICSSoft.STORMNET.UserDataTypes.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.UserDataTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Web.AjaxControls.dll">
+      <Name>ICSSoft.STORMNET.Web.AjaxControls.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Web.AjaxControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Web.AjaxControls.Fakes.dll">
+      <Name>ICSSoft.STORMNET.Web.AjaxControls.Fakes.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Web.AjaxControls.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Web.Reports.dll">
+      <Name>ICSSoft.STORMNET.Web.Reports.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Web.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Web.Tools.dll">
+      <Name>ICSSoft.STORMNET.Web.Tools.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Web.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Web.Tools.Fakes.dll">
+      <Name>ICSSoft.STORMNET.Web.Tools.Fakes.dll</Name>
+      <HintPath>lib\ICSSoft.STORMNET.Web.Tools.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Caseberry.Logging(BusinessServers).dll">
+      <Name>IIS.Caseberry.Logging(BusinessServers).dll</Name>
+      <HintPath>lib\IIS.Caseberry.Logging(BusinessServers).dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Caseberry.Logging(Objects).dll">
+      <Name>IIS.Caseberry.Logging(Objects).dll</Name>
+      <HintPath>lib\IIS.Caseberry.Logging(Objects).dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Caseberry.Logging.MsEntLib.dll">
+      <Name>IIS.Caseberry.Logging.MsEntLib.dll</Name>
+      <HintPath>lib\IIS.Caseberry.Logging.MsEntLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.ExpressionSerialization.dll">
+      <Name>IIS.ExpressionSerialization.dll</Name>
+      <HintPath>lib\IIS.ExpressionSerialization.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Flex.CaseberryInteraction.dll">
+      <Name>IIS.Flex.CaseberryInteraction.dll</Name>
+      <HintPath>lib\IIS.Flex.CaseberryInteraction.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Flexberry.Reports.Core.dll">
+      <Name>IIS.Flexberry.Reports.Core.dll</Name>
+      <HintPath>lib\IIS.Flexberry.Reports.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Flexberry.Reports.StimulsoftReport.dll">
+      <Name>IIS.Flexberry.Reports.StimulsoftReport.dll</Name>
+      <HintPath>lib\IIS.Flexberry.Reports.StimulsoftReport.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Validation.dll">
+      <Name>IIS.Validation.dll</Name>
+      <HintPath>lib\IIS.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Аудит(Objects).dll">
+      <Name>IIS.Аудит(Objects).dll</Name>
+      <HintPath>lib\IIS.Аудит(Objects).dll</HintPath>
+    </Reference>
+    <Reference Include="ImageResizerKernel.dll">
+      <Name>ImageResizerKernel.dll</Name>
+      <HintPath>lib\ImageResizerKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net.dll">
+      <Name>log4net.dll</Name>
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="LogService.dll">
+      <Name>LogService.dll</Name>
+      <HintPath>lib\LogService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration.dll">
+      <Name>Microsoft.Practices.Unity.Configuration.dll</Name>
+      <HintPath>lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.dll">
+      <Name>Microsoft.Practices.Unity.dll</Name>
+      <HintPath>lib\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes.dll">
+      <Name>Microsoft.QualityTools.Testing.Fakes.dll</Name>
+      <HintPath>lib\Microsoft.QualityTools.Testing.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security.dll">
+      <Name>Mono.Security.dll</Name>
+      <HintPath>lib\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Web.Http.dll">
+      <Name>NewPlatform.Flexberry.Web.Http.dll</Name>
+      <HintPath>lib\NewPlatform.Flexberry.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Web.LimitEditor.dll">
+      <Name>NewPlatform.Flexberry.Web.LimitEditor.dll</Name>
+      <HintPath>lib\NewPlatform.Flexberry.Web.LimitEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql.dll">
+      <Name>Npgsql.dll</Name>
+      <HintPath>lib\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficeWebUI.dll">
+      <Name>OfficeWebUI.dll</Name>
+      <HintPath>lib\OfficeWebUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.dll">
+      <Name>Remotion.Linq.dll</Name>
+      <HintPath>lib\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Security(BusinessServers).dll">
+      <Name>Security(BusinessServers).dll</Name>
+      <HintPath>lib\Security(BusinessServers).dll</HintPath>
+    </Reference>
+    <Reference Include="Security(Objects).dll">
+      <Name>Security(Objects).dll</Name>
+      <HintPath>lib\Security(Objects).dll</HintPath>
+    </Reference>
+    <Reference Include="SmartScroller.dll">
+      <Name>SmartScroller.dll</Name>
+      <HintPath>lib\SmartScroller.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base.dll">
+      <Name>Stimulsoft.Base.dll</Name>
+      <HintPath>lib\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.dll">
+      <Name>Stimulsoft.Report.dll</Name>
+      <HintPath>lib\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web.dll">
+      <Name>Stimulsoft.Report.Web.dll</Name>
+      <HintPath>lib\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebDesignSL.dll">
+      <Name>Stimulsoft.Report.WebDesignSL.dll</Name>
+      <HintPath>lib\Stimulsoft.Report.WebDesignSL.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.4.0.0.0.Fakes.dll">
+      <Name>System.Web.4.0.0.0.Fakes.dll</Name>
+      <HintPath>lib\System.Web.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Tests.dll">
+      <Name>Tests.dll</Name>
+      <HintPath>lib\Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="UserSettingsService.1.1.0.0.Fakes.dll">
+      <Name>UserSettingsService.1.1.0.0.Fakes.dll</Name>
+      <HintPath>lib\UserSettingsService.1.1.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="UserSettingsService.dll">
+      <Name>UserSettingsService.dll</Name>
+      <HintPath>lib\UserSettingsService.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>System</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <HintPath>System.Data</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <HintPath>System.Drawing</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <HintPath>System.Web</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Name>System.Web.Extensions</Name>
+      <HintPath>System.Web.Extensions</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <Name>System.Web.Extensions.Design</Name>
+      <HintPath>System.Web.Extensions.Design</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+      <HintPath>System.Web.Services</HintPath>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+      <HintPath>System.XML</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Name>System.Xml.Linq</Name>
+      <HintPath>System.Xml.Linq</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+      <Name>System.Workflow.Runtime</Name>
+      <HintPath>System.Workflow.Runtime</HintPath>
+    </Reference>
+    <ProjectReference Include=".\..\\Objects\EmployeeCourses(Objects).csproj">
+      <Project>{C3839690-B09B-4E9D-B196-1BAE42C29E4A}</Project>
+      <Name>EmployeeCourses(Objects)</Name>
+    </ProjectReference>
+    <ProjectReference Include=".\..\\Objects\EmployeeCourses(Objects).csproj">
+      <Project>{C3839690-B09B-4E9D-B196-1BAE42C29E4A}</Project>
+      <Name>EmployeeCourses(Objects)</Name>
+    </ProjectReference>
+    <ProjectReference Include=".\..\\Objects\EmployeeCourses(Objects).csproj">
+      <Project>{C3839690-B09B-4E9D-B196-1BAE42C29E4A}</Project>
+      <Name>EmployeeCourses(Objects)</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="forms\Queries\Queries.aspx" />
+    <Content Include="forms\Zayavka\ZayavkaL.aspx" />
+    <Compile Include="forms\Queries\Queries.aspx.cs">
+      <DependentUpon>Queries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Queries\Queries.aspx.designer.cs">
+      <DependentUpon>Queries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Zayavka\ZayavkaL.aspx.cs">
+      <DependentUpon>ZayavkaL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Zayavka\ZayavkaL.aspx.designer.cs">
+      <DependentUpon>ZayavkaL.aspx</DependentUpon>
+    </Compile>
+    <Content Include="forms\ZHurnal\ZHurnalL.aspx" />
+    <Compile Include="forms\ZHurnal\ZHurnalL.aspx.cs">
+      <DependentUpon>ZHurnalL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="forms\Zayavka\ZayavkaE.aspx" />
+    <Compile Include="forms\Zayavka\ZayavkaE.aspx.cs">
+      <DependentUpon>ZayavkaE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="forms\Kurs\KursE.aspx" />
+    <Compile Include="forms\Kurs\KursE.aspx.cs">
+      <DependentUpon>KursE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Kurs\KursE.aspx.designer.cs">
+      <DependentUpon>KursE.aspx</DependentUpon>
+    </Compile>
+    <Content Include="forms\Sotrudnik\SotrudnikE.aspx" />
+    <Compile Include="forms\Sotrudnik\SotrudnikE.aspx.cs">
+      <DependentUpon>SotrudnikE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="forms\Kurs\KursL.aspx" />
+    <Compile Include="forms\Kurs\KursL.aspx.cs">
+      <DependentUpon>KursL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Kurs\KursL.aspx.designer.cs">
+      <DependentUpon>KursL.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Web.sitemap" />
+    <Content Include="forms\Sotrudnik\SotrudnikL.aspx" />
+    <Compile Include="forms\Sotrudnik\SotrudnikL.aspx.cs">
+      <DependentUpon>SotrudnikL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="forms\ZHurnal\ZHurnalE.aspx" />
+    <Compile Include="forms\ZHurnal\ZHurnalE.aspx.cs">
+      <DependentUpon>ZHurnalE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\ZHurnal\ZHurnalE.aspx.designer.cs">
+      <DependentUpon>ZHurnalE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\BaseEditForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\BaseListForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\LookUpForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormUtils.cs" />
+    <Content Include="Web.config" />
+    <Content Include="Site1.Master" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Content Include="Default.aspx" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Content Include="ErrorForm.aspx" />
+    <Compile Include="ErrorForm.aspx.cs">
+      <DependentUpon>ErrorForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorForm.aspx.designer.cs">
+      <DependentUpon>ErrorForm.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Error404.aspx" />
+    <Compile Include="Error404.aspx.cs">
+      <DependentUpon>Error404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error404.aspx.designer.cs">
+      <DependentUpon>Error404.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Global.asax" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Content Include="LoginForm.aspx" />
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Content Include="favicon.ico" />
+    <Compile Include="WOLVSettApplyer.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="App_GlobalResources\Resource.designer.cs" />
+    <Compile Include="App_GlobalResources\Resource.en.designer.cs" />
+    <Content Include="App_GlobalResources\Resource.en.resx" />
+    <Content Include="App_GlobalResources\Resource.resx" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\ServiceConfig.cs" />
+    <Content Include="App_Themes\CommonSettings.less" />
+    <Content Include="App_Themes\BaseTheme\BaseStyles.css" />
+    <Content Include="App_Themes\BaseTheme\BaseStyles.less" />
+    <Content Include="App_Themes\BaseTheme\Theme.skin" />
+    <Content Include="App_Themes\BaseTheme\Web.config" />
+    <Content Include="App_Themes\BaseTheme\Controls\Controls.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\AjaxGroupEdit\AjaxGroupEdit.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\AjaxGroupEdit\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Buttons\Buttons.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Buttons\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\DateTimePicker\DateTimePicker.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\DateTimePicker\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Forms\FormDefault.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Forms\FormElements.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Forms\FormHorizontal.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Forms\Forms.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Forms\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Lookup\Lookup.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Lookup\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\LookupMultiple\LookupMultiple.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\LookupMultiple\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Messages\AlertMessage.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Messages\Messages.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Messages\Tooltip.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Messages\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\Messages\Images\help.gif" />
+    <Content Include="App_Themes\BaseTheme\Controls\Messages\Images\important.gif" />
+    <Content Include="App_Themes\BaseTheme\Controls\Messages\Images\info.gif" />
+    <Content Include="App_Themes\BaseTheme\Controls\ModalWindows\ModalWindowContent.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\ModalWindows\ModalWindows.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\ModalWindows\ModalWindowWrapper.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\ModalWindows\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\ModalWindows\Images\loading.gif" />
+    <Content Include="App_Themes\BaseTheme\Controls\ShowHideDiv\ShowHideDiv.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\ShowHideDiv\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\exed.objtree.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\fluid_grid.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\jquery-ui.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\jquery.dropdown.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\layout.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\paramlist.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\pseudodetail.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\ribbon.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\WebLimitEditor.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\xquery.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\group-bracket-bottom.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\group-bracket-top.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\param-add.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\param-delete.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\param-edit.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\param-save.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\return-up-arrow.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\save.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\value-helper-menu.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\animated-overlay.gif" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-icons_228ef1_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-icons_ef8c08_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-icons_ffd27a_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\jQueryUI\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\add.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\application_side.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\bullet_orange.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\card-address.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\cards-stack.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\clipboard-task.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\clock-history.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\clock.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\database-network.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\docs.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\document-word.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\favorites.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\hp_barchart.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\hp_refreshgraph.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\hp_tabsgraph.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\icon_excel.gif" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\magnifier.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\newDocument.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\node-select-child.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\officewebui.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\ribbon_logo.jpg" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\spell-check.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\sticky-notes.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\tables-stacks.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\tick.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebLimitEditor\Images\Ribbon\user.png" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\ContextMenu.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\HierarchySettings.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\LimitEditSettings.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\Pager.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\TableToolbar.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\Toolbar.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\ViewColumnProvider.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\WebObjectListView.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\WolvClasses.less" />
+    <Content Include="App_Themes\BaseTheme\Controls\WebObjectListView\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\Libraries.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\animated.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\bordered-pulled.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\core.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\fixed-width.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\font-awesome.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\icons.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\larger.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\list.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\mixins.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\path.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\rotated-flipped.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\stacked.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\variables.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="App_Themes\BaseTheme\Libraries\FontAwesome\fonts\FontAwesome.otf" />
+    <Content Include="App_Themes\BaseTheme\Libraries\IcsFont\IcsFont.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\IcsFont\fonts\ics-font-webfont.eot" />
+    <Content Include="App_Themes\BaseTheme\Libraries\IcsFont\fonts\ics-font-webfont.svg" />
+    <Content Include="App_Themes\BaseTheme\Libraries\IcsFont\fonts\ics-font-webfont.ttf" />
+    <Content Include="App_Themes\BaseTheme\Libraries\IcsFont\fonts\ics-font-webfont.woff" />
+    <Content Include="App_Themes\BaseTheme\Libraries\IcsFont\fonts\ics-font-webfont.woff2" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryTagIt\jQueryTagIt.Base.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryTagIt\jQueryTagIt.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryTagIt\tagit.ui-zendesk.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\jQueryUI.Base.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\jQueryUI.DateTimePicker.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\jQueryUI.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\jQueryUI.Settings.less" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\help.gif" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\important.gif" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\info.gif" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Libraries\jQueryUI\Images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\BaseTheme\Pages\Pages.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\EditPage\EditPage.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\EditPage\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\ExceptionPage\ExceptionPage.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\ExceptionPage\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\LoginPage\LoginPage.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\LoginPage\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\MainPage\MainPage.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\MainPage\_Variables.less" />
+    <Content Include="App_Themes\BaseTheme\Pages\MainPage\Images\app-logo.png" />
+    <Content Include="App_Themes\BaseTheme\Pages\MainPage\Images\indicator.gif" />
+    <Content Include="App_Themes\BaseTheme\_Mixins\Mixins.less" />
+    <Content Include="App_Themes\Default\BaseStyles.css" />
+    <Content Include="App_Themes\Default\BaseStyles.less" />
+    <Content Include="App_Themes\Default\Theme.skin" />
+    <Content Include="App_Themes\Default\Web.config" />
+    <Content Include="App_Themes\Default\Controls\Controls.less" />
+    <Content Include="App_Themes\Default\Controls\AjaxGroupEdit\AjaxGroupEdit.less" />
+    <Content Include="App_Themes\Default\Controls\AjaxGroupEdit\_Settings.less" />
+    <Content Include="App_Themes\Default\Controls\AjaxGroupEdit\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\Buttons\Buttons.less" />
+    <Content Include="App_Themes\Default\Controls\Buttons\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\DateTimePicker\DateTimePicker.less" />
+    <Content Include="App_Themes\Default\Controls\DateTimePicker\_Settings.less" />
+    <Content Include="App_Themes\Default\Controls\DateTimePicker\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\FileControl\FileControl.less" />
+    <Content Include="App_Themes\Default\Controls\FileControl\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\Forms\FormDefault.less" />
+    <Content Include="App_Themes\Default\Controls\Forms\FormElements.less" />
+    <Content Include="App_Themes\Default\Controls\Forms\FormHorizontal.less" />
+    <Content Include="App_Themes\Default\Controls\Forms\Forms.less" />
+    <Content Include="App_Themes\Default\Controls\Forms\_Settings.less" />
+    <Content Include="App_Themes\Default\Controls\Forms\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\Lookup\Lookup.less" />
+    <Content Include="App_Themes\Default\Controls\Lookup\_Settings.less" />
+    <Content Include="App_Themes\Default\Controls\Lookup\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\LookupMultiple\LookupMultiple.less" />
+    <Content Include="App_Themes\Default\Controls\LookupMultiple\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\Messages\AlertMessage.less" />
+    <Content Include="App_Themes\Default\Controls\Messages\Messages.less" />
+    <Content Include="App_Themes\Default\Controls\Messages\Tooltip.less" />
+    <Content Include="App_Themes\Default\Controls\Messages\_Settings.less" />
+    <Content Include="App_Themes\Default\Controls\Messages\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\ModalWindows\ModalWindowContent.less" />
+    <Content Include="App_Themes\Default\Controls\ModalWindows\ModalWindows.less" />
+    <Content Include="App_Themes\Default\Controls\ModalWindows\ModalWindowWrapper.less" />
+    <Content Include="App_Themes\Default\Controls\ModalWindows\_Settings.less" />
+    <Content Include="App_Themes\Default\Controls\ModalWindows\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\ModalWindows\Images\loading.gif" />
+    <Content Include="App_Themes\Default\Controls\ModalWindows\Images\select-on-this-page-icons.png" />
+    <Content Include="App_Themes\Default\Controls\ShowHideDiv\ShowHideDiv.less" />
+    <Content Include="App_Themes\Default\Controls\ShowHideDiv\_Settings.less" />
+    <Content Include="App_Themes\Default\Controls\ShowHideDiv\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\WebLimitEditor\WebLimitEditor.less" />
+    <Content Include="App_Themes\Default\Controls\WebLimitEditor\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\ContextMenu.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\LimitEditSettings.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\Pager.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\TableToolbar.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\Toolbar.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\WebObjectListView.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\_Settings.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\_Variables.less" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\Images\toolbar-icons.png" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\Images\transparent.png" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\Images\wolv-caption-toolbar.png" />
+    <Content Include="App_Themes\Default\Controls\WebObjectListView\Images\wolv-table-toolbar.png" />
+    <Content Include="App_Themes\Default\Images\404.png" />
+    <Content Include="App_Themes\Default\Images\quest.gif" />
+    <Content Include="App_Themes\Default\Images\transparent.png" />
+    <Content Include="App_Themes\Default\Libraries\Libraries.less" />
+    <Content Include="App_Themes\Default\Libraries\FontAwesome\FontAwesome.less" />
+    <Content Include="App_Themes\Default\Libraries\IcsFont\IcsFont.less" />
+    <Content Include="App_Themes\Default\Libraries\jQueryTagIt\jQueryTagIt.less" />
+    <Content Include="App_Themes\Default\Libraries\jQueryUI\jQueryUI.less" />
+    <Content Include="App_Themes\Default\Pages\Pages.less" />
+    <Content Include="App_Themes\Default\Pages\EditPage\EditPage.less" />
+    <Content Include="App_Themes\Default\Pages\EditPage\_Settings.less" />
+    <Content Include="App_Themes\Default\Pages\EditPage\_Variables.less" />
+    <Content Include="App_Themes\Default\Pages\EditPage\Images\edit-form-additional-toolbar-btns.png" />
+    <Content Include="App_Themes\Default\Pages\EditPage\Images\edit-form-toolbar-btns.png" />
+    <Content Include="App_Themes\Default\Pages\EditPage\Images\remove-btn.gif" />
+    <Content Include="App_Themes\Default\Pages\ExceptionPage\ExceptionPage.less" />
+    <Content Include="App_Themes\Default\Pages\ExceptionPage\_Settings.less" />
+    <Content Include="App_Themes\Default\Pages\ExceptionPage\_Variables.less" />
+    <Content Include="App_Themes\Default\Pages\LoginPage\LoginPage.less" />
+    <Content Include="App_Themes\Default\Pages\LoginPage\_Settings.less" />
+    <Content Include="App_Themes\Default\Pages\LoginPage\_Variables.less" />
+    <Content Include="App_Themes\Default\Pages\LoginPage\Images\login-form-header-background.png" />
+    <Content Include="App_Themes\Default\Pages\MainPage\MainPage.less" />
+    <Content Include="App_Themes\Default\Pages\MainPage\_Settings.less" />
+    <Content Include="App_Themes\Default\Pages\MainPage\_Variables.less" />
+    <Content Include="App_Themes\Default\Pages\MainPage\Images\app-logo.png" />
+    <Content Include="App_Themes\Default\Pages\MainPage\Images\header-background.png" />
+    <Content Include="App_Themes\Default\Pages\MainPage\Images\indicator.gif" />
+    <Content Include="App_Themes\Light\BaseStyles.css" />
+    <Content Include="App_Themes\Light\BaseStyles.less" />
+    <Content Include="App_Themes\Light\Theme.skin" />
+    <Content Include="App_Themes\Light\Web.config" />
+    <Content Include="App_Themes\Light\Controls\Controls.less" />
+    <Content Include="App_Themes\Light\Controls\AjaxGroupEdit\AjaxGroupEdit.less" />
+    <Content Include="App_Themes\Light\Controls\AjaxGroupEdit\_Settings.less" />
+    <Content Include="App_Themes\Light\Controls\AjaxGroupEdit\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\Buttons\Buttons.less" />
+    <Content Include="App_Themes\Light\Controls\Buttons\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\DateTimePicker\DateTimePicker.less" />
+    <Content Include="App_Themes\Light\Controls\DateTimePicker\_Settings.less" />
+    <Content Include="App_Themes\Light\Controls\DateTimePicker\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\FileControl\FileControl.less" />
+    <Content Include="App_Themes\Light\Controls\FileControl\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\Forms\FormDefault.less" />
+    <Content Include="App_Themes\Light\Controls\Forms\FormElements.less" />
+    <Content Include="App_Themes\Light\Controls\Forms\FormHorizontal.less" />
+    <Content Include="App_Themes\Light\Controls\Forms\Forms.less" />
+    <Content Include="App_Themes\Light\Controls\Forms\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\Lookup\Lookup.less" />
+    <Content Include="App_Themes\Light\Controls\Lookup\_Settings.less" />
+    <Content Include="App_Themes\Light\Controls\Lookup\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\Lookup\Images\indicator.gif" />
+    <Content Include="App_Themes\Light\Controls\LookupMultiple\LookupMultiple.less" />
+    <Content Include="App_Themes\Light\Controls\LookupMultiple\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\Messages\AlertMessage.less" />
+    <Content Include="App_Themes\Light\Controls\Messages\Messages.less" />
+    <Content Include="App_Themes\Light\Controls\Messages\Tooltip.less" />
+    <Content Include="App_Themes\Light\Controls\Messages\_Settings.less" />
+    <Content Include="App_Themes\Light\Controls\Messages\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\Messages\Images\title.gif" />
+    <Content Include="App_Themes\Light\Controls\ModalWindows\ModalWindowContent.less" />
+    <Content Include="App_Themes\Light\Controls\ModalWindows\ModalWindows.less" />
+    <Content Include="App_Themes\Light\Controls\ModalWindows\ModalWindowWrapper.less" />
+    <Content Include="App_Themes\Light\Controls\ModalWindows\_Settings.less" />
+    <Content Include="App_Themes\Light\Controls\ModalWindows\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\ModalWindows\Images\loading.gif" />
+    <Content Include="App_Themes\Light\Controls\ModalWindows\Images\select-on-this-page-icons.png" />
+    <Content Include="App_Themes\Light\Controls\ShowHideDiv\ShowHideDiv.less" />
+    <Content Include="App_Themes\Light\Controls\ShowHideDiv\_Settings.less" />
+    <Content Include="App_Themes\Light\Controls\ShowHideDiv\_Varaibles.less" />
+    <Content Include="App_Themes\Light\Controls\WebLimitEditor\WebLimitEditor.less" />
+    <Content Include="App_Themes\Light\Controls\WebLimitEditor\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\ContextMenu.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\LimitEditSettings.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\Pager.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\TableToolbar.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\Toolbar.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\WebObjectListView.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\_Settings.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\_Variables.less" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\Images\icons-mini.png" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\Images\icons-red.png" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\Images\toolbar-icons-hover.png" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\Images\toolbar-icons.png" />
+    <Content Include="App_Themes\Light\Controls\WebObjectListView\Images\transparent.png" />
+    <Content Include="App_Themes\Light\Images\404.png" />
+    <Content Include="App_Themes\Light\Images\help.gif" />
+    <Content Include="App_Themes\Light\Images\indicator.gif" />
+    <Content Include="App_Themes\Light\Images\info.gif" />
+    <Content Include="App_Themes\Light\Images\loading.gif" />
+    <Content Include="App_Themes\Light\Images\quest.gif" />
+    <Content Include="App_Themes\Light\Images\transparent.png" />
+    <Content Include="App_Themes\Light\Libraries\Libraries.less" />
+    <Content Include="App_Themes\Light\Libraries\FontAwesome\FontAwesome.less" />
+    <Content Include="App_Themes\Light\Libraries\IcsFont\IcsFont.less" />
+    <Content Include="App_Themes\Light\Libraries\jQueryTagIt\jQueryTagIt.less" />
+    <Content Include="App_Themes\Light\Libraries\jQueryUI\jQueryUI.less" />
+    <Content Include="App_Themes\Light\Pages\Pages.less" />
+    <Content Include="App_Themes\Light\Pages\EditPage\EditPage.less" />
+    <Content Include="App_Themes\Light\Pages\EditPage\_Settings.less" />
+    <Content Include="App_Themes\Light\Pages\EditPage\_Variables.less" />
+    <Content Include="App_Themes\Light\Pages\EditPage\Images\icons-normal.png" />
+    <Content Include="App_Themes\Light\Pages\EditPage\Images\icons-red.png" />
+    <Content Include="App_Themes\Light\Pages\ExceptionPage\ExceptionPage.less" />
+    <Content Include="App_Themes\Light\Pages\ExceptionPage\_Settings.less" />
+    <Content Include="App_Themes\Light\Pages\ExceptionPage\_Variables.less" />
+    <Content Include="App_Themes\Light\Pages\LoginPage\LoginPage.less" />
+    <Content Include="App_Themes\Light\Pages\LoginPage\_Settings.less" />
+    <Content Include="App_Themes\Light\Pages\LoginPage\_Variables.less" />
+    <Content Include="App_Themes\Light\Pages\LoginPage\Images\arrow.png" />
+    <Content Include="App_Themes\Light\Pages\MainPage\MainPage.less" />
+    <Content Include="App_Themes\Light\Pages\MainPage\_Settings.less" />
+    <Content Include="App_Themes\Light\Pages\MainPage\_Variables.less" />
+    <Content Include="App_Themes\Light\Pages\MainPage\Images\app-logo.png" />
+    <Content Include="App_Themes\Light\Pages\MainPage\Images\indicator.gif" />
+    <Content Include="App_Themes\Light\Pages\MainPage\Images\splitter1.gif" />
+    <Content Include="App_Themes\Light\Pages\MainPage\Images\splitter2.gif" />
+    <Content Include="App_Themes\Smart\BaseStyles.css" />
+    <Content Include="App_Themes\Smart\BaseStyles.less" />
+    <Content Include="App_Themes\Smart\Theme.skin" />
+    <Content Include="App_Themes\Smart\Web.config" />
+    <Content Include="App_Themes\Smart\Controls\Controls.less" />
+    <Content Include="App_Themes\Smart\Controls\AjaxGroupEdit\AjaxGroupEdit.less" />
+    <Content Include="App_Themes\Smart\Controls\AjaxGroupEdit\_Settings.less" />
+    <Content Include="App_Themes\Smart\Controls\AjaxGroupEdit\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\Buttons\Buttons.less" />
+    <Content Include="App_Themes\Smart\Controls\Buttons\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\DateTimePicker\DateTimePicker.less" />
+    <Content Include="App_Themes\Smart\Controls\DateTimePicker\_Settings.less" />
+    <Content Include="App_Themes\Smart\Controls\DateTimePicker\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\FileControl\FileControl.less" />
+    <Content Include="App_Themes\Smart\Controls\FileControl\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\Forms\FormDefault.less" />
+    <Content Include="App_Themes\Smart\Controls\Forms\FormElements.less" />
+    <Content Include="App_Themes\Smart\Controls\Forms\FormHorizontal.less" />
+    <Content Include="App_Themes\Smart\Controls\Forms\Forms.less" />
+    <Content Include="App_Themes\Smart\Controls\Forms\_Settings.less" />
+    <Content Include="App_Themes\Smart\Controls\Forms\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\Lookup\Lookup.less" />
+    <Content Include="App_Themes\Smart\Controls\Lookup\_Settings.less" />
+    <Content Include="App_Themes\Smart\Controls\Lookup\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\LookupMultiple\LookupMultiple.less" />
+    <Content Include="App_Themes\Smart\Controls\LookupMultiple\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\Messages\AlertMessage.less" />
+    <Content Include="App_Themes\Smart\Controls\Messages\Messages.less" />
+    <Content Include="App_Themes\Smart\Controls\Messages\Tooltip.less" />
+    <Content Include="App_Themes\Smart\Controls\Messages\_Settings.less" />
+    <Content Include="App_Themes\Smart\Controls\Messages\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\Messages\Images\background-dark.png" />
+    <Content Include="App_Themes\Smart\Controls\Messages\Images\background-light.png" />
+    <Content Include="App_Themes\Smart\Controls\ModalWindows\ModalWindowContent.less" />
+    <Content Include="App_Themes\Smart\Controls\ModalWindows\ModalWindows.less" />
+    <Content Include="App_Themes\Smart\Controls\ModalWindows\ModalWindowWrapper.less" />
+    <Content Include="App_Themes\Smart\Controls\ModalWindows\_Settings.less" />
+    <Content Include="App_Themes\Smart\Controls\ModalWindows\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\ModalWindows\Images\select-on-this-page-icons.png" />
+    <Content Include="App_Themes\Smart\Controls\ShowHideDiv\ShowHideDiv.less" />
+    <Content Include="App_Themes\Smart\Controls\ShowHideDiv\_Settings.less" />
+    <Content Include="App_Themes\Smart\Controls\ShowHideDiv\_Varaibles.less" />
+    <Content Include="App_Themes\Smart\Controls\WebLimitEditor\WebLimitEditor.less" />
+    <Content Include="App_Themes\Smart\Controls\WebLimitEditor\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\ContextMenu.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\LimitEditSettings.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\Pager.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\TableToolbar.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\Toolbar.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\WebObjectListView.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\_Settings.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\_Variables.less" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\Images\arrow.png" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\Images\toolbar-icons.png" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\Images\wolv-caption-toolbar.png" />
+    <Content Include="App_Themes\Smart\Controls\WebObjectListView\Images\wolv-table-toolbar.png" />
+    <Content Include="App_Themes\Smart\Images\404.png" />
+    <Content Include="App_Themes\Smart\Images\buttons-template.png" />
+    <Content Include="App_Themes\Smart\Images\loading.gif" />
+    <Content Include="App_Themes\Smart\Images\transparent.png" />
+    <Content Include="App_Themes\Smart\Libraries\Libraries.less" />
+    <Content Include="App_Themes\Smart\Libraries\FontAwesome\FontAwesome.less" />
+    <Content Include="App_Themes\Smart\Libraries\IcsFont\IcsFont.less" />
+    <Content Include="App_Themes\Smart\Libraries\jQueryTagIt\jQueryTagIt.less" />
+    <Content Include="App_Themes\Smart\Libraries\jQueryUI\jQueryUI.less" />
+    <Content Include="App_Themes\Smart\Pages\Pages.less" />
+    <Content Include="App_Themes\Smart\Pages\EditPage\EditPage.less" />
+    <Content Include="App_Themes\Smart\Pages\EditPage\_Settings.less" />
+    <Content Include="App_Themes\Smart\Pages\EditPage\_Variables.less" />
+    <Content Include="App_Themes\Smart\Pages\EditPage\Images\edit-form-additional-toolbar-btns.png" />
+    <Content Include="App_Themes\Smart\Pages\EditPage\Images\edit-form-toolbar-btns.png" />
+    <Content Include="App_Themes\Smart\Pages\EditPage\Images\remove-btn.gif" />
+    <Content Include="App_Themes\Smart\Pages\ExceptionPage\ExceptionPage.less" />
+    <Content Include="App_Themes\Smart\Pages\ExceptionPage\_Settings.less" />
+    <Content Include="App_Themes\Smart\Pages\ExceptionPage\_Variables.less" />
+    <Content Include="App_Themes\Smart\Pages\LoginPage\LoginPage.less" />
+    <Content Include="App_Themes\Smart\Pages\LoginPage\_Settings.less" />
+    <Content Include="App_Themes\Smart\Pages\LoginPage\_Variables.less" />
+    <Content Include="App_Themes\Smart\Pages\MainPage\MainPage.less" />
+    <Content Include="App_Themes\Smart\Pages\MainPage\_Settings.less" />
+    <Content Include="App_Themes\Smart\Pages\MainPage\_Variables.less" />
+    <Content Include="App_Themes\Smart\Pages\MainPage\Images\background-dark.png" />
+    <Content Include="App_Themes\Smart\Pages\MainPage\Images\background-light.png" />
+    <Content Include="App_Themes\Smart\Pages\MainPage\Images\header-background.png" />
+    <Content Include="App_Themes\Smart\Pages\MainPage\Images\menu-background.png" />
+    <Content Include="App_Themes\Smart\Pages\MainPage\Images\menu-header-background.png" />
+    <Content Include="App_Themes\Spring\BaseStyles.css" />
+    <Content Include="App_Themes\Spring\BaseStyles.less" />
+    <Content Include="App_Themes\Spring\Theme.skin" />
+    <Content Include="App_Themes\Spring\Web.config" />
+    <Content Include="App_Themes\Spring\Controls\Controls.less" />
+    <Content Include="App_Themes\Spring\Controls\AjaxGroupEdit\AjaxGroupEdit.less" />
+    <Content Include="App_Themes\Spring\Controls\AjaxGroupEdit\_Settings.less" />
+    <Content Include="App_Themes\Spring\Controls\AjaxGroupEdit\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\Buttons\Buttons.less" />
+    <Content Include="App_Themes\Spring\Controls\Buttons\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\DateTimePicker\DateTimePicker.less" />
+    <Content Include="App_Themes\Spring\Controls\DateTimePicker\_Settings.less" />
+    <Content Include="App_Themes\Spring\Controls\DateTimePicker\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\FileControl\FileControl.less" />
+    <Content Include="App_Themes\Spring\Controls\FileControl\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\Forms\FormDefault.less" />
+    <Content Include="App_Themes\Spring\Controls\Forms\FormElements.less" />
+    <Content Include="App_Themes\Spring\Controls\Forms\FormHorizontal.less" />
+    <Content Include="App_Themes\Spring\Controls\Forms\Forms.less" />
+    <Content Include="App_Themes\Spring\Controls\Forms\_Settings.less" />
+    <Content Include="App_Themes\Spring\Controls\Forms\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\Lookup\Lookup.less" />
+    <Content Include="App_Themes\Spring\Controls\Lookup\_Settings.less" />
+    <Content Include="App_Themes\Spring\Controls\Lookup\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\Lookup\Images\indicator.gif" />
+    <Content Include="App_Themes\Spring\Controls\LookupMultiple\LookupMultiple.less" />
+    <Content Include="App_Themes\Spring\Controls\LookupMultiple\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\Messages\AlertMessage.less" />
+    <Content Include="App_Themes\Spring\Controls\Messages\Messages.less" />
+    <Content Include="App_Themes\Spring\Controls\Messages\Tooltip.less" />
+    <Content Include="App_Themes\Spring\Controls\Messages\_Settings.less" />
+    <Content Include="App_Themes\Spring\Controls\Messages\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\ModalWindows\ModalWindowContent.less" />
+    <Content Include="App_Themes\Spring\Controls\ModalWindows\ModalWindows.less" />
+    <Content Include="App_Themes\Spring\Controls\ModalWindows\ModalWindowWrapper.less" />
+    <Content Include="App_Themes\Spring\Controls\ModalWindows\_Settings.less" />
+    <Content Include="App_Themes\Spring\Controls\ModalWindows\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\ModalWindows\Images\close-btn.png" />
+    <Content Include="App_Themes\Spring\Controls\ModalWindows\Images\select-columns-icons.png" />
+    <Content Include="App_Themes\Spring\Controls\ShowHideDiv\ShowHideDiv.less" />
+    <Content Include="App_Themes\Spring\Controls\ShowHideDiv\_Settings.less" />
+    <Content Include="App_Themes\Spring\Controls\ShowHideDiv\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\WebLimitEditor\WebLimitEditor.less" />
+    <Content Include="App_Themes\Spring\Controls\WebLimitEditor\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\ContextMenu.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\LimitEditSettings.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\Pager.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\TableToolbar.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\Toolbar.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\WebObjectListView.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\_Settings.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\_Variables.less" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\Images\toolbar-icons.png" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\Images\transparent.png" />
+    <Content Include="App_Themes\Spring\Controls\WebObjectListView\Images\wolv-table-toolbar.png" />
+    <Content Include="App_Themes\Spring\Images\404.png" />
+    <Content Include="App_Themes\Spring\Images\buttons-template.png" />
+    <Content Include="App_Themes\Spring\Images\transparent.png" />
+    <Content Include="App_Themes\Spring\Libraries\Libraries.less" />
+    <Content Include="App_Themes\Spring\Libraries\FontAwesome\FontAwesome.less" />
+    <Content Include="App_Themes\Spring\Libraries\IcsFont\IcsFont.less" />
+    <Content Include="App_Themes\Spring\Libraries\jQueryTagIt\jQueryTagIt.less" />
+    <Content Include="App_Themes\Spring\Libraries\jQueryUI\jQueryUI.less" />
+    <Content Include="App_Themes\Spring\Pages\Pages.less" />
+    <Content Include="App_Themes\Spring\Pages\EditPage\EditPage.less" />
+    <Content Include="App_Themes\Spring\Pages\EditPage\_Settings.less" />
+    <Content Include="App_Themes\Spring\Pages\EditPage\_Variables.less" />
+    <Content Include="App_Themes\Spring\Pages\EditPage\Images\edit-form-additional-toolbar-btns.png" />
+    <Content Include="App_Themes\Spring\Pages\EditPage\Images\edit-form-table-toolbar.png" />
+    <Content Include="App_Themes\Spring\Pages\EditPage\Images\edit-form-toolbar-btns.png" />
+    <Content Include="App_Themes\Spring\Pages\ExceptionPage\ExceptionPage.less" />
+    <Content Include="App_Themes\Spring\Pages\ExceptionPage\_Settings.less" />
+    <Content Include="App_Themes\Spring\Pages\ExceptionPage\_Variables.less" />
+    <Content Include="App_Themes\Spring\Pages\LoginPage\LoginPage.less" />
+    <Content Include="App_Themes\Spring\Pages\LoginPage\_Settings.less" />
+    <Content Include="App_Themes\Spring\Pages\LoginPage\_Variables.less" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\MainPage.less" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\_Settings.less" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\_Variables.less" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\Images\app-logo.png" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\Images\background.png" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\Images\indicator.gif" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\Images\navigator-background.png" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\Images\treeview-hide.png" />
+    <Content Include="App_Themes\Spring\Pages\MainPage\Images\treeview-show.png" />
+    <Content Include="shared\jstreeThemes\apple\bg.jpg" />
+    <Content Include="shared\jstreeThemes\apple\d.png" />
+    <Content Include="shared\jstreeThemes\apple\dot_for_ie.gif" />
+    <Content Include="shared\jstreeThemes\apple\style.css" />
+    <Content Include="shared\jstreeThemes\apple\throbber.gif" />
+    <Content Include="shared\jstreeThemes\classic\d.gif" />
+    <Content Include="shared\jstreeThemes\classic\d.png" />
+    <Content Include="shared\jstreeThemes\classic\dot_for_ie.gif" />
+    <Content Include="shared\jstreeThemes\classic\style.css" />
+    <Content Include="shared\jstreeThemes\classic\throbber.gif" />
+    <Content Include="shared\jstreeThemes\default\d.gif" />
+    <Content Include="shared\jstreeThemes\default\d.png" />
+    <Content Include="shared\jstreeThemes\default\style.css" />
+    <Content Include="shared\jstreeThemes\default\t.png" />
+    <Content Include="shared\jstreeThemes\default\throbber.gif" />
+    <Content Include="shared\jstreeThemes\default-rtl\d.gif" />
+    <Content Include="shared\jstreeThemes\default-rtl\d.png" />
+    <Content Include="shared\jstreeThemes\default-rtl\dots.gif" />
+    <Content Include="shared\jstreeThemes\default-rtl\style.css" />
+    <Content Include="shared\jstreeThemes\default-rtl\throbber.gif" />
+    <Content Include="shared\script\exceptionpanel.js" />
+    <Content Include="shared\script\jquery-1.7.2.min.js" />
+    <Content Include="shared\script\jquery-ui.min.js" />
+    <Content Include="shared\script\jquery.alerts.js" />
+    <Content Include="shared\script\jquery.color.js" />
+    <Content Include="shared\script\jquery.contextMenu.js" />
+    <Content Include="shared\script\jquery.cookie.js" />
+    <Content Include="shared\script\jquery.countdown.pack.js" />
+    <Content Include="shared\script\jquery.dimensions.js" />
+    <Content Include="shared\script\jquery.disable.text.select.js" />
+    <Content Include="shared\script\jquery.ics.js" />
+    <Content Include="shared\script\jquery.maskedinput-1.2.2.js" />
+    <Content Include="shared\script\jquery.maxlength.min.js" />
+    <Content Include="shared\script\jquery.sticky.js" />
+    <Content Include="shared\script\jquery.tooltip.js" />
+    <Content Include="shared\script\master.page.js" />
+    <Content Include="shared\script\tag-it.min.js" />
+    <Content Include="shared\script\thickbox.js" />
+    <Content Include="shared\script\tooltips.js" />
+    <Content Include="lib\AntiXssLibrary.dll" />
+    <Content Include="lib\CacheBaseLibrary.dll" />
+    <Content Include="lib\CheckingLibrary.dll" />
+    <Content Include="lib\CheckingLibrary.xml" />
+    <Content Include="lib\ClientLibrary.dll" />
+    <Content Include="lib\CustomSiteMapProvider.dll" />
+    <Content Include="lib\DocumentFormat.OpenXml.dll" />
+    <Content Include="lib\DocumentFormat.OpenXml.xml" />
+    <Content Include="lib\EventTaskMonitor.dll" />
+    <Content Include="lib\ExpressionBuilder.dll" />
+    <Content Include="lib\ExternalLangDef.dll" />
+    <Content Include="lib\HttpCompress.dll" />
+    <Content Include="lib\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="lib\ICSSoft.Services.CurrentUserService.dll" />
+    <Content Include="lib\ICSSoft.Services.CurrentUserService.xml" />
+    <Content Include="lib\ICSSoft.Services.UnityFactory.dll" />
+    <Content Include="lib\ICSSoft.Services.UnityFactory.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.AzManBridge.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.AzManBridge.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.BF.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.BF.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.1.0.0.1.Fakes.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.1.0.0.1.Fakes.fakesconfig" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.1.0.0.1.Fakes.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.Audit.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.Audit.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.BFDataService.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.BFDataService.pdb" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.BFDataService.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.DRDataService.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.DRDataService.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.HttpDataService.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.HttpDataService.pdb" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.HttpDataService.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.LINQProvider.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.LINQProvider.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.LockService.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.LockService.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.MSSQLDataService.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.MSSQLDataService.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.ODBCDataService.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.ODBCDataService.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.OracleDataService.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.OracleDataService.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.PostgresDataService.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.PostgresDataService.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Business.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Collections.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Collections.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.DataObject.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.DataObject.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Drawing.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Drawing.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.EBSI.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.EBSI.pdb" />
+    <Content Include="lib\ICSSoft.STORMNET.EBSI.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.FunctionalLanguage.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.FunctionalLanguage.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.LockServices.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.RightManager.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.RightManager.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.TestDataBase.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.TestDataBase.pdb" />
+    <Content Include="lib\ICSSoft.STORMNET.TestTools.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.TestTools.pdb" />
+    <Content Include="lib\ICSSoft.STORMNET.Tools.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Tools.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.UserDataTypes.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.UserDataTypes.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.AjaxControls.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.AjaxControls.Fakes.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.AjaxControls.Fakes.fakesconfig" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.AjaxControls.Fakes.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.AjaxControls.pdb" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.AjaxControls.XML" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Reports.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Reports.pdb" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Reports.XML" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Tools.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Tools.Fakes.dll" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Tools.Fakes.fakesconfig" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Tools.Fakes.xml" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Tools.pdb" />
+    <Content Include="lib\ICSSoft.STORMNET.Web.Tools.XML" />
+    <Content Include="lib\IIS.Caseberry.Logging(BusinessServers).dll" />
+    <Content Include="lib\IIS.Caseberry.Logging(BusinessServers).xml" />
+    <Content Include="lib\IIS.Caseberry.Logging(Objects).dll" />
+    <Content Include="lib\IIS.Caseberry.Logging(Objects).xml" />
+    <Content Include="lib\IIS.Caseberry.Logging.MsEntLib.dll" />
+    <Content Include="lib\IIS.Caseberry.Logging.MsEntLib.xml" />
+    <Content Include="lib\IIS.ExpressionSerialization.dll" />
+    <Content Include="lib\IIS.ExpressionSerialization.pdb" />
+    <Content Include="lib\IIS.Flex.CaseberryInteraction.dll" />
+    <Content Include="lib\IIS.Flex.CaseberryInteraction.pdb" />
+    <Content Include="lib\IIS.Flexberry.Reports.Core.dll" />
+    <Content Include="lib\IIS.Flexberry.Reports.Core.pdb" />
+    <Content Include="lib\IIS.Flexberry.Reports.StimulsoftReport.dll" />
+    <Content Include="lib\IIS.Flexberry.Reports.StimulsoftReport.pdb" />
+    <Content Include="lib\IIS.Validation.dll" />
+    <Content Include="lib\IIS.Validation.pdb" />
+    <Content Include="lib\IIS.Аудит(Objects).dll" />
+    <Content Include="lib\IIS.Аудит(Objects).xml" />
+    <Content Include="lib\ImageResizerKernel.dll" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\log4net.xml" />
+    <Content Include="lib\LogService.dll" />
+    <Content Include="lib\LogService.xml" />
+    <Content Include="lib\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="lib\Microsoft.Practices.Unity.Configuration.xml" />
+    <Content Include="lib\Microsoft.Practices.Unity.dll" />
+    <Content Include="lib\Microsoft.Practices.Unity.xml" />
+    <Content Include="lib\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="lib\Mono.Security.dll" />
+    <Content Include="lib\NewPlatform.Flexberry.Web.Http.dll" />
+    <Content Include="lib\NewPlatform.Flexberry.Web.Http.pdb" />
+    <Content Include="lib\NewPlatform.Flexberry.Web.LimitEditor.dll" />
+    <Content Include="lib\NewPlatform.Flexberry.Web.LimitEditor.pdb" />
+    <Content Include="lib\NewPlatform.Flexberry.Web.LimitEditor.XML" />
+    <Content Include="lib\Npgsql.dll" />
+    <Content Include="lib\Npgsql.xml" />
+    <Content Include="lib\OfficeWebUI.dll" />
+    <Content Include="lib\OfficeWebUI.pdb" />
+    <Content Include="lib\OfficeWebUI.XML" />
+    <Content Include="lib\Remotion.Linq.dll" />
+    <Content Include="lib\Remotion.Linq.xml" />
+    <Content Include="lib\Security(BusinessServers).dll" />
+    <Content Include="lib\Security(BusinessServers).xml" />
+    <Content Include="lib\Security(Objects).dll" />
+    <Content Include="lib\Security(Objects).xml" />
+    <Content Include="lib\SmartScroller.dll" />
+    <Content Include="lib\Stimulsoft.Base.dll" />
+    <Content Include="lib\Stimulsoft.Base.xml" />
+    <Content Include="lib\Stimulsoft.Report.dll" />
+    <Content Include="lib\Stimulsoft.Report.Web.dll" />
+    <Content Include="lib\Stimulsoft.Report.Web.xml" />
+    <Content Include="lib\Stimulsoft.Report.WebDesignSL.dll" />
+    <Content Include="lib\Stimulsoft.Report.WebDesignSL.xml" />
+    <Content Include="lib\Stimulsoft.Report.xml" />
+    <Content Include="lib\System.Web.4.0.0.0.Fakes.dll" />
+    <Content Include="lib\System.Web.4.0.0.0.Fakes.fakesconfig" />
+    <Content Include="lib\System.Web.4.0.0.0.Fakes.xml" />
+    <Content Include="lib\Tests.dll" />
+    <Content Include="lib\Tests.dll.config" />
+    <Content Include="lib\Tests.pdb" />
+    <Content Include="lib\UserSettingsService.1.1.0.0.Fakes.dll" />
+    <Content Include="lib\UserSettingsService.1.1.0.0.Fakes.fakesconfig" />
+    <Content Include="lib\UserSettingsService.1.1.0.0.Fakes.xml" />
+    <Content Include="lib\UserSettingsService.dll" />
+    <Content Include="lib\UserSettingsService.xml" />
+    <Content Include="Xml\ServiceSecurityProvider.xml" />
+    <Content Include="Xml\ViewColumnProvider.xml" />
+    <Content Include="Xml\ViewColumnProvider.xsd" />
+    <Content Include="Xml\WebControlProvider.xml" />
+    <Content Include="Xml\WebControlProvider.xsd" />
+    <Content Include="Xml\Bindings\ExampleE.xml" />
+    <Content Include="Xml\Sitemaps\Empty.sitemap" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6500</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

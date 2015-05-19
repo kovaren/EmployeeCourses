@@ -1,0 +1,30 @@
+﻿/**
+ * Файл визуального оформления настроек иерархического отображения.
+ */
+
+
+.@{wolvCellValue} .@{wolvHierarchyClass} {
+    float: left; // Необходимо для отображения текста и иконки иерархии в один ряд.
+    margin-right: 2px;
+    margin-left: 2px;
+    .font-icon-style();
+    color: @wolvHierarchyIconColor;
+    font-size: @wolvHierarchyIconFontSize;
+
+    &.@{wolvHierarchyCollapsedClass}:before {
+        content: "\f0fe";
+    }
+
+    &.@{wolvHierarchyExpandedClass}:before {
+        content: "\f146";
+    }
+
+    &.@{wolvHierarchyExternalClass} {
+        margin-right: 0;
+        width: @wolvHierarchyIconFontSize;
+        height: 16px;
+    }
+}
+
+
+@import (reference) "WolvClasses.less";

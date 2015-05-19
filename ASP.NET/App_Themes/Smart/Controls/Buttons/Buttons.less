@@ -1,0 +1,37 @@
+﻿@import '../../../BaseTheme/Controls/Buttons/Buttons.less';
+
+/**
+ * Файл визуального оформления кнопок.
+ * Тема Smart.
+ */
+
+
+.@{buttonClass},
+.@{wolvToolbarBtnClass} {
+    background-color: @buttonBackground;
+
+    &:hover {
+        background: @buttonHoverBackgroundColor;
+        color: @buttonTextColor;
+        text-decoration: none;
+        filter: none;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: @buttonFocusBorderColor;
+        background: @buttonFocusBackgroundColor;
+        color: @buttonTextColor;
+        text-decoration: none;
+        filter: none;
+    }
+
+    &:active {
+        background-color: #f0f0f0;
+        -webkit-box-shadow: inset 1px 1px 1px #808080;
+        box-shadow: inset 1px 1px 1px #808080;
+    }
+}
+
+
+@import (reference) "_Variables.less";

@@ -1,0 +1,104 @@
+﻿@import "../../../BaseTheme/Controls/Forms/FormElements.less";
+
+/**
+ * Файл визуального оформления дефолтных контролов.
+ */
+
+
+/* Кнопки. */
+.ics-btn,
+.login-form-btn,
+.ics-wolv-pager-navigation-button,
+.ics-wolv-pager-page,
+#popup_panel input[type="button"] {
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 2px 6px;
+    box-shadow: inset 0 0 1px 1px #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 16px;
+    border-radius: 2px;
+    background:#e6e6e6;
+    .background(#e6e6e6, #fff);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#ffffff',GradientType=0 );
+    cursor: pointer;
+}
+
+.ics-btn:hover,
+.login-form-btn:hover,
+.ics-wolv-pager-navigation-button:hover,
+.ics-wolv-pager-page:hover,
+#popup_panel input[type="button"]:hover {
+    color: #000;
+    background: #fff;
+    .background(#fff, #e6e6e6);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 );
+}
+
+.ics-btn:active,
+.login-form-btn:active,
+.ics-wolv-pager-navigation-button:active, .ics-wolv-pager-page:active,
+.ics-wolv-pager-current-page, .ics-wolv-toolbar-button-active,
+#popup_panel input[type="button"]:active {
+    color: #000;
+    box-shadow: inset 0 0 1px 1px #00bfff;
+}
+
+.ics-btn:focus,
+.login-form-btn:focus,
+.ics-wolv-pager-navigation-button:focus, .ics-wolv-pager-page:focus,
+#popup_panel input[type="button"]:focus {
+    outline: none;
+    border-color: #00bfff;
+    position: relative;
+}
+
+.ics-btn.disabled,
+.ics-btn[disabled] {
+    background: #ddd;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* Текстовые поля. */
+input[type="text"], input[type="password"] {
+    border: 1px solid #bbb;
+    background: #eee;
+    padding: 1px;
+    margin: 0;
+   .border-box();
+    min-height: 22px;
+    line-height: 16px;
+    border-radius: 2px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    outline: none;
+    background-color: #8fbc8f;
+    border-color: #4d81de;
+}
+
+/* Многострочные текстовые поля. */
+textarea {
+    .border-box();
+    min-height: 22px;
+    padding: 1px;
+    border: 1px solid #bbb;
+    background: #eee;
+    border-radius: 2px;
+    resize: vertical;
+}
+
+/* Выпадающие списки. */
+select {
+    .border-box();
+    min-height: 22px;
+    padding: 1px;
+    border: 1px solid #bbb;
+    .border-radius(2px);
+    margin: 0;
+    background: #eee;
+}
+
+@import '_Settings.less';

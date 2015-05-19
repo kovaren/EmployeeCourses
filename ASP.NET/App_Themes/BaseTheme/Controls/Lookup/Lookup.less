@@ -1,0 +1,88 @@
+﻿/**
+ * Стили базовой темы.
+ * Контрол Lookup. 
+ */
+
+@import (reference) '_Variables.less';
+
+.@{lookupMainClass} {
+    position: relative;
+
+    .@{lookupClass} {
+        overflow: hidden;
+
+        > input {
+            .border-box();
+            padding-right: 45px;
+            height: 30px;
+        }
+    }
+
+    .@{lookupBtnClass} {
+        position: absolute;
+        z-index: 1;
+        .font-icon-style();
+        font-size: @lookupIconSize;
+        float: right;
+        padding: 4px;
+        line-height: @lookupBtnLineHeight;
+
+        .@{wrapperCellDataClass} & {
+            position: static;
+        }
+
+        /**
+         * Кнопка "Выбрать".
+         */
+        &.@{lookupLookupBtnClass} {
+            right: 22px;
+            color: @lookupIconLookupColor;
+            padding-top: 5px;
+            padding-bottom: 3px;
+
+            &:before {
+                content: "\f08e";
+            }
+
+            &:hover {
+                color: @lookupIconLookupHoverColor;
+            }
+        }
+        /**
+         * Кнопка "Очистить".
+         */
+        &.@{lookupClearBtnClass} {
+            right: 0;
+            color: @lookupIconClearColor;
+
+            &:before {
+                content: "\f00d";
+            }
+
+            &:hover {
+                color: @lookupIconClearHoverColor;
+            }
+        }
+        /**
+         * Кнопка "Показать объект".
+         */
+        &.@{lookupShowObjectBtnClass} {
+            right: 47px;
+            color: @lookupIconShowObjectColor;
+
+            &:before {
+                content: "\f06e";
+            }
+
+            &:hover {
+                color: @lookupIconShowObjectHoverColor;
+            }
+        }
+    }
+    /**
+     * Недоступный лукап.
+     */
+    .aspNetDisabled:before {
+        color: gray;
+    }
+}

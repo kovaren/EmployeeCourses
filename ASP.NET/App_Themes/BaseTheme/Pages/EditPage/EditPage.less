@@ -1,0 +1,50 @@
+﻿/**
+* Стили базовой темы.
+* Форма редактирования. 
+*/
+
+@import (reference) '_Variables.less';
+
+.@{editFormClass} {
+    max-width: 100%;
+    margin: 0 auto;
+
+    .@{editControlClass} {
+        margin: 0 24px;
+
+        .@{clearfixClass} {
+            clear: both;
+            overflow: hidden;
+            width: 100%;
+            margin: 8px 0;
+
+
+            .@{descLblClass} {
+                float: left;
+                width: 130px;
+                padding: 4px 10px;
+                margin: 2px 0;
+                text-align: right;
+            }
+
+            .@{descTxtClass} {
+                .border-box();
+                float: left;
+                width: 200px;                
+                margin: 0;
+
+                > input {
+                   .border-box();
+                    min-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.@{btnSaveClass},
+.@{btnSaveCloseClass},
+.@{btnCloseClass} {
+    margin-right:5px;
+    background-repeat: no-repeat;    
+}

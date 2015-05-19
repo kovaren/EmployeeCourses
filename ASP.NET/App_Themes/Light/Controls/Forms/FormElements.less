@@ -1,0 +1,179 @@
+﻿@import "../../../BaseTheme/Controls/Forms/FormElements.less";
+
+/**
+ * Файл визуального оформления дефолтных контролов.
+ */
+
+
+/* Кнопка. */
+.ics-btn,
+.ics-wolv-toolbar-search-panel input[type="button"],
+#popup_panel input[type="button"],
+.ui-state-default {
+    display: inline-block;
+    background-color: #e5e5e5;
+    background-image: none !important;
+    color: #4c4c4c;
+    padding: 4px 12px;
+    border: 1px solid #ccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-bottom-color: #b3b3b3;
+    .border-radius(4px);
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    -webkit-text-shadow: 0 1px 1px #fff;
+    text-shadow: 0 1px 1px #fff;
+    vertical-align: middle;
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 2px #000;
+    -moz-box-shadow: inset 0 1px 0 #fff,0 1px 2px #000;
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 #fff,0 1px 2px #000;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+
+#popup_panel input[type="button"] {
+    min-width: 75px;
+}
+
+/* Кнопка выделенная. */
+.ics-btn:hover,
+.ics-wolv-toolbar-search-panel input[type="button"]:hover,
+#popup_panel input[type="button"]:hover,
+.ui-state-hover {
+    color: #333;
+    text-decoration: none;
+    background-position: 0 -15px;
+    -webkit-transition: background-position .1s linear;
+    -moz-transition: background-position .1s linear;
+    -o-transition: background-position .1s linear;
+    transition: background-position .1s linear;
+}
+
+/* Нажатая кнопка. */
+.ics-btn:active,
+.ics-wolv-toolbar-search-panel input[type="button"]:active,
+#popup_panel input[type="button"]:active,
+.ui-state-active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 4px #000,0 1px 2px #000;
+    -moz-box-shadow: inset 0 2px 4px #000,0 1px 2px #000;
+    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 2px 4px #000,0 1px 2px #000;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Кнопка с фокусом. */
+.ics-btn:focus,
+.ics-wolv-toolbar-search-panel input[type="button"]:focus,
+#popup_panel input[type="button"]:focus,
+.ui-state-focus, .ui-state-highlight {
+    outline: none !important;
+    border-color: #f60 !important;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {    
+    padding: 5px 6px;
+    border: 1px solid #d4d4d4;
+    border-color: #d4d4d4 #e8e8e8 #d4d4d4 #e8e8e8;
+    .border-radius(4px);
+    background: #f2f2f2;
+    font-size: 14px;
+}
+
+/* Поля ввода с курсором. */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus {
+    border-color: #f60;    
+    background: #fdc;
+    outline: none;
+}
+
+/* Неактивная кнопка. */
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="button"][disabled],
+input[type="submit"][disabled] {
+    background: #f0f0f0;
+    color: #999;
+    cursor: default;
+}
+
+/* Список. */
+select, select option {       
+    padding: 4px 6px !important;
+    border: 1px inset #fff;
+    .border-radius(4px);
+    background: #f2f2f2; 
+}
+
+/* Неактивные текстовые поля. */
+input[type="text"][readonly],
+textarea[readonly],
+input[type="datetime"][readonly],
+input[type="datetime-local"][readonly],
+input[type="date"][readonly],
+input[type="month"][readonly],
+input[type="time"][readonly],
+input[type="week"][readonly],
+input[type="number"][readonly],
+input[type="email"][readonly],
+input[type="url"][readonly],
+input[type="search"][readonly],
+input[type="tel"][readonly],
+input[type="color"][readonly],
+.uneditable-input,
+input[type="text"][disabled],
+textarea[disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="date"][disabled],
+input[type="month"][disabled],
+input[type="time"][disabled],
+input[type="week"][disabled],
+input[type="number"][disabled],
+input[type="email"][disabled],
+input[type="url"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="color"][disabled],
+select[disabled],
+.uneditable-input {
+    background-color: #d9d9d9;
+    cursor: not-allowed;
+}

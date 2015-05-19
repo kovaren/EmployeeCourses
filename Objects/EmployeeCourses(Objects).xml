@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeeCourses(Objects)</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.EmployeeCourses.Должность">
+            <summary>
+            Должность.
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Должность.Руководитель">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Должность.Разработчик">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Должность.Экономист">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Должность.Менеджер">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Должность.Тестировщик">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Должность.Бухгалтер">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Сотрудник">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.ТабельныйНомер">
+            <summary>
+            ТабельныйНомер.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.Фамилия">
+            <summary>
+            Фамилия.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.Имя">
+            <summary>
+            Имя.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.Отчество">
+            <summary>
+            Отчество.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.ДатаРождения">
+            <summary>
+            ДатаРождения.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.Должность">
+            <summary>
+            Должность.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.Телефон">
+            <summary>
+            Телефон.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.Email">
+            <summary>
+            Email.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Сотрудник.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.Views.СотрудникE">
+            <summary>
+            "СотрудникE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Сотрудник.Views.СотрудникL">
+            <summary>
+            "СотрудникL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Журнал">
+            <summary>
+            Журнал.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Журнал.Статус">
+            <summary>
+            Статус.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Журнал.Обязательный">
+            <summary>
+            Обязательный.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Журнал.Оценка">
+            <summary>
+            Оценка.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Журнал.Сотрудник">
+            <summary>
+            Журнал.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Журнал.Курс">
+            <summary>
+            Журнал.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Журнал.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Журнал.Views.ЖурналE">
+            <summary>
+            "ЖурналE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Журнал.Views.ЖурналL">
+            <summary>
+            "ЖурналL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Занятие">
+            <summary>
+            Занятие.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Занятие.ДатаВремя">
+            <summary>
+            ДатаВремя.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Занятие.Тема">
+            <summary>
+            Тема.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Занятие.Описание">
+            <summary>
+            Описание.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Занятие.Курс">
+            <summary>
+            мастеровая ссылка на шапку IIS.EmployeeCourses.Курс.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Занятие.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Занятие.Views.ЗанятиеE">
+            <summary>
+            "ЗанятиеE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.DetailArrayOfЗанятие">
+            <summary>
+            Detail array of Занятие.
+            </summary>
+        </member>
+        <member name="M:IIS.EmployeeCourses.DetailArrayOfЗанятие.#ctor(IIS.EmployeeCourses.Курс)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type Занятие by index.
+            </summary>
+            <summary>
+            Adds object with type Занятие.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Категория">
+            <summary>
+            Категория.
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Категория.БД">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Категория.ИС">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Категория.ЖЦПО">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Категория.ТРИЗ">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Категория.Программирование">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Категория.Финансы">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.Категория.Прочее">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Курс">
+            <summary>
+            Курс.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Название">
+            <summary>
+            Название.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.ДатаНачала">
+            <summary>
+            ДатаНачала.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.ДатаКонца">
+            <summary>
+            ДатаКонца.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Тип">
+            <summary>
+            Тип.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Очный">
+            <summary>
+            Очный.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Категория">
+            <summary>
+            Категория.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Описание">
+            <summary>
+            Описание.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Стоимость">
+            <summary>
+            Стоимость.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.МестоПроведения">
+            <summary>
+            МестоПроведения.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Занятие">
+            <summary>
+            Курс.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Курс.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Views.КурсE">
+            <summary>
+            "КурсE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Курс.Views.КурсL">
+            <summary>
+            "КурсL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.СтатусКурса">
+            <summary>
+            Статус курса.
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.СтатусКурса.Ожидается">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.СтатусКурса.Слушается">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.СтатусКурса.Окончен">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Заявка">
+            <summary>
+            Заявка.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Заявка.Примечание">
+            <summary>
+            Примечание.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Заявка.Сотрудник">
+            <summary>
+            Заявка.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Заявка.Курс">
+            <summary>
+            Заявка.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.Заявка.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Заявка.Views.ЗаявкаE">
+            <summary>
+            "ЗаявкаE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Заявка.Views.ЗаявкаL">
+            <summary>
+            "ЗаявкаL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.ТипКурса">
+            <summary>
+            Тип курса.
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.ТипКурса.Семинар">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.ТипКурса.Тренинг">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.EmployeeCourses.ТипКурса.Лекция">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

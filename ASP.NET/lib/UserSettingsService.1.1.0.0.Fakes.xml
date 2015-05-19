@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UserSettingsService.1.1.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ICSSoft.Services.Fakes.StubIUserSettingsService">
+            <summary>Stub type of ICSSoft.Services.IUserSettingsService</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.#ctor">
+            <summary>Initializes a new instance of type StubIUserSettingsService</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.AppNameGet">
+            <summary>Sets the stub of IUserSettingsService.get_AppName()</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.AttachBackingFieldToUseSettings">
+            <summary>Attaches delegates to emulate StubIUserSettingsService.UseSettings as a property with a backing field.</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.CommonModuleGuidGet">
+            <summary>Sets the stub of IUserSettingsService.get_CommonModuleGuid()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.CommonModuleNameGet">
+            <summary>Sets the stub of IUserSettingsService.get_CommonModuleName()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.CommonUserGuidGet">
+            <summary>Sets the stub of IUserSettingsService.get_CommonUserGuid()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.CommonUserNameGet">
+            <summary>Sets the stub of IUserSettingsService.get_CommonUserName()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteAllCommonSettings">
+            <summary>Sets the stub of IUserSettingsService.DeleteAllCommonSettings()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteCommonSettingsGuid">
+            <summary>Sets the stub of IUserSettingsService.DeleteCommonSettings(Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteCommonSettingsString">
+            <summary>Sets the stub of IUserSettingsService.DeleteCommonSettings(String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettings">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettingsByModuleStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettingsByModule(String moduleName, Nullable`1&lt;Guid&gt; moduleGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettingsByUserGuid">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettingsByUser(Guid userGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettingsByUserString">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettingsByUser(String userName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettingsByUserStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettingsByUser(String userName, Nullable`1&lt;Guid&gt; userGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettingsGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettingsStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings(String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettingsStringNullableOfGuidStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.DeleteSettingsStringStringString">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetADUserNameString">
+            <summary>Sets the stub of IUserSettingsService.GetADUserName(String userName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetAllCommonSettings">
+            <summary>Sets the stub of IUserSettingsService.GetAllCommonSettings()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetAllSettingsByModuleGuid">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByModule(Guid moduleGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetAllSettingsByModuleString">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByModule(String moduleName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetAllSettingsByModuleStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByModule(String moduleName, Nullable`1&lt;Guid&gt; moduleGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetAllSettingsByUserGuid">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByUser(Guid userGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetAllSettingsByUserString">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByUser(String userName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetAllSettingsByUserStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByUser(String userName, Nullable`1&lt;Guid&gt; userGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetAllSettingsNamesStringString">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsNames(String userName, String moduleName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetBoolSettingGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.GetBoolSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetBoolSettingStringNullableOfGuidStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetBoolSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetBoolSettingStringStringString">
+            <summary>Sets the stub of IUserSettingsService.GetBoolSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonBoolSettingGuid">
+            <summary>Sets the stub of IUserSettingsService.GetCommonBoolSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonBoolSettingString">
+            <summary>Sets the stub of IUserSettingsService.GetCommonBoolSetting(String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonDateTimeSettingGuid">
+            <summary>Sets the stub of IUserSettingsService.GetCommonDateTimeSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonDateTimeSettingString">
+            <summary>Sets the stub of IUserSettingsService.GetCommonDateTimeSetting(String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonDecimalSettingGuid">
+            <summary>Sets the stub of IUserSettingsService.GetCommonDecimalSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonDecimalSettingString">
+            <summary>Sets the stub of IUserSettingsService.GetCommonDecimalSetting(String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonGuidSettingGuid">
+            <summary>Sets the stub of IUserSettingsService.GetCommonGuidSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonGuidSettingString">
+            <summary>Sets the stub of IUserSettingsService.GetCommonGuidSetting(String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonIntSettingGuid">
+            <summary>Sets the stub of IUserSettingsService.GetCommonIntSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonIntSettingString">
+            <summary>Sets the stub of IUserSettingsService.GetCommonIntSetting(String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonSettingsGuidStringOutStringOutNullableOfInt32OutNullableOfBooleanOutNullableOfGuidOutNullableOfDecimalOutNullableOfDateTimeOut">
+            <summary>Sets the stub of IUserSettingsService.GetCommonSettings(Guid settingGuid, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonSettingsStringStringOutStringOutNullableOfInt32OutNullableOfBooleanOutNullableOfGuidOutNullableOfDecimalOutNullableOfDateTimeOut">
+            <summary>Sets the stub of IUserSettingsService.GetCommonSettings(String settingName, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonStrSettingGuid">
+            <summary>Sets the stub of IUserSettingsService.GetCommonStrSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonStrSettingString">
+            <summary>Sets the stub of IUserSettingsService.GetCommonStrSetting(String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonTxtSettingGuid">
+            <summary>Sets the stub of IUserSettingsService.GetCommonTxtSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetCommonTxtSettingString">
+            <summary>Sets the stub of IUserSettingsService.GetCommonTxtSetting(String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetDateTimeSettingGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.GetDateTimeSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetDateTimeSettingStringNullableOfGuidStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetDateTimeSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetDateTimeSettingStringStringString">
+            <summary>Sets the stub of IUserSettingsService.GetDateTimeSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetDecimalSettingGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.GetDecimalSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetDecimalSettingStringNullableOfGuidStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetDecimalSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetDecimalSettingStringStringString">
+            <summary>Sets the stub of IUserSettingsService.GetDecimalSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetEnvOrADUserName">
+            <summary>Sets the stub of IUserSettingsService.GetEnvOrADUserName()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetGuidSettingGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.GetGuidSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetGuidSettingStringNullableOfGuidStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetGuidSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetGuidSettingStringStringString">
+            <summary>Sets the stub of IUserSettingsService.GetGuidSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetIntSettingGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.GetIntSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetIntSettingStringNullableOfGuidStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetIntSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetIntSettingStringStringString">
+            <summary>Sets the stub of IUserSettingsService.GetIntSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetSettingsGuidGuidGuidStringOutStringOutNullableOfInt32OutNullableOfBooleanOutNullableOfGuidOutNullableOfDecimalOutNullableOfDateTimeOut">
+            <summary>Sets the stub of IUserSettingsService.GetSettings(Guid userGuid, Guid moduleGuid, Guid settingGuid, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetSettingsStringNullableOfGuidStringNullableOfGuidStringNullableOfGuidStringOutStringOutNullableOfInt32OutNullableOfBooleanOutNullableOfGuidOutNullableOfDecimalOutNullableOfDateTimeOut">
+            <summary>Sets the stub of IUserSettingsService.GetSettings(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetSettingsStringStringStringStringOutStringOutNullableOfInt32OutNullableOfBooleanOutNullableOfGuidOutNullableOfDecimalOutNullableOfDateTimeOut">
+            <summary>Sets the stub of IUserSettingsService.GetSettings(String userName, String moduleName, String settingName, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetStrSettingGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.GetStrSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetStrSettingStringNullableOfGuidStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetStrSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetStrSettingStringStringString">
+            <summary>Sets the stub of IUserSettingsService.GetStrSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetTxtSettingGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.GetTxtSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetTxtSettingStringNullableOfGuidStringNullableOfGuidStringNullableOfGuid">
+            <summary>Sets the stub of IUserSettingsService.GetTxtSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.GetTxtSettingStringStringString">
+            <summary>Sets the stub of IUserSettingsService.GetTxtSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteAllCommonSettings">
+            <summary>Sets the stub of IUserSettingsService.DeleteAllCommonSettings()</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteCommonSettings(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.DeleteCommonSettings(Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteCommonSettings(System.String)">
+            <summary>Sets the stub of IUserSettingsService.DeleteCommonSettings(String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettings">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings()</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettings(System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettings(System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettings(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings(String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettings(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettings(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettingsByModule(System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettingsByModule(String moduleName, Nullable`1&lt;Guid&gt; moduleGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettingsByUser(System.String)">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettingsByUser(String userName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettingsByUser(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettingsByUser(Guid userGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#DeleteSettingsByUser(System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.DeleteSettingsByUser(String userName, Nullable`1&lt;Guid&gt; userGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetADUserName(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetADUserName(String userName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetAllCommonSettings">
+            <summary>Sets the stub of IUserSettingsService.GetAllCommonSettings()</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetAllSettingsByModule(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByModule(String moduleName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetAllSettingsByModule(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByModule(Guid moduleGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetAllSettingsByModule(System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByModule(String moduleName, Nullable`1&lt;Guid&gt; moduleGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetAllSettingsByUser(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByUser(String userName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetAllSettingsByUser(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByUser(Guid userGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetAllSettingsByUser(System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsByUser(String userName, Nullable`1&lt;Guid&gt; userGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetAllSettingsNames(System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetAllSettingsNames(String userName, String moduleName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetBoolSetting(System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetBoolSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetBoolSetting(System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetBoolSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetBoolSetting(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetBoolSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonBoolSetting(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonBoolSetting(String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonBoolSetting(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonBoolSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonDateTimeSetting(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonDateTimeSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonDateTimeSetting(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonDateTimeSetting(String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonDecimalSetting(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonDecimalSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonDecimalSetting(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonDecimalSetting(String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonGuidSetting(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonGuidSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonGuidSetting(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonGuidSetting(String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonIntSetting(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonIntSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonIntSetting(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonIntSetting(String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonSettings(System.String,System.String@,System.String@,System.Nullable{System.Int32}@,System.Nullable{System.Boolean}@,System.Nullable{System.Guid}@,System.Nullable{System.Decimal}@,System.Nullable{System.DateTime}@)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonSettings(String settingName, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonSettings(System.Guid,System.String@,System.String@,System.Nullable{System.Int32}@,System.Nullable{System.Boolean}@,System.Nullable{System.Guid}@,System.Nullable{System.Decimal}@,System.Nullable{System.DateTime}@)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonSettings(Guid settingGuid, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonStrSetting(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonStrSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonStrSetting(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonStrSetting(String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonTxtSetting(System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonTxtSetting(String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetCommonTxtSetting(System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetCommonTxtSetting(Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetDateTimeSetting(System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetDateTimeSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetDateTimeSetting(System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetDateTimeSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetDateTimeSetting(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetDateTimeSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetDecimalSetting(System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetDecimalSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetDecimalSetting(System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetDecimalSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetDecimalSetting(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetDecimalSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetEnvOrADUserName">
+            <summary>Sets the stub of IUserSettingsService.GetEnvOrADUserName()</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetGuidSetting(System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetGuidSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetGuidSetting(System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetGuidSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetGuidSetting(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetGuidSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetIntSetting(System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetIntSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetIntSetting(System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetIntSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetIntSetting(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetIntSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetSettings(System.Guid,System.Guid,System.Guid,System.String@,System.String@,System.Nullable{System.Int32}@,System.Nullable{System.Boolean}@,System.Nullable{System.Guid}@,System.Nullable{System.Decimal}@,System.Nullable{System.DateTime}@)">
+            <summary>Sets the stub of IUserSettingsService.GetSettings(Guid userGuid, Guid moduleGuid, Guid settingGuid, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetSettings(System.String,System.String,System.String,System.String@,System.String@,System.Nullable{System.Int32}@,System.Nullable{System.Boolean}@,System.Nullable{System.Guid}@,System.Nullable{System.Decimal}@,System.Nullable{System.DateTime}@)">
+            <summary>Sets the stub of IUserSettingsService.GetSettings(String userName, String moduleName, String settingName, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetSettings(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String@,System.String@,System.Nullable{System.Int32}@,System.Nullable{System.Boolean}@,System.Nullable{System.Guid}@,System.Nullable{System.Decimal}@,System.Nullable{System.DateTime}@)">
+            <summary>Sets the stub of IUserSettingsService.GetSettings(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid, String&amp; stringValue, String&amp; textValue, Nullable`1&lt;Int32&gt;&amp; intValue, Nullable`1&lt;Boolean&gt;&amp; boolValue, Nullable`1&lt;Guid&gt;&amp; guidValue, Nullable`1&lt;Decimal&gt;&amp; decimalValue, Nullable`1&lt;DateTime&gt;&amp; dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetStrSetting(System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetStrSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetStrSetting(System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetStrSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetStrSetting(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetStrSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetTxtSetting(System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.GetTxtSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetTxtSetting(System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.GetTxtSetting(String userName, String moduleName, String settingName)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#GetTxtSetting(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})">
+            <summary>Sets the stub of IUserSettingsService.GetTxtSetting(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetBoolSetting(System.Guid,System.Guid,System.Guid,System.Boolean)">
+            <summary>Sets the stub of IUserSettingsService.SetBoolSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, Boolean boolValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetBoolSetting(System.String,System.String,System.String,System.Boolean)">
+            <summary>Sets the stub of IUserSettingsService.SetBoolSetting(String userName, String moduleName, String settingName, Boolean boolValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonBoolSetting(System.Guid,System.Boolean)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonBoolSetting(Guid settingGuid, Boolean boolValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonBoolSetting(System.String,System.Boolean)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonBoolSetting(String settingName, Boolean boolValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonDateTimeSetting(System.String,System.DateTime)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonDateTimeSetting(String settingName, DateTime dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonDateTimeSetting(System.Guid,System.DateTime)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonDateTimeSetting(Guid settingGuid, DateTime dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonDecimalSetting(System.String,System.Decimal)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonDecimalSetting(String settingName, Decimal decimalValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonDecimalSetting(System.Guid,System.Decimal)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonDecimalSetting(Guid settingGuid, Decimal decimalValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonGuidSetting(System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonGuidSetting(Guid settingGuid, Guid guidValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonGuidSetting(System.String,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonGuidSetting(String settingName, Guid guidValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonIntSetting(System.Guid,System.Int32)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonIntSetting(Guid settingGuid, Int32 intValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonIntSetting(System.String,System.Int32)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonIntSetting(String settingName, Int32 intValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonStrSetting(System.Guid,System.String)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonStrSetting(Guid settingGuid, String stringValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonStrSetting(System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonStrSetting(String settingName, String stringValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonTxtSetting(System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonTxtSetting(String settingName, String textValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetCommonTxtSetting(System.Guid,System.String)">
+            <summary>Sets the stub of IUserSettingsService.SetCommonTxtSetting(Guid settingGuid, String textValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetDateTimeSetting(System.Guid,System.Guid,System.Guid,System.DateTime)">
+            <summary>Sets the stub of IUserSettingsService.SetDateTimeSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, DateTime dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetDateTimeSetting(System.String,System.String,System.String,System.DateTime)">
+            <summary>Sets the stub of IUserSettingsService.SetDateTimeSetting(String userName, String moduleName, String settingName, DateTime dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetDecimalSetting(System.String,System.String,System.String,System.Decimal)">
+            <summary>Sets the stub of IUserSettingsService.SetDecimalSetting(String userName, String moduleName, String settingName, Decimal decimalValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetDecimalSetting(System.Guid,System.Guid,System.Guid,System.Decimal)">
+            <summary>Sets the stub of IUserSettingsService.SetDecimalSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, Decimal decimalValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetGuidSetting(System.Guid,System.Guid,System.Guid,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.SetGuidSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, Guid guidValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetGuidSetting(System.String,System.String,System.String,System.Guid)">
+            <summary>Sets the stub of IUserSettingsService.SetGuidSetting(String userName, String moduleName, String settingName, Guid guidValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetIntSetting(System.Guid,System.Guid,System.Guid,System.Int32)">
+            <summary>Sets the stub of IUserSettingsService.SetIntSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, Int32 intValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetIntSetting(System.String,System.String,System.String,System.Int32)">
+            <summary>Sets the stub of IUserSettingsService.SetIntSetting(String userName, String moduleName, String settingName, Int32 intValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetSettings(System.Guid,System.Guid,System.Guid,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Guid},System.Nullable{System.Decimal},System.Nullable{System.DateTime})">
+            <summary>Sets the stub of IUserSettingsService.SetSettings(Guid userGuid, Guid moduleGuid, Guid settingGuid, String stringValue, String textValue, Nullable`1&lt;Int32&gt; intValue, Nullable`1&lt;Boolean&gt; boolValue, Nullable`1&lt;Guid&gt; guidValue, Nullable`1&lt;Decimal&gt; decimalValue, Nullable`1&lt;DateTime&gt; dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetSettings(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Guid},System.Nullable{System.Decimal},System.Nullable{System.DateTime})">
+            <summary>Sets the stub of IUserSettingsService.SetSettings(String userName, String moduleName, String settingName, String stringValue, String textValue, Nullable`1&lt;Int32&gt; intValue, Nullable`1&lt;Boolean&gt; boolValue, Nullable`1&lt;Guid&gt; guidValue, Nullable`1&lt;Decimal&gt; decimalValue, Nullable`1&lt;DateTime&gt; dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetSettings(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Guid},System.Nullable{System.Decimal},System.Nullable{System.DateTime})">
+            <summary>Sets the stub of IUserSettingsService.SetSettings(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid, String stringValue, String textValue, Nullable`1&lt;Int32&gt; intValue, Nullable`1&lt;Boolean&gt; boolValue, Nullable`1&lt;Guid&gt; guidValue, Nullable`1&lt;Decimal&gt; decimalValue, Nullable`1&lt;DateTime&gt; dateTimeValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetStrSetting(System.Guid,System.Guid,System.Guid,System.String)">
+            <summary>Sets the stub of IUserSettingsService.SetStrSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, String stringValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetStrSetting(System.String,System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.SetStrSetting(String userName, String moduleName, String settingName, String stringValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetTxtSetting(System.String,System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserSettingsService.SetTxtSetting(String userName, String moduleName, String settingName, String textValue)</summary>
+        </member>
+        <member name="M:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#SetTxtSetting(System.Guid,System.Guid,System.Guid,System.String)">
+            <summary>Sets the stub of IUserSettingsService.SetTxtSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, String textValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetBoolSettingGuidGuidGuidBoolean">
+            <summary>Sets the stub of IUserSettingsService.SetBoolSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, Boolean boolValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetBoolSettingStringStringStringBoolean">
+            <summary>Sets the stub of IUserSettingsService.SetBoolSetting(String userName, String moduleName, String settingName, Boolean boolValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonBoolSettingGuidBoolean">
+            <summary>Sets the stub of IUserSettingsService.SetCommonBoolSetting(Guid settingGuid, Boolean boolValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonBoolSettingStringBoolean">
+            <summary>Sets the stub of IUserSettingsService.SetCommonBoolSetting(String settingName, Boolean boolValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonDateTimeSettingGuidDateTime">
+            <summary>Sets the stub of IUserSettingsService.SetCommonDateTimeSetting(Guid settingGuid, DateTime dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonDateTimeSettingStringDateTime">
+            <summary>Sets the stub of IUserSettingsService.SetCommonDateTimeSetting(String settingName, DateTime dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonDecimalSettingGuidDecimal">
+            <summary>Sets the stub of IUserSettingsService.SetCommonDecimalSetting(Guid settingGuid, Decimal decimalValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonDecimalSettingStringDecimal">
+            <summary>Sets the stub of IUserSettingsService.SetCommonDecimalSetting(String settingName, Decimal decimalValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonGuidSettingGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.SetCommonGuidSetting(Guid settingGuid, Guid guidValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonGuidSettingStringGuid">
+            <summary>Sets the stub of IUserSettingsService.SetCommonGuidSetting(String settingName, Guid guidValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonIntSettingGuidInt32">
+            <summary>Sets the stub of IUserSettingsService.SetCommonIntSetting(Guid settingGuid, Int32 intValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonIntSettingStringInt32">
+            <summary>Sets the stub of IUserSettingsService.SetCommonIntSetting(String settingName, Int32 intValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonStrSettingGuidString">
+            <summary>Sets the stub of IUserSettingsService.SetCommonStrSetting(Guid settingGuid, String stringValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonStrSettingStringString">
+            <summary>Sets the stub of IUserSettingsService.SetCommonStrSetting(String settingName, String stringValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonTxtSettingGuidString">
+            <summary>Sets the stub of IUserSettingsService.SetCommonTxtSetting(Guid settingGuid, String textValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetCommonTxtSettingStringString">
+            <summary>Sets the stub of IUserSettingsService.SetCommonTxtSetting(String settingName, String textValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetDateTimeSettingGuidGuidGuidDateTime">
+            <summary>Sets the stub of IUserSettingsService.SetDateTimeSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, DateTime dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetDateTimeSettingStringStringStringDateTime">
+            <summary>Sets the stub of IUserSettingsService.SetDateTimeSetting(String userName, String moduleName, String settingName, DateTime dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetDecimalSettingGuidGuidGuidDecimal">
+            <summary>Sets the stub of IUserSettingsService.SetDecimalSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, Decimal decimalValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetDecimalSettingStringStringStringDecimal">
+            <summary>Sets the stub of IUserSettingsService.SetDecimalSetting(String userName, String moduleName, String settingName, Decimal decimalValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetGuidSettingGuidGuidGuidGuid">
+            <summary>Sets the stub of IUserSettingsService.SetGuidSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, Guid guidValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetGuidSettingStringStringStringGuid">
+            <summary>Sets the stub of IUserSettingsService.SetGuidSetting(String userName, String moduleName, String settingName, Guid guidValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetIntSettingGuidGuidGuidInt32">
+            <summary>Sets the stub of IUserSettingsService.SetIntSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, Int32 intValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetIntSettingStringStringStringInt32">
+            <summary>Sets the stub of IUserSettingsService.SetIntSetting(String userName, String moduleName, String settingName, Int32 intValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetSettingsGuidGuidGuidStringStringNullableOfInt32NullableOfBooleanNullableOfGuidNullableOfDecimalNullableOfDateTime">
+            <summary>Sets the stub of IUserSettingsService.SetSettings(Guid userGuid, Guid moduleGuid, Guid settingGuid, String stringValue, String textValue, Nullable`1&lt;Int32&gt; intValue, Nullable`1&lt;Boolean&gt; boolValue, Nullable`1&lt;Guid&gt; guidValue, Nullable`1&lt;Decimal&gt; decimalValue, Nullable`1&lt;DateTime&gt; dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetSettingsStringNullableOfGuidStringNullableOfGuidStringNullableOfGuidStringStringNullableOfInt32NullableOfBooleanNullableOfGuidNullableOfDecimalNullableOfDateTime">
+            <summary>Sets the stub of IUserSettingsService.SetSettings(String userName, Nullable`1&lt;Guid&gt; userGuid, String moduleName, Nullable`1&lt;Guid&gt; moduleGuid, String settingName, Nullable`1&lt;Guid&gt; settingGuid, String stringValue, String textValue, Nullable`1&lt;Int32&gt; intValue, Nullable`1&lt;Boolean&gt; boolValue, Nullable`1&lt;Guid&gt; guidValue, Nullable`1&lt;Decimal&gt; decimalValue, Nullable`1&lt;DateTime&gt; dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetSettingsStringStringStringStringStringNullableOfInt32NullableOfBooleanNullableOfGuidNullableOfDecimalNullableOfDateTime">
+            <summary>Sets the stub of IUserSettingsService.SetSettings(String userName, String moduleName, String settingName, String stringValue, String textValue, Nullable`1&lt;Int32&gt; intValue, Nullable`1&lt;Boolean&gt; boolValue, Nullable`1&lt;Guid&gt; guidValue, Nullable`1&lt;Decimal&gt; decimalValue, Nullable`1&lt;DateTime&gt; dateTimeValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetStrSettingGuidGuidGuidString">
+            <summary>Sets the stub of IUserSettingsService.SetStrSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, String stringValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetStrSettingStringStringStringString">
+            <summary>Sets the stub of IUserSettingsService.SetStrSetting(String userName, String moduleName, String settingName, String stringValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetTxtSettingGuidGuidGuidString">
+            <summary>Sets the stub of IUserSettingsService.SetTxtSetting(Guid userGuid, Guid moduleGuid, Guid settingGuid, String textValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.SetTxtSettingStringStringStringString">
+            <summary>Sets the stub of IUserSettingsService.SetTxtSetting(String userName, String moduleName, String settingName, String textValue)</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.UseSettingsGet">
+            <summary>Sets the stub of IUserSettingsService.get_UseSettings()</summary>
+        </member>
+        <member name="F:ICSSoft.Services.Fakes.StubIUserSettingsService.UseSettingsSetBoolean">
+            <summary>Sets the stub of IUserSettingsService.set_UseSettings(Boolean value)</summary>
+        </member>
+        <member name="P:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#AppName">
+            <summary>Sets the stub of IUserSettingsService.get_AppName()</summary>
+        </member>
+        <member name="P:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#CommonModuleGuid">
+            <summary>Sets the stub of IUserSettingsService.get_CommonModuleGuid()</summary>
+        </member>
+        <member name="P:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#CommonModuleName">
+            <summary>Sets the stub of IUserSettingsService.get_CommonModuleName()</summary>
+        </member>
+        <member name="P:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#CommonUserGuid">
+            <summary>Sets the stub of IUserSettingsService.get_CommonUserGuid()</summary>
+        </member>
+        <member name="P:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#CommonUserName">
+            <summary>Sets the stub of IUserSettingsService.get_CommonUserName()</summary>
+        </member>
+        <member name="P:ICSSoft.Services.Fakes.StubIUserSettingsService.uss::ICSSoft#Services#IUserSettingsService#UseSettings">
+            <summary>Sets the stub of IUserSettingsService.get_UseSettings()</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.UserSettingsServiceDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of UserSettingsService</summary>
+        </member>
+    </members>
+</doc>

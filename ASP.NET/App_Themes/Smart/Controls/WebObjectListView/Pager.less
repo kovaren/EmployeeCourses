@@ -1,0 +1,165 @@
+﻿@import "../../../BaseTheme/Controls/WebObjectListView/Pager.less";
+
+/* Файл визуального оформления пейджера. */
+
+input[type="text"]:focus {
+    border-color: @wolvPagerInputTextboxFocusedBackgroundColor;
+    outline: none;
+    position: relative;
+}
+
+select {
+    border: 1px solid #cccccc;
+    border-color: @wolvPagersSelectTopBorderColor @wolvPagersSelectRightBorderColor @wolvPagersSelectBottomBorderColor @wolvPagersSelectLeftBorderColor;
+    .background(#ededed, #e0e0e0);
+    display: inline-block;
+    margin: 0;
+    padding: 3px 6px;
+    .border-radius(4px);
+    color: #333;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
+}
+/*#region Верхний контейнер панели навигации. */
+&.ics-wolv-pager-top {
+    .ics-wolv-pager-go-to-page-top {
+        display: none;
+    }
+}
+/*#endregion*/
+/*#region Нижний контейнер панели навигации. */
+&.ics-wolv-pager-bottom {
+    display: block;
+}
+/*#endregion*/
+/*#region Контейнер с переключателями страниц.*/
+.@{wolvPagerPagesClass} {
+    margin-right: 3px;
+    /*#region Текущая страница */
+    > span.@{wolvPagerCurrentPageClass} {
+        padding: 5px 8px;
+        /*#region  Текущая страница с тектовым полем */
+        &.@{wolvPagerTextFieldClass} {
+            padding: 0;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+        /*#endregion*/
+    }
+    /*#endregion*/
+}
+/*#endregion*/
+/*#region Группы панели навигации.*/
+.@{wolvPagerPagesClass},
+.@{wolvPagerNavigationClass},
+.@{wolvPagerItemsOnPageClass},
+.@{wolvPagerGoToPageClass} {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.@{wolvPagerPagesClass} a + a,
+.@{wolvPagerPagesClass} span + a,
+.@{wolvPagerPagesClass} a + span,
+.@{wolvPagerPagesClass} span + span,
+.@{wolvPagerNavigationClass} a + a,
+.@{wolvPagerNavigationClass} span + a,
+.@{wolvPagerNavigationClass} a + span,
+.@{wolvPagerNavigationClass} span + span {
+    margin-left: 4px !important;
+}
+/*#endregion*/
+/*#region Выделенная ссылка в панели навигации.*/
+.@{wolvPagerPageClass}:hover,
+.@{wolvPagerNavigatioButtonClass}:hover {
+    background: @wolvPagerNavigatorHoveredBackgroundColor;
+    color: @wolvPagerNavigatortTextHoveredColor;
+    text-decoration: none;
+    filter: none;
+}
+/*#endregion*/
+/*#region Ссылка с фокусом в панели навигации.*/
+.@{wolvPagerPageClass}:focus,
+.@{wolvPagerNavigatioButtonClass}:focus {
+    background: @wolvPagerNavigatorFocusedBackgroundColor;
+    color: @wolvPagerNavigatorTextFocusedColor;
+    border-color: @wolvPagerNavigatorFocusedBorderColor;
+}
+/*#endregion*/
+/*#region Нажатая/текущая ссылка в панели навигации.*/
+.@{wolvPagerPagesClass} > span.@{wolvPagerCurrentPageClass},
+.@{wolvPagerPagesClass} a:active,
+.@{wolvPagerNavigatioButtonClass}:active {
+    text-decoration: none;
+    .background(#0098ca, #007ea7);
+    color: @wolvPagerNavigatorTextActiveColor;
+}
+/*#endregion*/
+/*#region Неактивная ссылка в панели навигации.*/
+.@{wolvPagerNavigationDisabledClass},
+.@{wolvPagerNavigationDisabledClass}:hover {
+    background: @wolvPagerNavigatorDisabledBackgroundColor;
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+/*#region Разделители.*/
+.@{wolvPagerNavigationSeparatorClass} {
+    display: none;
+}
+/*#endregion*/
+/*#region Контейнер с кнопками "Назад" и "Вперед".*/
+.@{wolvPagerNavigationClass} {
+    float: left;
+}
+/*#endregion*/
+/*#region Контейнер количества элементов на странице.*/
+.@{wolvPagerItemsOnPageClass} {
+    float: right;
+}
+/*#endregion*/
+.ics-wolv-pager-items-on-page-caption {
+    margin-right: 8px;
+}
+/*#region Метка контейнера перехода по номеру страницы.*/
+.@{wolvPagerGoToPageLabelClass} {
+    display: none;
+}
+/*#endregion*/
+/*#region Поле ввода контейнера перехода по номеру страницы.*/
+.@{wolvPagerGoToPageInputClass},
+.@{wolvPagerInlineGoToPageInputClass} {
+    width: 43px;
+    text-align: center;
+    line-height: 20px;
+}
+/*#endregion*/
+/*#region Ссылка в панели навигации.*/
+.@{wolvPagerPageClass},
+.@{wolvPagerNavigatioButtonClass},
+.@{wolvPagerPagesClass} > span {
+    border-color: @wolvPagerNavigatorTopBorderColor @wolvPagerNavigatorRightBorderColor @wolvPagerNavigatorBottomBorderColor @wolvPagerNavigatorLeftBorderColor;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.@{wolvPagerPagesClass} > .@{wolvPagerPageClass},
+.@{wolvPagerNavigationClass} > .@{wolvPagerNavigatioButtonClass} {
+    margin-left: 0;
+    .border-radius(4px);
+}
+/*#endregion*/
+
+/*#region Боковые отсутпы между элементами.*/
+.@{wolvPagerContainerClass} + .@{wolvPagerContainerClass} {
+    margin-left: 8px;
+}
+/*#endregion*/
+
+@import (reference) "_Settings.less";
