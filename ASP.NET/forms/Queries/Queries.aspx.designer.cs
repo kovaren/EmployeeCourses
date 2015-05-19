@@ -6,3 +6,18 @@
 //     the code is regenerated. 
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+
+namespace IIS.EmployeeCourses
+{
+    /// <summary>
+    /// Queries class.
+    /// </summary>
+    /// <remarks>
+    /// Non-Auto-generated class.
+    /// </remarks>
+    public partial class Queiries
+    {
+        //объявление класса запросов
+    }
+}

@@ -66,8 +66,8 @@ namespace IIS.EmployeeCourses
         private IIS.EmployeeCourses.Категория fКатегория;
         
         private string fОписание;
-        
-        private int fСтоимость;
+
+        private double fСтоимость;
         
         private string fМестоПроведения;
         
@@ -309,14 +309,14 @@ namespace IIS.EmployeeCourses
 
         // *** End programmer edit section *** (Курс.Стоимость CustomAttributes)
         [NotNull()]
-        public virtual int Стоимость
+        public virtual double Стоимость
         {
             get
             {
                 // *** Start programmer edit section *** (Курс.Стоимость Get start)
 
                 // *** End programmer edit section *** (Курс.Стоимость Get start)
-                int result = this.fСтоимость;
+                double result = this.fСтоимость;
                 // *** Start programmer edit section *** (Курс.Стоимость Get end)
 
                 // *** End programmer edit section *** (Курс.Стоимость Get end)

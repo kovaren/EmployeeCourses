@@ -91,8 +91,8 @@ ErrorMessage="Не указано: Категория" EnableClientScript="true"
 <div class="clearfix">
   <asp:Label CssClass="descLbl" ID="ctrlСтоимостьLabel" runat="server" Text="Стоимость" EnableViewState="False">
 </asp:Label>
-<ac:AlphaNumericTextBox CssClass="descTxt" ID="ctrlСтоимость" Type="Numeric" runat="server">
-</ac:AlphaNumericTextBox>
+<ac:DecimalTextBox CssClass="descTxt" ID="ctrlСтоимость" Type="Decimal" runat="server">
+</ac:DecimalTextBox>
 
 <asp:RequiredFieldValidator ID="ctrlСтоимостьValidator" runat="server" ControlToValidate="ctrlСтоимость"
 ErrorMessage="Не указано: Стоимость" EnableClientScript="true" ValidationGroup="savedoc">*</asp:RequiredFieldValidator>
