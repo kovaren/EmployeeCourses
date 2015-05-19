@@ -409,6 +409,7 @@
     <Content Include="forms\Zayavka\ZayavkaL.aspx" />
     <Compile Include="forms\Queries\Queries.aspx.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="forms\Queries\Queries.aspx.designer.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
@@ -1252,7 +1253,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6500</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:6510/</IISUrl>
+          <IISUrl>http://localhost:6508/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

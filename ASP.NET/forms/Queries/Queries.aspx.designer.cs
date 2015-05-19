@@ -7,17 +7,28 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-namespace IIS.EmployeeCourses
+namespace IIS.EmployeeCourses.forms.Queries
 {
+public partial class Queries {
+    
     /// <summary>
-    /// Queries class.
+    /// Button1 control.
     /// </summary>
     /// <remarks>
-    /// Non-Auto-generated class.
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    public partial class Queiries
-    {
-        //объявление класса запросов
-    }
+    protected global::System.Web.UI.WebControls.Button Button1;
+    
+    /// <summary>
+    /// GridView1 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.GridView GridView1;
 }
+
+}
+
