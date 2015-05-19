@@ -60,7 +60,7 @@
   <ItemGroup>
     <Reference Include="ICSSoft.STORMNET.DataObject, Version=1.0.0.1, Culture=neutral, PublicKeyToken=023a90c13b0ca8dc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ICS-Soft\ISOGD\ISOGDService\ICSSoft.STORMNET.DataObject.dll</HintPath>
+      <HintPath>..\..\..\..\ICSSoft.STORMNET.DataObject.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <HintPath>System.dll</HintPath>
