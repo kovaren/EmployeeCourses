@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Queries.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Queries.aspx.cs" Inherits="IIS.EmployeeCourses.forms.Queries.Query1" %>
 <%@ Import namespace="NewPlatform.Flexberry.Web.Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

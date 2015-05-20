@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ICSSoft.STORMNET.Web {
+namespace IIS.EmployeeCourses.forms.Zayavka {
     
     
-    public partial class Default {
+    public partial class MyRequests {
     }
 }

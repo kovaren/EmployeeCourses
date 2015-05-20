@@ -5,7 +5,7 @@
     /// <summary>
     /// Класс страницы по-умолчанию.
     /// </summary>
-    public partial class Default : BasePage
+    public partial class DefaultEr : BasePage
     {
     }
 }

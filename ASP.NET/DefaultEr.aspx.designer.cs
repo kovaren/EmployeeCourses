@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IIS.EmployeeCourses.forms.Queries {
+namespace ICSSoft.STORMNET.Web {
     
     
-    public partial class Query1 {
+    public partial class DefaultEr {
     }
 }
