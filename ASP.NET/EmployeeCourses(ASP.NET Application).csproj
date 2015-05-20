@@ -405,6 +405,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default1.aspx" />
     <Content Include="forms\Queries\Queries.aspx" />
     <Content Include="forms\Queries\Query5.aspx" />
     <Content Include="forms\Queries\Query4.aspx" />
@@ -412,6 +413,13 @@
     <Content Include="forms\Queries\Query2.aspx" />
     <Content Include="forms\Queries\Query1.aspx" />
     <Content Include="forms\Zayavka\ZayavkaL.aspx" />
+    <Compile Include="Default1.aspx.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default1.aspx.designer.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forms\Queries\Queries.aspx.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
