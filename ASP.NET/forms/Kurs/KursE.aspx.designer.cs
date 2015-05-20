@@ -11,5 +11,248 @@ namespace IIS.EmployeeCourses {
     
     
     public partial class КурсE {
+        
+        /// <summary>
+        /// ctrlНазваниеLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlНазваниеLabel;
+        
+        /// <summary>
+        /// ctrlНазвание control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ctrlНазвание;
+        
+        /// <summary>
+        /// ctrlНазваниеValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlНазваниеValidator;
+        
+        /// <summary>
+        /// ctrlДатаНачалаLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlДатаНачалаLabel;
+        
+        /// <summary>
+        /// ctrlДатаНачала control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.DatePicker ctrlДатаНачала;
+        
+        /// <summary>
+        /// ctrlДатаНачалаValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlДатаНачалаValidator;
+        
+        /// <summary>
+        /// ctrlДатаКонцаLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlДатаКонцаLabel;
+        
+        /// <summary>
+        /// ctrlДатаКонца control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.DatePicker ctrlДатаКонца;
+        
+        /// <summary>
+        /// ctrlДатаКонцаValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlДатаКонцаValidator;
+        
+        /// <summary>
+        /// ctrlТипLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlТипLabel;
+        
+        /// <summary>
+        /// ctrlТип control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ctrlТип;
+        
+        /// <summary>
+        /// ctrlТипValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlТипValidator;
+        
+        /// <summary>
+        /// ctrlОчныйLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlОчныйLabel;
+        
+        /// <summary>
+        /// ctrlОчный control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox ctrlОчный;
+        
+        /// <summary>
+        /// ctrlКатегорияLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlКатегорияLabel;
+        
+        /// <summary>
+        /// ctrlКатегория control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ctrlКатегория;
+        
+        /// <summary>
+        /// ctrlКатегорияValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlКатегорияValidator;
+        
+        /// <summary>
+        /// ctrlОписаниеLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlОписаниеLabel;
+        
+        /// <summary>
+        /// ctrlОписание control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ctrlОписание;
+        
+        /// <summary>
+        /// ctrlСтоимостьLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlСтоимостьLabel;
+        
+        /// <summary>
+        /// ctrlСтоимость control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.DecimalTextBox ctrlСтоимость;
+        
+        /// <summary>
+        /// ctrlСтоимостьValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlСтоимостьValidator;
+        
+        /// <summary>
+        /// ctrlМестоПроведенияLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlМестоПроведенияLabel;
+        
+        /// <summary>
+        /// ctrlМестоПроведения control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ctrlМестоПроведения;
+        
+        /// <summary>
+        /// ctrlМестоПроведенияValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlМестоПроведенияValidator;
+        
+        /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+        /// ctrlЗанятие control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlЗанятие;
     }
 }

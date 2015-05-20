@@ -91,7 +91,7 @@ ErrorMessage="Не указано: Категория" EnableClientScript="true"
 <div class="clearfix">
   <asp:Label CssClass="descLbl" ID="ctrlСтоимостьLabel" runat="server" Text="Стоимость" EnableViewState="False">
 </asp:Label>
-<ac:DecimalTextBox CssClass="descTxt" ID="ctrlСтоимость" Type="Decimal" runat="server">
+<ac:DecimalTextBox CssClass="descTxt" ID="ctrlСтоимость" MaxDecimalPlaces="2" runat="server">
 </ac:DecimalTextBox>
 
 <asp:RequiredFieldValidator ID="ctrlСтоимостьValidator" runat="server" ControlToValidate="ctrlСтоимость"
