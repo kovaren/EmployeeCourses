@@ -406,6 +406,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="forms\Queries\Queries.aspx" />
+    <Content Include="forms\Queries\Query5.aspx" />
+    <Content Include="forms\Queries\Query4.aspx" />
+    <Content Include="forms\Queries\Query3.aspx" />
+    <Content Include="forms\Queries\Query2.aspx" />
+    <Content Include="forms\Queries\Query1.aspx" />
     <Content Include="forms\Zayavka\ZayavkaL.aspx" />
     <Compile Include="forms\Queries\Queries.aspx.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
@@ -413,6 +418,41 @@
     </Compile>
     <Compile Include="forms\Queries\Queries.aspx.designer.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Queries\Query5.aspx.cs">
+      <DependentUpon>Query5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Queries\Query5.aspx.designer.cs">
+      <DependentUpon>Query5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Queries\Query4.aspx.cs">
+      <DependentUpon>Query4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Queries\Query4.aspx.designer.cs">
+      <DependentUpon>Query4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Queries\Query3.aspx.cs">
+      <DependentUpon>Query3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Queries\Query3.aspx.designer.cs">
+      <DependentUpon>Query3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Queries\Query2.aspx.cs">
+      <DependentUpon>Query2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Queries\Query2.aspx.designer.cs">
+      <DependentUpon>Query2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Queries\Query1.aspx.cs">
+      <DependentUpon>Query1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Queries\Query1.aspx.designer.cs">
+      <DependentUpon>Query1.aspx</DependentUpon>
     </Compile>
     <Compile Include="forms\Zayavka\ZayavkaL.aspx.cs">
       <DependentUpon>ZayavkaL.aspx</DependentUpon>
