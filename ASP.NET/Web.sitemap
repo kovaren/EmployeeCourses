@@ -10,9 +10,9 @@
       <siteMapNode title="Версии сборок" url="~/flexberry/Version" />
     </siteMapNode>
     <siteMapNode title="Просмотр" roles="*" xmlns="">
-      <siteMapNode title="Сотрудник" description="" url="~/forms/Sotrudnik/SotrudnikL.aspx" />
+      <siteMapNode title="Сотрудники" description="" url="~/forms/Sotrudnik/SotrudnikL.aspx" />
       <siteMapNode title="Журнал" description="" url="~/forms/ZHurnal/ZHurnalL.aspx" />
-      <siteMapNode title="Курс" description="" url="~/forms/Kurs/KursL.aspx" />
+      <siteMapNode title="Курсы" description="" url="~/forms/Kurs/KursL.aspx" />
       <siteMapNode title="Заявка" description="" url="~/forms/Zayavka/ZayavkaL.aspx" />
       <siteMapNode title="Запросы" description="" url="~/forms/Queries/Queries.aspx" />
     </siteMapNode>
