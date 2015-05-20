@@ -405,20 +405,29 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default1.aspx" />
+    <Content Include="DefaultEr.aspx" />
+    <Content Include="DefaultEe.aspx" />
     <Content Include="forms\Queries\Queries.aspx" />
     <Content Include="forms\Queries\Query5.aspx" />
     <Content Include="forms\Queries\Query4.aspx" />
     <Content Include="forms\Queries\Query3.aspx" />
     <Content Include="forms\Queries\Query2.aspx" />
     <Content Include="forms\Queries\Query1.aspx" />
+    <Content Include="forms\Zayavka\MyRequests.aspx" />
     <Content Include="forms\Zayavka\ZayavkaL.aspx" />
-    <Compile Include="Default1.aspx.cs">
-      <DependentUpon>Default1.aspx</DependentUpon>
+    <Compile Include="DefaultEr.aspx.cs">
+      <DependentUpon>DefaultEr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default1.aspx.designer.cs">
-      <DependentUpon>Default1.aspx</DependentUpon>
+    <Compile Include="DefaultEr.aspx.designer.cs">
+      <DependentUpon>DefaultEr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultEe.aspx.cs">
+      <DependentUpon>DefaultEe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultEe.aspx.designer.cs">
+      <DependentUpon>DefaultEe.aspx</DependentUpon>
     </Compile>
     <Compile Include="forms\Queries\Queries.aspx.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
@@ -461,6 +470,13 @@
     </Compile>
     <Compile Include="forms\Queries\Query1.aspx.designer.cs">
       <DependentUpon>Query1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Zayavka\MyRequests.aspx.cs">
+      <DependentUpon>MyRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Zayavka\MyRequests.aspx.designer.cs">
+      <DependentUpon>MyRequests.aspx</DependentUpon>
     </Compile>
     <Compile Include="forms\Zayavka\ZayavkaL.aspx.cs">
       <DependentUpon>ZayavkaL.aspx</DependentUpon>
@@ -1286,6 +1302,7 @@
     <Content Include="Xml\Sitemaps\Empty.sitemap" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -1301,7 +1318,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6500</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:6508/</IISUrl>
+          <IISUrl>http://localhost:6510/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
