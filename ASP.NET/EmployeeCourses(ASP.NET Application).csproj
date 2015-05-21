@@ -515,6 +515,9 @@
       <DependentUpon>JournalView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="forms\ZHurnal\JournalView.aspx.designer.cs">
+      <DependentUpon>JournalView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forms\ZHurnal\ZHurnalL.aspx.cs">
       <DependentUpon>ZHurnalL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -542,12 +545,7 @@
       <DependentUpon>KursL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="forms\Kurs\KursL.aspx.designer.cs">
-      <DependentUpon>KursL.aspx</DependentUpon>
-    </Compile>
-    <Content Include="Web.sitemap">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.sitemap" />
     <Content Include="forms\Sotrudnik\SotrudnikL.aspx" />
     <Compile Include="forms\Sotrudnik\SotrudnikL.aspx.cs">
       <DependentUpon>SotrudnikL.aspx</DependentUpon>
@@ -1349,7 +1347,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6500</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:6510/</IISUrl>
+          <IISUrl>http://localhost:6508/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

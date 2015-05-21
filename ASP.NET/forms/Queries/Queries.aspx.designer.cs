@@ -10,6 +10,6 @@
 namespace IIS.EmployeeCourses.forms.Queries {
     
     
-    public partial class Query1 {
+    public partial class Queries {
     }
 }
