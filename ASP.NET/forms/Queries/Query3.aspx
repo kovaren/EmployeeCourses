@@ -27,7 +27,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <h3 style="font-family:'Segoe UI';font-weight:lighter">Список наиболее посещаемых курсов за указанный период</h3>
+        <h3 style="font-family:'Segoe UI';font-weight:lighter">Рейтинг сотрудников по среднему баллу</h3>
         <div class="descTxt">
             <ac:DatePicker ID="firstDate" Text="Начало периода" runat="server"/>
         </div>
@@ -35,6 +35,6 @@
             <ac:DatePicker ID="lastDate" Text="Конец периода" runat="server"/>
         </div>
         <asp:GridView ID="GridView1" ShowHeaderWhenEmpty="true" AutoGenerateColumns="true" runat="server"></asp:GridView>
-        <asp:Button ID="queryButton" Text="Запрос" OnClick="Button_Click" runat="server"/>
+        <asp:Button ID="queryButton" Text="Запрос" OnClick="RunQuery" runat="server"/>
     </div>
 </asp:Content>

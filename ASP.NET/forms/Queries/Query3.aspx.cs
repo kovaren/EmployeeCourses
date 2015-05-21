@@ -19,16 +19,52 @@ namespace IIS.EmployeeCourses.forms.Queries
 
         public void RunQuery(object sender, EventArgs e)
         {
-            //var ds = (SQLDataService)DataServiceProvider.DataService; // Сервис данных.
-            //IQueryable<Сотрудник> employees = ds.Query<Сотрудник>(Сотрудник.Views.СотрудникL);
-            //IQueryable<Журнал> logs = ds.Query<Журнал>(Журнал.Views.ЖурналL);
-            //IQueryable<Сотрудник> query =
-            //    from employees
-            //    join logs on o.__PrimaryKey equals l.Сотрудник
-            //    select o.ТабельныйНомер, Фамилия;
-            //double sum = query.AsEnumerable().Sum(x => x.Стоимость);
-            //costSum.Text = sum.ToString();
+            var ds = (SQLDataService)DataServiceProvider.DataService; // Сервис данных.
+            var employees = ds.Query<Сотрудник>(Сотрудник.Views.СотрудникL).ToArray();
+            var logs = ds.Query<Журнал>(Журнал.Views.ЖурналL).ToArray();
+            //var query =
+            //     from employee in employees
+            //     join log in logs on employee.__PrimaryKey equals log.Сотрудник
+            //     select new
+            //     {
+            //         ТабельныйНомер = employee.ТабельныйНомер,
+            //         Фамилия = employee.Фамилия,
+            //         Имя = employee.Имя,
+            //         Оценка = log.Оценка
+            //     };
 
+            var temp =
+                employees.Join
+                (
+                    logs,
+                    first => first.__PrimaryKey,
+                    second => second.Сотрудник.__PrimaryKey,
+                    (emp, log) => new
+                    {
+                        tab=emp.ТабельныйНомер,
+                        roman=log.Оценка
+                    }
+                ).ToArray();
+
+
+            //var query = employees
+            //    .Join(logs, 
+            //    emp => emp.__PrimaryKey, 
+            //    l => l.Сотрудник,
+            //    (emp, l) => new { emp })
+            //    .GroupBy(emp => emp.emp)
+            //    .Select(emp => new 
+            //    {
+            //        ТабельныйНомер = emp.Key.ТабельныйНомер,
+            //         Фамилия = emp.Key.Фамилия,
+            //         Имя = emp.Key.Имя,
+            //    }).Single();
+
+
+            
+            GridView1.DataSource = temp.ToList();
+            GridView1.DataBind();
+            
             //select ТабельныйНомер as 'Табельный номер', Фамилия, Имя, AVG(Оценка) as 'Средний балл'
             //from Сотрудник inner join Журнал on Сотрудник.primaryKey = Журнал.Сотрудник
             //group by ТабельныйНомер, Фамилия, Имя, Обязательный
