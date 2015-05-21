@@ -13,24 +13,6 @@ namespace IIS.EmployeeCourses.forms.Queries {
     public partial class Query4 {
         
         /// <summary>
-        /// firstDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.DatePicker firstDate;
-        
-        /// <summary>
-        /// lastDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.DatePicker lastDate;
-        
-        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>
@@ -40,12 +22,12 @@ namespace IIS.EmployeeCourses.forms.Queries {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// queryButton control.
+        /// percent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button queryButton;
+        protected global::System.Web.UI.WebControls.TextBox percent;
     }
 }

@@ -35,7 +35,7 @@ namespace IIS.EmployeeCourses.forms.Queries
                 .GroupBy(x => new { x.ТабельныйНомер, x.ФИО })
                 .Select(a => new
                 {
-                    ТабельныйНомер = a.Key.ТабельныйНомер,
+                    Табельный_номер = a.Key.ТабельныйНомер,
                     ФИО = a.Key.ФИО,
                     Средний_балл = a.Average(y => y.Оценка)
                 })

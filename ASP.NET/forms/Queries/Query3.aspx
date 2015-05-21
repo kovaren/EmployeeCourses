@@ -4,6 +4,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
         <h3 style="font-family:'Segoe UI';font-weight:lighter">Рейтинг сотрудников по среднему баллу</h3>
-        <asp:GridView ID="GridView1" ShowHeaderWhenEmpty="true" AutoGenerateColumns="true" runat="server"></asp:GridView>
+        <asp:GridView ID="GridView1" ShowHeaderWhenEmpty="true" RowStyle-HorizontalAlign="Center" AutoGenerateColumns="true" runat="server"></asp:GridView>
     </div>
 </asp:Content>
