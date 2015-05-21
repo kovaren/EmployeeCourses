@@ -407,12 +407,15 @@
   <ItemGroup>
     <Content Include="DefaultEr.aspx" />
     <Content Include="DefaultEe.aspx" />
+    <Content Include="forms\Kurs\MyCourses.aspx" />
+    <Content Include="forms\Kurs\CoursesView.aspx" />
     <Content Include="forms\Queries\Queries.aspx" />
     <Content Include="forms\Queries\Query5.aspx" />
     <Content Include="forms\Queries\Query4.aspx" />
     <Content Include="forms\Queries\Query3.aspx" />
     <Content Include="forms\Queries\Query2.aspx" />
     <Content Include="forms\Queries\Query1.aspx" />
+    <Content Include="forms\Zayavka\RequestsToConfirm.aspx" />
     <Content Include="forms\Zayavka\MyRequests.aspx" />
     <Content Include="forms\Zayavka\ZayavkaL.aspx" />
     <Compile Include="DefaultEr.aspx.cs">
@@ -428,6 +431,20 @@
     </Compile>
     <Compile Include="DefaultEe.aspx.designer.cs">
       <DependentUpon>DefaultEe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Kurs\MyCourses.aspx.cs">
+      <DependentUpon>MyCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Kurs\MyCourses.aspx.designer.cs">
+      <DependentUpon>MyCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Kurs\CoursesView.aspx.cs">
+      <DependentUpon>CoursesView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Kurs\CoursesView.aspx.designer.cs">
+      <DependentUpon>CoursesView.aspx</DependentUpon>
     </Compile>
     <Compile Include="forms\Queries\Queries.aspx.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
@@ -471,6 +488,13 @@
     <Compile Include="forms\Queries\Query1.aspx.designer.cs">
       <DependentUpon>Query1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="forms\Zayavka\RequestsToConfirm.aspx.cs">
+      <DependentUpon>RequestsToConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Zayavka\RequestsToConfirm.aspx.designer.cs">
+      <DependentUpon>RequestsToConfirm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forms\Zayavka\MyRequests.aspx.cs">
       <DependentUpon>MyRequests.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -485,7 +509,12 @@
     <Compile Include="forms\Zayavka\ZayavkaL.aspx.designer.cs">
       <DependentUpon>ZayavkaL.aspx</DependentUpon>
     </Compile>
+    <Content Include="forms\ZHurnal\JournalView.aspx" />
     <Content Include="forms\ZHurnal\ZHurnalL.aspx" />
+    <Compile Include="forms\ZHurnal\JournalView.aspx.cs">
+      <DependentUpon>JournalView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="forms\ZHurnal\ZHurnalL.aspx.cs">
       <DependentUpon>ZHurnalL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1318,7 +1347,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6500</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:6510/</IISUrl>
+          <IISUrl>http://localhost:6508/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
