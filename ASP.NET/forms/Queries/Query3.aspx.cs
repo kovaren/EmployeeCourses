@@ -14,61 +14,36 @@ namespace IIS.EmployeeCourses.forms.Queries
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            RunQuery();
         }
 
-        public void RunQuery(object sender, EventArgs e)
+        public void RunQuery()
         {
             var ds = (SQLDataService)DataServiceProvider.DataService; // Сервис данных.
             var employees = ds.Query<Сотрудник>(Сотрудник.Views.СотрудникL).ToArray();
             var logs = ds.Query<Журнал>(Журнал.Views.ЖурналL).ToArray();
-            //var query =
-            //     from employee in employees
-            //     join log in logs on employee.__PrimaryKey equals log.Сотрудник
-            //     select new
-            //     {
-            //         ТабельныйНомер = employee.ТабельныйНомер,
-            //         Фамилия = employee.Фамилия,
-            //         Имя = employee.Имя,
-            //         Оценка = log.Оценка
-            //     };
+            var query = employees
+                .Join(logs,
+                emp => emp.__PrimaryKey,
+                log => log.Сотрудник.__PrimaryKey,
+                (emp, log) => new
+                {
+                    ТабельныйНомер = emp.ТабельныйНомер,
+                    ФИО = emp.Фамилия + " " + emp.Имя + " " + emp.Отчество,
+                    Оценка = log.Оценка
+                })
+                .GroupBy(x => new { x.ТабельныйНомер, x.ФИО })
+                .Select(a => new
+                {
+                    ТабельныйНомер = a.Key.ТабельныйНомер,
+                    ФИО = a.Key.ФИО,
+                    Средний_балл = a.Average(y => y.Оценка)
+                })
+                .OrderByDescending(b => b.Средний_балл)
+                .ToArray();
 
-            var temp =
-                employees.Join
-                (
-                    logs,
-                    first => first.__PrimaryKey,
-                    second => second.Сотрудник.__PrimaryKey,
-                    (emp, log) => new
-                    {
-                        tab=emp.ТабельныйНомер,
-                        roman=log.Оценка
-                    }
-                ).ToArray();
-
-
-            //var query = employees
-            //    .Join(logs, 
-            //    emp => emp.__PrimaryKey, 
-            //    l => l.Сотрудник,
-            //    (emp, l) => new { emp })
-            //    .GroupBy(emp => emp.emp)
-            //    .Select(emp => new 
-            //    {
-            //        ТабельныйНомер = emp.Key.ТабельныйНомер,
-            //         Фамилия = emp.Key.Фамилия,
-            //         Имя = emp.Key.Имя,
-            //    }).Single();
-
-
-            
-            GridView1.DataSource = temp.ToList();
+            GridView1.DataSource = query.ToList();
             GridView1.DataBind();
-            
-            //select ТабельныйНомер as 'Табельный номер', Фамилия, Имя, AVG(Оценка) as 'Средний балл'
-            //from Сотрудник inner join Журнал on Сотрудник.primaryKey = Журнал.Сотрудник
-            //group by ТабельныйНомер, Фамилия, Имя, Обязательный
-            //order by 'Средний балл' desc
         }
     }
 }

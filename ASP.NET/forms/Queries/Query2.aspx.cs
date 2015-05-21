@@ -21,12 +21,17 @@ namespace IIS.EmployeeCourses.forms.Queries
         {
             var ds = (SQLDataService)DataServiceProvider.DataService; // Сервис данных.
             IQueryable<Курс> courses = ds.Query<Курс>(Курс.Views.КурсL);
-            IQueryable<Курс> query =
-                from o in courses
-                where o.ДатаНачала >= firstDate.Value && o.ДатаКонца <= lastDate.Value
-                select o;
-            double sum = query.AsEnumerable().Sum(x => x.Стоимость);
+            double sum = courses
+                .Where(x => x.ДатаНачала >= firstDate.Value && x.ДатаКонца <= lastDate.Value)
+                .AsEnumerable()
+                .Sum(c => c.Стоимость);
+
             costSum.Text = sum.ToString();
+
+            //IQueryable<Курс> query = 
+            //    from o in courses
+            //    where o.ДатаНачала >= firstDate.Value && o.ДатаКонца <= lastDate.Value
+            //    select o;
         }
     }
 }
