@@ -5,7 +5,7 @@ namespace IIS.EmployeeCourses
     using ICSSoft.STORMNET;
     using ICSSoft.STORMNET.Web.Controls;
     using ICSSoft.STORMNET.Web.AjaxControls;
-    
+
     public partial class КурсE : BaseEditForm<Курс>
     {
         /// <summary>

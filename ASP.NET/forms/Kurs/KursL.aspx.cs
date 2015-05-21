@@ -6,17 +6,18 @@ namespace IIS.EmployeeCourses
 
     using Resources;
 
-    public partial class КурсL : BaseListForm<Курс>
+    public partial class KursL : BaseListForm<Курс>
     {
         /// <summary>
         /// Конструктор без параметров,
         /// инициализирует свойства, соответствующие конкретной форме.
         /// </summary>
-        public КурсL() : base(Курс.Views.КурсL)
+        public KursL()
+            : base(Курс.Views.КурсL)
         {
             EditPage = КурсE.FormPath;
         }
-                
+
         /// <summary>
         /// Путь до формы.
         /// </summary>
