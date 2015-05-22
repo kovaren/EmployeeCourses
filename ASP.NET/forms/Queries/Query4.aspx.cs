@@ -13,10 +13,19 @@ namespace IIS.EmployeeCourses.forms.Queries
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var ds = (SQLDataService)DataServiceProvider.DataService; // Сервис данных.
+            var ds = (SQLDataService)DataServiceProvider.DataService;
             var logs = ds.Query<Журнал>(Журнал.Views.ЖурналL).ToArray();
-            percent.Text = ((double)logs.Count(x => x.Обязательный && x.Оценка < 6) /
-                (double)logs.Count(x => x.Обязательный) * 100).ToString() + "%";
+            double percentage = ((double)logs
+                .Where(y => y.Обязательный && y.Оценка < 6)
+                .Select(x => x.Сотрудник.__PrimaryKey)
+                .Distinct()
+                .Count() /
+                (double)logs
+                .Where(x => x.Обязательный)
+                .Select(x => x.Сотрудник.__PrimaryKey)
+                .Distinct()
+                .Count() * 100);
+            percent.Text = Math.Round(percentage, 2).ToString() + "%";
         }
     }
 }
