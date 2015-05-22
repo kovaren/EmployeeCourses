@@ -399,10 +399,6 @@
       <Project>{C3839690-B09B-4E9D-B196-1BAE42C29E4A}</Project>
       <Name>EmployeeCourses(Objects)</Name>
     </ProjectReference>
-    <ProjectReference Include=".\..\\Objects\EmployeeCourses(Objects).csproj">
-      <Project>{C3839690-B09B-4E9D-B196-1BAE42C29E4A}</Project>
-      <Name>EmployeeCourses(Objects)</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DefaultEr.aspx" />
@@ -1347,7 +1343,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6500</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:6508/</IISUrl>
+          <IISUrl>http://localhost:6510/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
