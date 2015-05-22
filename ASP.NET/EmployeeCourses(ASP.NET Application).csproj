@@ -222,14 +222,6 @@
       <Name>ICSSoft.STORMNET.Web.Tools.Fakes.dll</Name>
       <HintPath>lib\ICSSoft.STORMNET.Web.Tools.Fakes.dll</HintPath>
     </Reference>
-    <Reference Include="IIS.Caseberry.Logging(BusinessServers).dll">
-      <Name>IIS.Caseberry.Logging(BusinessServers).dll</Name>
-      <HintPath>lib\IIS.Caseberry.Logging(BusinessServers).dll</HintPath>
-    </Reference>
-    <Reference Include="IIS.Caseberry.Logging(Objects).dll">
-      <Name>IIS.Caseberry.Logging(Objects).dll</Name>
-      <HintPath>lib\IIS.Caseberry.Logging(Objects).dll</HintPath>
-    </Reference>
     <Reference Include="IIS.Caseberry.Logging.MsEntLib.dll">
       <Name>IIS.Caseberry.Logging.MsEntLib.dll</Name>
       <HintPath>lib\IIS.Caseberry.Logging.MsEntLib.dll</HintPath>
@@ -391,11 +383,11 @@
       <Name>System.Workflow.Runtime</Name>
       <HintPath>System.Workflow.Runtime</HintPath>
     </Reference>
-    <ProjectReference Include="..\..\BusinessServers\EmployeeCourses%28BusinessServers%29.csproj">
+    <ProjectReference Include="..\BusinessServers\EmployeeCourses%28BusinessServers%29.csproj">
       <Project>{aa3898ed-23a8-4a29-9784-0c593e1bc2d9}</Project>
       <Name>EmployeeCourses%28BusinessServers%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Objects\EmployeeCourses%28Objects%29.csproj">
+    <ProjectReference Include="..\Objects\EmployeeCourses%28Objects%29.csproj">
       <Project>{c84c6377-129d-4ec7-a1c8-9cde0e90a57c}</Project>
       <Name>EmployeeCourses%28Objects%29</Name>
     </ProjectReference>

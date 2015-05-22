@@ -44,9 +44,9 @@
             Сотрудник.
             </summary>
         </member>
-        <member name="P:IIS.EmployeeCourses.Сотрудник.ТабельныйНомер">
+        <member name="P:IIS.EmployeeCourses.Сотрудник.ID">
             <summary>
-            ТабельныйНомер.
+            ID.
             </summary>
         </member>
         <member name="P:IIS.EmployeeCourses.Сотрудник.Фамилия">
@@ -335,6 +335,11 @@
             Примечание.
             </summary>
         </member>
+        <member name="P:IIS.EmployeeCourses.Заявка.Статус">
+            <summary>
+            Статус.
+            </summary>
+        </member>
         <member name="P:IIS.EmployeeCourses.Заявка.Сотрудник">
             <summary>
             Заявка.
@@ -378,6 +383,11 @@
         <member name="F:IIS.EmployeeCourses.ТипКурса.Лекция">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:IIS.EmployeeCourses.СтатусЗаявки">
+            <summary>
+            СтатусЗаявки.
             </summary>
         </member>
     </members>

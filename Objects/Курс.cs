@@ -66,7 +66,7 @@ namespace IIS.EmployeeCourses
         private IIS.EmployeeCourses.Категория fКатегория;
         
         private string fОписание;
-
+        
         private double fСтоимость;
         
         private string fМестоПроведения;

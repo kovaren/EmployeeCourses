@@ -27,8 +27,9 @@ namespace IIS.EmployeeCourses
 
     // *** End programmer edit section *** (Сотрудник CustomAttributes)
     [AutoAltered()]
-    [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [AccessType(ICSSoft.STORMNET.AccessType.@this)]
     [View("СотрудникE", new string[] {
+			"ID as \'ID\'",
             "Фамилия as \'Фамилия\'",
             "Имя as \'Имя\'",
             "Отчество as \'Отчество\'",
@@ -37,7 +38,7 @@ namespace IIS.EmployeeCourses
             "Телефон as \'Телефон\'",
             "Email as \'Email\'"})]
     [View("СотрудникL", new string[] {
-            "ТабельныйНомер as \'Табельный номер\'",
+            "ID as \'ID\'",
             "Фамилия as \'Фамилия\'",
             "Имя as \'Имя\'",
             "ДатаРождения as \'Дата рождения\'",
@@ -48,7 +49,7 @@ namespace IIS.EmployeeCourses
     public class Сотрудник : ICSSoft.STORMNET.DataObject
     {
         
-        private int fТабельныйНомер;
+        private string fID;
         
         private string fФамилия;
         
@@ -70,35 +71,34 @@ namespace IIS.EmployeeCourses
 
         
         /// <summary>
-        /// ТабельныйНомер.
+        /// ID.
         /// </summary>
-        // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер CustomAttributes)
+        // *** Start programmer edit section *** (Сотрудник.ID CustomAttributes)
 
-        // *** End programmer edit section *** (Сотрудник.ТабельныйНомер CustomAttributes)
-        [DisableInsertProperty(true)]
-        [NotNull()]
-        public virtual int ТабельныйНомер
+        // *** End programmer edit section *** (Сотрудник.ID CustomAttributes)
+        [StrLen(255)]
+        public virtual string ID
         {
             get
             {
-                // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер Get start)
+                // *** Start programmer edit section *** (Сотрудник.ID Get start)
 
-                // *** End programmer edit section *** (Сотрудник.ТабельныйНомер Get start)
-                int result = this.fТабельныйНомер;
-                // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер Get end)
+                // *** End programmer edit section *** (Сотрудник.ID Get start)
+                string result = this.fID;
+                // *** Start programmer edit section *** (Сотрудник.ID Get end)
 
-                // *** End programmer edit section *** (Сотрудник.ТабельныйНомер Get end)
+                // *** End programmer edit section *** (Сотрудник.ID Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер Set start)
+                // *** Start programmer edit section *** (Сотрудник.ID Set start)
 
-                // *** End programmer edit section *** (Сотрудник.ТабельныйНомер Set start)
-                this.fТабельныйНомер = value;
-                // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер Set end)
+                // *** End programmer edit section *** (Сотрудник.ID Set start)
+                this.fID = value;
+                // *** Start programmer edit section *** (Сотрудник.ID Set end)
 
-                // *** End programmer edit section *** (Сотрудник.ТабельныйНомер Set end)
+                // *** End programmer edit section *** (Сотрудник.ID Set end)
             }
         }
         

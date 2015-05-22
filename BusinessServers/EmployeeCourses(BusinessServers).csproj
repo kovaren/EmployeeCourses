@@ -2,10 +2,10 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProjectGuid>{C84C6377-129D-4EC7-A1C8-9CDE0E90A57C}</ProjectGuid>
+    <ProjectGuid>{AA3898ED-23A8-4A29-9784-0C593E1BC2D9}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <AssemblyName>EmployeeCourses(Objects)</AssemblyName>
+    <AssemblyName>EmployeeCourses(BusinessServers)</AssemblyName>
     <OutputType>Library</OutputType>
     <RootNamespace>IIS.EmployeeCourses</RootNamespace>
     <FileUpgradeFlags>
@@ -21,7 +21,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DocumentationFile>EmployeeCourses(Objects).xml</DocumentationFile>
+    <DocumentationFile>EmployeeCourses(BusinessServers).xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
@@ -43,7 +43,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE</DefineConstants>
-    <DocumentationFile>EmployeeCourses(Objects).xml</DocumentationFile>
+    <DocumentationFile>EmployeeCourses(BusinessServers).xml</DocumentationFile>
     <DebugSymbols>false</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
@@ -64,53 +64,18 @@
     <Reference Include="System.XML">
       <HintPath>System.XML.dll</HintPath>
     </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business">
+      <HintPath>..\..\..\ICSSoft.STORMNET.Business.dll</HintPath>
+    </Reference>
     <Reference Include="ICSSoft.STORMNET.DataObject">
       <HintPath>..\..\..\ICSSoft.STORMNET.DataObject.dll</HintPath>
     </Reference>
-    <Reference Include="Repository">
-      <HintPath>..\..\..\Repository.dll</HintPath>
-    </Reference>
-    <ProjectReference Include="..\..\EC\Objects\EC(Objects).csproj">
-      <Project>{F64CAEE1-C662-4B40-87DF-F5B25F847190}</Project>
-      <Name>EC(Objects)</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\EmployeeCourses_clean\Objects\EmployeeCourses(Objects).csproj">
-      <Project>{DBF347D5-2AD8-48FD-ABA6-FFB87BD41A79}</Project>
-      <Name>EmployeeCourses(Objects)</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Должность.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Сотрудник.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Журнал.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Занятие.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Категория.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Курс.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="СтатусКурса.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Заявка.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ТипКурса.cs">
+    <Compile Include="ДобавлениеСотрудникаВБазу.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="СтатусЗаявки.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

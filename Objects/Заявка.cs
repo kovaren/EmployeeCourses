@@ -43,6 +43,8 @@ namespace IIS.EmployeeCourses
         
         private string fПримечание;
         
+        private IIS.EmployeeCourses.СтатусЗаявки fСтатус;
+        
         private IIS.EmployeeCourses.Сотрудник fСотрудник;
         
         private IIS.EmployeeCourses.Курс fКурс;
@@ -81,6 +83,37 @@ namespace IIS.EmployeeCourses
                 // *** Start programmer edit section *** (Заявка.Примечание Set end)
 
                 // *** End programmer edit section *** (Заявка.Примечание Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Статус.
+        /// </summary>
+        // *** Start programmer edit section *** (Заявка.Статус CustomAttributes)
+
+        // *** End programmer edit section *** (Заявка.Статус CustomAttributes)
+        public virtual IIS.EmployeeCourses.СтатусЗаявки Статус
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Заявка.Статус Get start)
+
+                // *** End programmer edit section *** (Заявка.Статус Get start)
+                IIS.EmployeeCourses.СтатусЗаявки result = this.fСтатус;
+                // *** Start programmer edit section *** (Заявка.Статус Get end)
+
+                // *** End programmer edit section *** (Заявка.Статус Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Заявка.Статус Set start)
+
+                // *** End programmer edit section *** (Заявка.Статус Set start)
+                this.fСтатус = value;
+                // *** Start programmer edit section *** (Заявка.Статус Set end)
+
+                // *** End programmer edit section *** (Заявка.Статус Set end)
             }
         }
         
