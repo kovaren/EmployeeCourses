@@ -10,7 +10,6 @@
         <div class="descTxt">
             <ac:DatePicker ID="lastDate" Text="Конец периода" runat="server"/>
         </div>
-        <asp:GridView ID="GridView1" ShowHeaderWhenEmpty="true" AutoGenerateColumns="true" runat="server"></asp:GridView>
         <asp:Button ID="queryButton" Text="Суммарная стоимость" OnClick="RunQuery" runat="server"/>
         <asp:TextBox ID="costSum" runat="server"></asp:TextBox>
     </div>
