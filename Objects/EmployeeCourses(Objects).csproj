@@ -58,26 +58,18 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSSoft.STORMNET.DataObject">
+      <HintPath>..\ASP.NET\lib\ICSSoft.STORMNET.DataObject.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>System.dll</HintPath>
     </Reference>
     <Reference Include="System.XML">
       <HintPath>System.XML.dll</HintPath>
     </Reference>
-    <Reference Include="ICSSoft.STORMNET.DataObject">
-      <HintPath>..\..\..\ICSSoft.STORMNET.DataObject.dll</HintPath>
-    </Reference>
     <Reference Include="Repository">
       <HintPath>..\..\..\Repository.dll</HintPath>
     </Reference>
-    <ProjectReference Include="..\..\EC\Objects\EC(Objects).csproj">
-      <Project>{F64CAEE1-C662-4B40-87DF-F5B25F847190}</Project>
-      <Name>EC(Objects)</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\EmployeeCourses_clean\Objects\EmployeeCourses(Objects).csproj">
-      <Project>{DBF347D5-2AD8-48FD-ABA6-FFB87BD41A79}</Project>
-      <Name>EmployeeCourses(Objects)</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Должность.cs">

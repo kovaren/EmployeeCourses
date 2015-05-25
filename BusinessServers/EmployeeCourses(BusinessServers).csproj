@@ -58,17 +58,17 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSSoft.STORMNET.Business">
+      <HintPath>..\ASP.NET\lib\ICSSoft.STORMNET.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.DataObject">
+      <HintPath>..\ASP.NET\lib\ICSSoft.STORMNET.DataObject.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>System.dll</HintPath>
     </Reference>
     <Reference Include="System.XML">
       <HintPath>System.XML.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSSoft.STORMNET.Business">
-      <HintPath>..\..\..\ICSSoft.STORMNET.Business.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSSoft.STORMNET.DataObject">
-      <HintPath>..\..\..\ICSSoft.STORMNET.DataObject.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +76,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Objects\EmployeeCourses%28Objects%29.csproj">
+      <Project>{c84c6377-129d-4ec7-a1c8-9cde0e90a57c}</Project>
+      <Name>EmployeeCourses%28Objects%29</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

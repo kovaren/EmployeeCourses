@@ -10,6 +10,7 @@
 
 namespace IIS.EmployeeCourses
 {
+    using ICSSoft.STORMNET;
     using System;
     using System.Xml;
     
@@ -30,7 +31,11 @@ namespace IIS.EmployeeCourses
     {
         
         // *** Start programmer edit section *** (ДобавлениеСотрудникаВБазу CustomMembers)
-
+        public virtual ICSSoft.STORMNET.DataObject[] OnUpdateСотрудник(IIS.EmployeeCourses.Сотрудник UpdatedObject)
+        {
+            DataObject[] temp = new DataObject[0];
+            return temp;
+        }
         // *** End programmer edit section *** (ДобавлениеСотрудникаВБазу CustomMembers)
 
     }
