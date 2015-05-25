@@ -412,7 +412,8 @@
     <Content Include="forms\Queries\Query2.aspx" />
     <Content Include="forms\Queries\Query1.aspx" />
     <Content Include="forms\Zayavka\RequestsToConfirm.aspx" />
-    <Content Include="forms\Zayavka\MyRequests.aspx" />
+    <Content Include="forms\Zayavka\MyRequestsL.aspx" />
+    <Content Include="forms\Zayavka\MyRequestsE.aspx" />
     <Content Include="forms\Zayavka\ZayavkaL.aspx" />
     <Compile Include="DefaultEr.aspx.cs">
       <DependentUpon>DefaultEr.aspx</DependentUpon>
@@ -491,12 +492,13 @@
     <Compile Include="forms\Zayavka\RequestsToConfirm.aspx.designer.cs">
       <DependentUpon>RequestsToConfirm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="forms\Zayavka\MyRequests.aspx.cs">
-      <DependentUpon>MyRequests.aspx</DependentUpon>
+    <Compile Include="forms\Zayavka\MyRequestsL.aspx.cs">
+      <DependentUpon>MyRequestsL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="forms\Zayavka\MyRequests.aspx.designer.cs">
-      <DependentUpon>MyRequests.aspx</DependentUpon>
+    <Compile Include="forms\Zayavka\MyRequestsE.aspx.cs">
+      <DependentUpon>MyRequestsE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="forms\Zayavka\ZayavkaL.aspx.cs">
       <DependentUpon>ZayavkaL.aspx</DependentUpon>

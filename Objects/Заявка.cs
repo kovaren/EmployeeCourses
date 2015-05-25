@@ -38,6 +38,16 @@ namespace IIS.EmployeeCourses
             "Сотрудник.Фамилия as \'Фамилия\'",
             "Курс.Название as \'Название\'",
             "Примечание as \'Примечание\'"})]
+    [View("MyRequestsL", new string[] {
+            "Сотрудник.Фамилия as \'Фамилия\'",
+            "Курс.Название as \'Название\'",
+            "Примечание as \'Примечание\'"})]
+    [View("MyRequestsE", new string[] {
+            "Сотрудник as \'Сотрудник\'",
+            "Сотрудник.Фамилия as \'Фамилия\'",
+            "Курс as \'Курс\'",
+            "Курс.Название as \'Название\'",
+            "Примечание as \'Примечание\'"})]
     public class Заявка : ICSSoft.STORMNET.DataObject
     {
         
@@ -210,6 +220,28 @@ namespace IIS.EmployeeCourses
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("ЗаявкаL", typeof(IIS.EmployeeCourses.Заявка));
+                }
+            }
+
+            /// <summary>
+            /// "MyRequestsL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View MyRequestsL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("MyRequestsL", typeof(IIS.EmployeeCourses.Заявка));
+                }
+            }
+
+            /// <summary>
+            /// "MyRequestsE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View MyRequestsE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("MyRequestsE", typeof(IIS.EmployeeCourses.Заявка));
                 }
             }
         }

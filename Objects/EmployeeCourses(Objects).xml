@@ -365,6 +365,16 @@
             "ЗаявкаL" view.
             </summary>
         </member>
+        <member name="P:IIS.EmployeeCourses.Заявка.Views.MyRequestsL">
+            <summary>
+            "MyRequestsL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.EmployeeCourses.Заявка.Views.MyRequestsE">
+            <summary>
+            "MyRequestsE" view.
+            </summary>
+        </member>
         <member name="T:IIS.EmployeeCourses.ТипКурса">
             <summary>
             Тип курса.

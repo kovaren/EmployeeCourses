@@ -27,11 +27,11 @@ namespace IIS.EmployeeCourses.forms.Queries
                 log => log.Сотрудник.__PrimaryKey,
                 (emp, log) => new
                 {
-                    ТабельныйНомер = emp.ТабельныйНомер,
+                    ID = emp.ID,
                     ФИО = emp.Фамилия + " " + emp.Имя + " " + emp.Отчество,
                     Оценка = log.Оценка
                 })
-                .GroupBy(x => new { x.ТабельныйНомер, x.ФИО })
+                .GroupBy(x => new { ТабельныйНомер = x.ID, x.ФИО })
                 .Select(a => new
                 {
                     Табельный_номер = a.Key.ТабельныйНомер,
