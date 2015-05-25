@@ -500,6 +500,9 @@
       <DependentUpon>MyRequestsE.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="forms\Zayavka\MyRequestsE.aspx.designer.cs">
+      <DependentUpon>MyRequestsE.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forms\Zayavka\ZayavkaL.aspx.cs">
       <DependentUpon>ZayavkaL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

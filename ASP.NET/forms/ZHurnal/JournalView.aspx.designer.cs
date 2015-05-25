@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IIS.EmployeeCourses.forms.ZHurnal {
+namespace IIS.EmployeeCourses {
     
     
     public partial class JournalView {

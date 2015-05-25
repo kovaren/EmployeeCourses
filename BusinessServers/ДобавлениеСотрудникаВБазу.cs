@@ -13,8 +13,8 @@ namespace IIS.EmployeeCourses
     using ICSSoft.STORMNET;
     using System;
     using System.Xml;
-    
-    
+
+
     // *** Start programmer edit section *** (Using statements)
 
     // *** End programmer edit section *** (Using statements)
@@ -29,11 +29,13 @@ namespace IIS.EmployeeCourses
     [ICSSoft.STORMNET.AccessType(ICSSoft.STORMNET.AccessType.none)]
     public class ДобавлениеСотрудникаВБазу : ICSSoft.STORMNET.Business.BusinessServer
     {
-        
+
         // *** Start programmer edit section *** (ДобавлениеСотрудникаВБазу CustomMembers)
         public virtual ICSSoft.STORMNET.DataObject[] OnUpdateСотрудник(IIS.EmployeeCourses.Сотрудник UpdatedObject)
         {
             DataObject[] temp = new DataObject[0];
+            //   ICSSoft.STORMNET.Security.Checking temp = new ICSSoft.STORMNET.Security.Checking();
+            //temp.
             return temp;
         }
         // *** End programmer edit section *** (ДобавлениеСотрудникаВБазу CustomMembers)

@@ -13,8 +13,8 @@ namespace IIS.EmployeeCourses
     using System;
     using System.Xml;
     using ICSSoft.STORMNET;
-    
-    
+
+
     // *** Start programmer edit section *** (Using statements)
 
     // *** End programmer edit section *** (Using statements)
@@ -42,24 +42,30 @@ namespace IIS.EmployeeCourses
             "Оценка as \'Оценка\'",
             "Сотрудник.Фамилия as \'Фамилия\'",
             "Курс.Название as \'Название\'"})]
+    [View("JournalView", new string[] {
+            "Статус",
+            "Обязательный as \'Обязательный\'",
+            "Оценка as \'Оценка\'",
+            "Сотрудник.Фамилия as \'Фамилия\'",
+            "Курс.Название as \'Название\'"})]
     public class Журнал : ICSSoft.STORMNET.DataObject
     {
-        
+
         private IIS.EmployeeCourses.СтатусКурса fСтатус;
-        
+
         private bool fОбязательный;
-        
+
         private int fОценка;
-        
+
         private IIS.EmployeeCourses.Сотрудник fСотрудник;
-        
+
         private IIS.EmployeeCourses.Курс fКурс;
-        
+
         // *** Start programmer edit section *** (Журнал CustomMembers)
 
         // *** End programmer edit section *** (Журнал CustomMembers)
 
-        
+
         /// <summary>
         /// Статус.
         /// </summary>
@@ -91,7 +97,7 @@ namespace IIS.EmployeeCourses
                 // *** End programmer edit section *** (Журнал.Статус Set end)
             }
         }
-        
+
         /// <summary>
         /// Обязательный.
         /// </summary>
@@ -122,7 +128,7 @@ namespace IIS.EmployeeCourses
                 // *** End programmer edit section *** (Журнал.Обязательный Set end)
             }
         }
-        
+
         /// <summary>
         /// Оценка.
         /// </summary>
@@ -153,7 +159,7 @@ namespace IIS.EmployeeCourses
                 // *** End programmer edit section *** (Журнал.Оценка Set end)
             }
         }
-        
+
         /// <summary>
         /// Журнал.
         /// </summary>
@@ -187,7 +193,7 @@ namespace IIS.EmployeeCourses
                 // *** End programmer edit section *** (Журнал.Сотрудник Set end)
             }
         }
-        
+
         /// <summary>
         /// Журнал.
         /// </summary>
@@ -221,13 +227,13 @@ namespace IIS.EmployeeCourses
                 // *** End programmer edit section *** (Журнал.Курс Set end)
             }
         }
-        
+
         /// <summary>
         /// Class views container.
         /// </summary>
         public class Views
         {
-            
+
             /// <summary>
             /// "ЖурналE" view.
             /// </summary>
@@ -238,7 +244,7 @@ namespace IIS.EmployeeCourses
                     return ICSSoft.STORMNET.Information.GetView("ЖурналE", typeof(IIS.EmployeeCourses.Журнал));
                 }
             }
-            
+
             /// <summary>
             /// "ЖурналL" view.
             /// </summary>
@@ -247,6 +253,13 @@ namespace IIS.EmployeeCourses
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("ЖурналL", typeof(IIS.EmployeeCourses.Журнал));
+                }
+            }
+            public static ICSSoft.STORMNET.View JournalView
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("JournalView", typeof(IIS.EmployeeCourses.Журнал));
                 }
             }
         }

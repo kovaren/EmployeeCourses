@@ -5,7 +5,9 @@ namespace IIS.EmployeeCourses
     using ICSSoft.STORMNET;
     using ICSSoft.STORMNET.Web.Controls;
     using ICSSoft.STORMNET.Web.AjaxControls;
-    
+    using ICSSoft.STORMNET.FunctionalLanguage;
+    using ICSSoft.STORMNET.FunctionalLanguage.SQLWhere;
+
     public partial class MyRequestsE : BaseEditForm<Заявка>
     {
         /// <summary>
@@ -36,6 +38,12 @@ namespace IIS.EmployeeCourses
         /// </summary>
         protected override void PreApplyToControls()
         {
+            ICSSoft.Services.CurrentUser USER = new ICSSoft.Services.CurrentUser();
+            string id = USER.Login;
+            SQLWhereLanguageDef langdef = SQLWhereLanguageDef.LanguageDef;
+            Function lf = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.ID), id));
+            ctrlСотрудник.LimitFunction = lf;
+
         }
 
         /// <summary>
