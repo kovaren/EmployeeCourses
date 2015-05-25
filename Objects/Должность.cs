@@ -42,7 +42,7 @@ namespace IIS.EmployeeCourses
         // *** Start programmer edit section *** (Должность.Разработчик CustomAttributes)
 
         // *** End programmer edit section *** (Должность.Разработчик CustomAttributes)
-        Разработчик,
+        Программист,
         
         /// <summary>
         /// 
@@ -74,6 +74,6 @@ namespace IIS.EmployeeCourses
         // *** Start programmer edit section *** (Должность.Бухгалтер CustomAttributes)
 
         // *** End programmer edit section *** (Должность.Бухгалтер CustomAttributes)
-        Бухгалтер,
+        Секретарь
     }
 }
