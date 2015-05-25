@@ -50,6 +50,16 @@ namespace IIS.EmployeeCourses
             "Описание as \'Описание\'",
             "Стоимость as \'Стоимость\'",
             "МестоПроведения as \'Место проведения\'"})]
+    [View("CoursesView", new string[] {
+            "Название as \'Название\'",
+            "ДатаНачала as \'Дата начала\'",
+            "ДатаКонца as \'Дата конца\'",
+            "Тип as \'Тип\'",
+            "Очный as \'Очный\'",
+            "Категория as \'Категория\'",
+            "Описание as \'Описание\'",
+            "Стоимость as \'Стоимость\'",
+            "МестоПроведения as \'Место проведения\'"})]
     public class Курс : ICSSoft.STORMNET.DataObject
     {
         
@@ -427,6 +437,14 @@ namespace IIS.EmployeeCourses
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("КурсL", typeof(IIS.EmployeeCourses.Курс));
+                }
+            }
+
+            public static ICSSoft.STORMNET.View CoursesView
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("CoursesView", typeof(IIS.EmployeeCourses.Курс));
                 }
             }
         }
