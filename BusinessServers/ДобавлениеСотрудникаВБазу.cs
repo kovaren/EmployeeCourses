@@ -34,7 +34,8 @@ namespace IIS.EmployeeCourses
         public virtual ICSSoft.STORMNET.DataObject[] OnUpdateСотрудник(IIS.EmployeeCourses.Сотрудник UpdatedObject)
         {
             DataObject[] temp = new DataObject[0];
-            //   ICSSoft.STORMNET.Security.Checking temp = new ICSSoft.STORMNET.Security.Checking();
+            ICSSoft.STORMNET.Security.Checking temp2 = new ICSSoft.STORMNET.Security.Checking();
+           // temp2.
             //temp.
             return temp;
         }

@@ -38,10 +38,10 @@ namespace IIS.EmployeeCourses
         /// </summary>
         protected override void PreApplyToControls()
         {
-            ICSSoft.Services.CurrentUser USER = new ICSSoft.Services.CurrentUser();
-            string id = USER.Login;
+            ICSSoft.Services.CurrentUser user = new ICSSoft.Services.CurrentUser();
+            string id = user.Login;
             SQLWhereLanguageDef langdef = SQLWhereLanguageDef.LanguageDef;
-            Function lf = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.ID), id));
+            Function lf = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Заявка>(x => x.Сотрудник), id));
             ctrlСотрудник.LimitFunction = lf;
 
         }

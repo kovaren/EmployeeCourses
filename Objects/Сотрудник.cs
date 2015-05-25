@@ -27,7 +27,7 @@ namespace IIS.EmployeeCourses
 
     // *** End programmer edit section *** (Сотрудник CustomAttributes)
     [AutoAltered()]
-    [AccessType(ICSSoft.STORMNET.AccessType.@this)]
+    [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СотрудникE", new string[] {
 			"ID as \'ID\'",
             "Фамилия as \'Фамилия\'",

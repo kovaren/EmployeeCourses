@@ -58,6 +58,9 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CheckingLibrary">
+      <HintPath>..\..\..\..\Documents\CASEBERRY 2015.02.26\CheckingLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="ICSSoft.STORMNET.Business">
       <HintPath>..\ASP.NET\lib\ICSSoft.STORMNET.Business.dll</HintPath>
     </Reference>
