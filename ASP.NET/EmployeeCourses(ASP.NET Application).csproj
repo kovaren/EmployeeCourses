@@ -403,7 +403,8 @@
   <ItemGroup>
     <Content Include="DefaultEr.aspx" />
     <Content Include="DefaultEe.aspx" />
-    <Content Include="forms\Kurs\MyCourses.aspx" />
+    <Content Include="forms\Kurs\MyCoursesE.aspx" />
+    <Content Include="forms\Kurs\MyCoursesL.aspx" />
     <Content Include="forms\Kurs\CoursesView.aspx" />
     <Content Include="forms\Queries\Queries.aspx" />
     <Content Include="forms\Queries\Query5.aspx" />
@@ -430,12 +431,19 @@
     <Compile Include="DefaultEe.aspx.designer.cs">
       <DependentUpon>DefaultEe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="forms\Kurs\MyCourses.aspx.cs">
-      <DependentUpon>MyCourses.aspx</DependentUpon>
+    <Compile Include="forms\Kurs\MyCoursesE.aspx.cs">
+      <DependentUpon>MyCoursesE.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="forms\Kurs\MyCourses.aspx.designer.cs">
-      <DependentUpon>MyCourses.aspx</DependentUpon>
+    <Compile Include="forms\Kurs\MyCoursesE.aspx.designer.cs">
+      <DependentUpon>MyCoursesE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Kurs\MyCoursesL.aspx.cs">
+      <DependentUpon>MyCoursesL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Kurs\MyCoursesL.aspx.designer.cs">
+      <DependentUpon>MyCoursesL.aspx</DependentUpon>
     </Compile>
     <Compile Include="forms\Kurs\CoursesView.aspx.cs">
       <DependentUpon>CoursesView.aspx</DependentUpon>

@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IIS.EmployeeCourses.forms.Kurs {
+namespace IIS.EmployeeCourses {
     
     
-    public partial class MyCourses {
+    public partial class MyCoursesL {
     }
 }
