@@ -22,11 +22,11 @@ namespace IIS.EmployeeCourses.forms.Queries
                 ICSSoft.STORMNET.Business.DataServiceProvider.DataService).GetConnection()) //получение подключения
             {
                 var command = new System.Data.SqlClient.SqlCommand(
-                                @"select ТабельныйНомер as 'Табельный номер', Фамилия + ' ' + Имя + ' ' + Отчество as 'ФИО', AVG(Оценка) as 'Средний балл'
+                                @"select ID, Фамилия + ' ' + Имя + ' ' + Отчество as 'ФИО', AVG(Оценка) as 'Средний балл'
                                 from Сотрудник inner join Журнал on Сотрудник.primaryKey = Журнал.Сотрудник
                                 where Сотрудник.primaryKey in
                                 (select distinct Сотрудник from Заявка)
-                                group by ТабельныйНомер, Фамилия, Имя, Отчество
+                                group by ID, Фамилия, Имя, Отчество
                                 order by 'Средний балл' desc", connection);
 
                 System.Data.SqlClient.SqlDataAdapter adapt = new System.Data.SqlClient.SqlDataAdapter(command);
