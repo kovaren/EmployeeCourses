@@ -48,6 +48,16 @@ namespace IIS.EmployeeCourses
             "Курс as \'Курс\'",
             "Курс.Название as \'Название\'",
             "Примечание as \'Примечание\'"})]
+    [View("RequestsToConfirmL", new string[] {
+            "Сотрудник.Фамилия as \'Фамилия\'",
+            "Курс.Название as \'Название\'",
+            "Примечание as \'Примечание\'"})]
+    [View("RequestsToConfirmE", new string[] {
+            "Сотрудник as \'Сотрудник\'",
+            "Сотрудник.Фамилия as \'Фамилия\'",
+            "Курс as \'Курс\'",
+            "Курс.Название as \'Название\'",
+            "Примечание as \'Примечание\'"})]
     public class Заявка : ICSSoft.STORMNET.DataObject
     {
         
@@ -242,6 +252,21 @@ namespace IIS.EmployeeCourses
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("MyRequestsE", typeof(IIS.EmployeeCourses.Заявка));
+                }
+            }
+
+            public static ICSSoft.STORMNET.View RequestsToConfirmL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("RequestsToConfirmL", typeof(IIS.EmployeeCourses.Заявка));
+                }
+            }
+            public static ICSSoft.STORMNET.View RequestsToConfirmE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("RequestsToConfirmE", typeof(IIS.EmployeeCourses.Заявка));
                 }
             }
         }

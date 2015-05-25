@@ -411,7 +411,8 @@
     <Content Include="forms\Queries\Query3.aspx" />
     <Content Include="forms\Queries\Query2.aspx" />
     <Content Include="forms\Queries\Query1.aspx" />
-    <Content Include="forms\Zayavka\RequestsToConfirm.aspx" />
+    <Content Include="forms\Zayavka\RequestsToConfirmE.aspx" />
+    <Content Include="forms\Zayavka\RequestsToConfirmL.aspx" />
     <Content Include="forms\Zayavka\MyRequestsL.aspx" />
     <Content Include="forms\Zayavka\MyRequestsE.aspx" />
     <Content Include="forms\Zayavka\ZayavkaL.aspx" />
@@ -485,12 +486,19 @@
     <Compile Include="forms\Queries\Query1.aspx.designer.cs">
       <DependentUpon>Query1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="forms\Zayavka\RequestsToConfirm.aspx.cs">
-      <DependentUpon>RequestsToConfirm.aspx</DependentUpon>
+    <Compile Include="forms\Zayavka\RequestsToConfirmE.aspx.cs">
+      <DependentUpon>RequestsToConfirmE.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="forms\Zayavka\RequestsToConfirm.aspx.designer.cs">
-      <DependentUpon>RequestsToConfirm.aspx</DependentUpon>
+    <Compile Include="forms\Zayavka\RequestsToConfirmE.aspx.designer.cs">
+      <DependentUpon>RequestsToConfirmE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Zayavka\RequestsToConfirmL.aspx.cs">
+      <DependentUpon>RequestsToConfirmL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\Zayavka\RequestsToConfirmL.aspx.designer.cs">
+      <DependentUpon>RequestsToConfirmL.aspx</DependentUpon>
     </Compile>
     <Compile Include="forms\Zayavka\MyRequestsL.aspx.cs">
       <DependentUpon>MyRequestsL.aspx</DependentUpon>

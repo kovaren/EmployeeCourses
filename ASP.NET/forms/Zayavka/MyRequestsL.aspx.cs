@@ -22,6 +22,12 @@ namespace IIS.EmployeeCourses
         }
         protected override void Preload()
         {
+            WebObjectListView1.Operations.New = false;
+            WebObjectListView1.Operations.Delete = false;
+            WebObjectListView1.Operations.DeleteInRow = false;
+            WebObjectListView1.Operations.EditOnClickInRow = false;
+            WebObjectListView1.Operations.EditInRow = false;
+            WebObjectListView1.Operations.LimitEdit = false;
             ICSSoft.Services.CurrentUser user = new ICSSoft.Services.CurrentUser();
             string id = user.Login;
             SQLWhereLanguageDef langdef = SQLWhereLanguageDef.LanguageDef;

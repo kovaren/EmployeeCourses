@@ -26,6 +26,7 @@ namespace IIS.EmployeeCourses
             WebObjectListView1.Operations.DeleteInRow = false;
             WebObjectListView1.Operations.EditOnClickInRow = false;
             WebObjectListView1.Operations.EditInRow = false;
+            WebObjectListView1.Operations.LimitEdit = false;
         }
     }
 }

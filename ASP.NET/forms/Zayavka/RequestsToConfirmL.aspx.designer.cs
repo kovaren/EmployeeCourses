@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IIS.EmployeeCourses.forms.Zayavka {
+namespace IIS.EmployeeCourses {
     
     
-    public partial class RequestsToConfirm {
+    public partial class RequestsToConfirmL {
     }
 }

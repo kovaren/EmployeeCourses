@@ -15,7 +15,7 @@
       <siteMapNode title="Заявки" description="" url="~/forms/Zayavka/ZayavkaL.aspx" />
       <siteMapNode title="Список курсов" description="" url="~/forms/Kurs/CoursesView.aspx" />
       <siteMapNode title="Журнал" description="" url="~/forms/ZHurnal/JournalView.aspx" />
-      <siteMapNode title="Заявки на согласование" description="" url="~/forms/Zayavka/RequestsToConfirm.aspx" />
+      <siteMapNode title="Заявки на согласование" description="" url="~/forms/Zayavka/RequestsToConfirmL.aspx" />
       <siteMapNode title="Мои курсы" description="" url="~/forms/Kurs/MyCourses.aspx" />
       <siteMapNode title="Мои заявки" description="" url="~/forms/Zayavka/MyRequestsL.aspx" />      
       <siteMapNode title="Запросы" description="" url="~/forms/Queries/Queries.aspx" />
