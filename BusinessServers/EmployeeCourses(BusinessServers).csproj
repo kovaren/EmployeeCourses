@@ -68,9 +68,15 @@
     <Reference Include="ICSSoft.STORMNET.DataObject">
       <HintPath>..\ASP.NET\lib\ICSSoft.STORMNET.DataObject.dll</HintPath>
     </Reference>
+    <Reference Include="ICSSoft.STORMNET.FunctionalLanguage">
+      <HintPath>..\..\..\..\Documents\CASEBERRY 2015.02.26\ICSSoft.STORMNET.FunctionalLanguage.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>System.dll</HintPath>
     </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.XML">
       <HintPath>System.XML.dll</HintPath>
     </Reference>

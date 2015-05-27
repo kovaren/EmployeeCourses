@@ -27,7 +27,7 @@
                 <div class="page-header-image"><a href="/Default.aspx"></a></div>
                 <div class="page-header-caption"><a style="text-decoration:none;font-family:'Segoe UI';font-weight:lighter" href="/Default.aspx">Курсы для сотрудников</a></div>
                 <div class="page-header-userbar">
-                    <asp:Label ID="fio" runat="server" Text="YourUserID" />
+                    <asp:Label ID="fio" runat="server" Text="YourUserName" />
                     <asp:LinkButton CssClass="exit-btn" ID="ExitButton" runat="server" OnClick="ExitButtonClickHandler">Выход</asp:LinkButton>
                 </div>
             </div>

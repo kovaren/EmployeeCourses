@@ -112,8 +112,7 @@
 
             LoadCurrentTheme();
             ApplyTreeViewCookie();
-
-            fio.Text = Context.User.Identity.Name;
+            fio.Text = "Добро пожаловать, " + Context.User.Identity.Name;
 
             base.OnLoad(e);
         }

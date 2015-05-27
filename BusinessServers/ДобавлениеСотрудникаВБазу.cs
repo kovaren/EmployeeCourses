@@ -13,6 +13,9 @@ namespace IIS.EmployeeCourses
     using ICSSoft.STORMNET;
     using System;
     using System.Xml;
+    using System.Web;
+    using System.Web.Security;
+    using ICSSoft.STORMNET.Security;
 
 
     // *** Start programmer edit section *** (Using statements)
@@ -29,15 +32,28 @@ namespace IIS.EmployeeCourses
     [ICSSoft.STORMNET.AccessType(ICSSoft.STORMNET.AccessType.none)]
     public class ДобавлениеСотрудникаВБазу : ICSSoft.STORMNET.Business.BusinessServer
     {
-
         // *** Start programmer edit section *** (ДобавлениеСотрудникаВБазу CustomMembers)
         public virtual ICSSoft.STORMNET.DataObject[] OnUpdateСотрудник(IIS.EmployeeCourses.Сотрудник UpdatedObject)
         {
-            DataObject[] temp = new DataObject[0];
-            ICSSoft.STORMNET.Security.Checking temp2 = new ICSSoft.STORMNET.Security.Checking();
-           // temp2.
-            //temp.
-            return temp;
+            CaseberryMembershipProvider temp2 = new CaseberryMembershipProvider();
+            MembershipCreateStatus status;
+            Сотрудник temp = UpdatedObject;
+            Checking temp3 = new Checking();
+            // добавление
+            if (UpdatedObject.GetStatus() == ICSSoft.STORMNET.ObjectStatus.Created)
+            {
+                temp2.CreateUser(temp.ID, temp.ID, "", "", "", true, null, out status);
+                string name = temp.Фамилия + " " + temp.Имя + " " + temp.Отчество;
+                temp3.UpdateUser(temp.ID, name, temp.ID, true);
+                if (temp.Должность.ToString() == "Руководитель")
+                    temp3.SetUserRoles(temp.ID, new System.Collections.Generic.List<string>() { "head" });
+                else
+                    temp3.SetUserRoles(temp.ID, new System.Collections.Generic.List<string>() { "employee" });
+            }
+            // удаление
+            if (UpdatedObject.GetStatus() == ICSSoft.STORMNET.ObjectStatus.Deleted)
+            temp2.DeleteUser(temp.ID, true);
+            return new DataObject[0];
         }
         // *** End programmer edit section *** (ДобавлениеСотрудникаВБазу CustomMembers)
 

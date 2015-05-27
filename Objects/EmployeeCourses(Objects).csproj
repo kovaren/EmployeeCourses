@@ -58,6 +58,9 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSSoft.STORMNET.Business">
+      <HintPath>..\..\..\..\Documents\CASEBERRY 2015.02.26\ICSSoft.STORMNET.Business.dll</HintPath>
+    </Reference>
     <Reference Include="ICSSoft.STORMNET.DataObject">
       <HintPath>..\ASP.NET\lib\ICSSoft.STORMNET.DataObject.dll</HintPath>
     </Reference>

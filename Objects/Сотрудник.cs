@@ -13,7 +13,7 @@ namespace IIS.EmployeeCourses
     using System;
     using System.Xml;
     using ICSSoft.STORMNET;
-    
+    using ICSSoft.STORMNET.Business;
     
     // *** Start programmer edit section *** (Using statements)
 
@@ -26,6 +26,7 @@ namespace IIS.EmployeeCourses
     // *** Start programmer edit section *** (Сотрудник CustomAttributes)
 
     // *** End programmer edit section *** (Сотрудник CustomAttributes)
+    [BusinessServer("IIS.EmployeeCourses.ДобавлениеСотрудникаВБазу, EmployeeCourses(BusinessServers)", ICSSoft.STORMNET.Business.DataServiceObjectEvents.OnAllEvents)]
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СотрудникE", new string[] {
